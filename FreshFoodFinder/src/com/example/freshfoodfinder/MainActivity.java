@@ -1,13 +1,15 @@
 package com.example.freshfoodfinder;
 
 import android.os.Bundle;
+
 import android.app.Activity;
 import android.view.Menu;
 
-//HEY NICK!
 
+//I HOPE NICK SEES THIS!
 public class MainActivity extends Activity {
 
+	//This class will manage the code for the screen involving the search bar and buttons for food
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
