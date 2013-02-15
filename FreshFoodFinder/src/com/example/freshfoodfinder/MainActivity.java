@@ -8,10 +8,10 @@ import android.view.Menu;
 
 //I HOPE NICK SEES THIS!
 public class MainActivity extends Activity {
-
 	//This class will manage the code for the screen involving the search bar and buttons for food
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	}
