@@ -5,6 +5,9 @@ public class Food {
 	public Food(String foodName) {
 		name=foodName;
 	}
+	public String getName(){
+		return name;
+	}
 	@Override
 	public int hashCode(){		
 		return name.hashCode();
