@@ -25,6 +25,7 @@
    <meta-data
     android:name="com.google.android.maps.v2.API_KEY"
     android:value="AIzaSyDdxw9tITSnSSmmDFScJr-TByir4ld5XZg"/>
+   <uses-library android:name="com.google.android.maps" />
 
     </application>
           <permission
