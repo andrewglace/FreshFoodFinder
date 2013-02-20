@@ -1,15 +1,14 @@
 package com.example.freshfoodfinder;
-import java.lang.String;
 import java.util.ArrayList;
+
+import com.google.android.maps.GeoPoint;
 public class Market {
 	private String name;
 	private ArrayList<Food> foodSoldHere;
-	private double xCoOrd;
-	private double yCoOrd;
-	public Market(String marketName, ArrayList<Food> foods, double xCoordinate, double yCoordinate) {
+	private GeoPoint location;
+	public Market(String marketName, ArrayList<Food> foods, GeoPoint whereIsThisMarket) {
 		name=marketName;
-		xCoOrd = xCoordinate;
-		yCoOrd = yCoordinate;
+		location=whereIsThisMarket;
 		foodSoldHere = foods;
 	}
 	public String getName(){
@@ -24,11 +23,8 @@ public class Market {
 		}
 		return false;
 	}
-	public double getX(){
-		return xCoOrd;
-	}
-	public double getY(){
-		return yCoOrd;
+	public GeoPoint getX(){
+		return location;
 	}
 	public void addFood(Food FoodIn){
 		 foodSoldHere.add(FoodIn);
