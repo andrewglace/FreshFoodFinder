@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -39,6 +40,8 @@ public class MainActivity extends ListActivity {
 	    // Get the item that was clicked
 	    Food foodClickedByUser = (Food) this.getListAdapter().getItem(position);
 	    activeFood = foodClickedByUser;
+	    Intent i = new Intent(this, UserMap.class);
+	    startActivityForResult(i, UserMap_ID);
 	   // Log.w(o.getName(), "ah");
 	
 
