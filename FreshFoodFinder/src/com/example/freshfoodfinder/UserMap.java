@@ -19,7 +19,7 @@ public class UserMap extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.mapactivity);
+		setContentView(R.layout.usermap);
 		mapFragment = ((MapFragment) getFragmentManager().findFragmentById(R.id.map));
 		mMap = mapFragment.getMap();
 		setUpMapIfNeeded();
