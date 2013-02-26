@@ -2,12 +2,11 @@ package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
 
-import android.os.Bundle;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
-import android.util.Log;
-import android.view.Menu;
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -41,7 +40,10 @@ public class MainActivity extends ListActivity {
 	    Food foodClickedByUser = (Food) this.getListAdapter().getItem(position);
 	    activeFood = foodClickedByUser;
 	    Intent i = new Intent(this, UserMap.class);
-	    startActivityForResult(i, UserMap_ID);
+	    Parcelable[] parcel = new Parcelable[1];
+	    parcel[0] = activeFood;
+	    i.putExtra("com.example.freshfoodfinder.activeFood", activeFood);
+	    startActivityForResult(i,UserMap_ID);
 	   // Log.w(o.getName(), "ah");
 	
 
