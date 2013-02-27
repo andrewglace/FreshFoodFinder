@@ -40,9 +40,7 @@ public class MainActivity extends ListActivity {
 	    Food foodClickedByUser = (Food) this.getListAdapter().getItem(position);
 	    activeFood = foodClickedByUser;
 	    Intent i = new Intent(this, UserMap.class);
-	    Parcelable[] parcel = new Parcelable[1];
-	    parcel[0] = activeFood;
-	    i.putExtra("com.example.freshfoodfinder.activeFood", activeFood);
+	    //i.putExtra("com.example.freshfoodfinder.activeFood", activeFood);
 	    startActivityForResult(i,UserMap_ID);
 	   // Log.w(o.getName(), "ah");
 	

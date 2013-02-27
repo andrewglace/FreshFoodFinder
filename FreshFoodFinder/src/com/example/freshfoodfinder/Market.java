@@ -6,7 +6,10 @@ public class Market {
 	private String name;
 	private ArrayList<Food> foodSoldHere;
 	private LatLng location;
-	public Market(String marketName, ArrayList<Food> foods, LatLng whereIsThisMarket) {
+	public Market(String marketName, ArrayList<Food> foods, LatLng whereIsThisMarket) throws IllegalArgumentException {
+		if (marketName == null || foods == null || foods.contains(null) || whereIsThisMarket == null) {
+			throw new IllegalArgumentException("Provided bad input to Market Constructor");
+		}
 		name=marketName;
 		location=whereIsThisMarket;
 		foodSoldHere = foods;
@@ -27,9 +30,15 @@ public class Market {
 		return location;
 	}
 	public void addFood(Food FoodIn){
+		if (FoodIn == null) {
+			return;
+		}
 		 foodSoldHere.add(FoodIn);
 	}
 	public void removeFood(Food FoodIn){
+		if (FoodIn == null) {
+			return;
+		}
 		 foodSoldHere.remove(FoodIn);
 	}
 	@Override

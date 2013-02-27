@@ -10,9 +10,9 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.Menu;
 
+import com.google.android.gms.internal.m;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
@@ -21,6 +21,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.maps.GeoPoint;
+import com.google.android.maps.MyLocationOverlay;
 
 public class UserMap extends Activity {
 
@@ -49,10 +50,11 @@ public class UserMap extends Activity {
 		map = mapFragment.getMap();
 		setUpMapIfNeeded();
 		GoogleMapOptions options = new GoogleMapOptions();
-		options.mapType(GoogleMap.MAP_TYPE_NORMAL)
-	    .compassEnabled(false)
-	    .rotateGesturesEnabled(false)
-	    .tiltGesturesEnabled(false);
+		options.mapType(GoogleMap.MAP_TYPE_TERRAIN)
+	    .compassEnabled(true)
+	    .rotateGesturesEnabled(true)
+	    .tiltGesturesEnabled(true);
+		
 		map.setMyLocationEnabled(true);
 		
 		markets = new ArrayList<Market>();
@@ -79,14 +81,19 @@ public class UserMap extends Activity {
 	    instantiateMarkets();
 	    
 	  //Handle Intent
-	    parcel = getIntent();
+	    /*Bundle extras = getIntent().getExtras();
+	    Parcelable parcel = extras.getParcelable("com.example.freshfoodfinder.activeFood");
 	    if (parcel != null) {
-	    	//activeFood = (Food)parcel.getParcelableExtra("com.example.freshfoodfinder.activeFood");
-	    }
+	    	activeFood = (Food)parcel;
+	    }*/
 	    //Make markers on map for the appropriate markets
 	    //markMarkets(searchMarkets());
 	    
+	    //For demo to show position of Fresh Grocer
+	    markMarkets(markets);
+	    
 		    // Move the camera instantly to user's location with a zoom of 15.
+	    //map.addMarker(new MarkerOptions().position(userLatLng).snippet("You are here"));
 		map.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 30));
 
 		    // Zoom in, animating the camera.
@@ -118,9 +125,9 @@ public class UserMap extends Activity {
 		markets.add(freshGrocer);
 	}
 	
-	/*This method provided by the Google Documentation 
-	 * https://developers.google.com/maps/documentation/android/map
-	 */
+	//This method provided by the Google Documentation 
+	 //* https://developers.google.com/maps/documentation/android/map
+	 
 	private void setUpMapIfNeeded() {
 	    // Do a null check to confirm that we have not already instantiated the map.
 	    if (map == null) {

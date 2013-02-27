@@ -32,14 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity     
-            android:name="com.example.freshfoodfinder.UserMap">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-             </activity> 
+        <activity android:name="UserMap">
+            
+             </activity>
    <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBCD7ZwsOzCXPN31EkzgHVey8qgDtc_9DU" />
