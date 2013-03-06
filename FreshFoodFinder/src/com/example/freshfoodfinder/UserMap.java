@@ -112,7 +112,9 @@ public class UserMap extends Activity {
 	}
 	
 	private void instantiateMarkets() {
+		
 		Food apple = new Food("apple");
+		activeFood = apple;
 		Food banana = new Food("banana");
 		Food carrot = new Food("carrot");
 		ArrayList<Food> foods = new ArrayList<Food>();
@@ -122,8 +124,20 @@ public class UserMap extends Activity {
 		
 		//This location is accurate
 		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
+		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
+		LatLng twenty3rdAndOregonShopRiteLocation = new LatLng(39.919951,-75.186009);
+		LatLng mifflinAndSwansonShopRiteLocation = new LatLng(39.923308,-75.145326);
+
+		
 		Market freshGrocer = new Market("Fresh Grocer",foods,freshGrocerLocation);
+		Market supreme = new Market("Supreme Supermarket",foods,freshGrocerLocation);
+		Market twenty3rdAndOregonShopRite = new Market("twenty3rdAndOregonShopRite",foods,freshGrocerLocation);
+		Market mifflinAndSwansonShopRite = new Market("mifflinAndSwansonShopRite",foods,freshGrocerLocation);
+		freshGrocer.removeFood(apple);
+		mifflinAndSwansonShopRite.removeFood(apple);
 		markets.add(freshGrocer);
+		markets.add(supreme);
+
 	}
 	
 	//This method provided by the Google Documentation 
