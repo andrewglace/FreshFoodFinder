@@ -21,17 +21,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.maps.GeoPoint;
-<<<<<<< HEAD
 	
 	public class UserMap extends Activity implements GoogleMap.OnMarkerClickListener{
 	
-=======
-import com.google.android.maps.MyLocationOverlay;
-
-import android.location.Location;
-public class UserMap extends Activity implements GoogleMap.OnMarkerClickListener {
-
->>>>>>> origin
 	private GoogleMap map;
 	private MapFragment mapFragment;
 	private GeoPoint geo;
@@ -147,11 +139,6 @@ public class UserMap extends Activity implements GoogleMap.OnMarkerClickListener
 		markets.add(supreme);
 		markets.add(twenty3rdAndOregonShopRite);
 		markets.add(mifflinAndSwansonShopRite);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin
 	}
 	
 	//This method provided by the Google Documentation
@@ -201,33 +188,6 @@ public class UserMap extends Activity implements GoogleMap.OnMarkerClickListener
 			}
 		}
 		return appropriateMarkets;
-<<<<<<< HEAD
-=======
-		
-	}
-	private void markMarkets(List<Market> marketsWithActiveFood) {
-		if (marketsWithActiveFood == null) return;
-		for (Market m : marketsWithActiveFood) {
-			LatLng location = new LatLng(m.getLatLng().latitude,m.getLatLng().longitude);
-		Marker market = map.addMarker(new MarkerOptions()
-			.position(location)
-		    .title(m.getName()));
-		}	
-	}
-	@Override
-	public boolean onMarkerClick(Marker marker) {
-		double lat = marker.getPosition().latitude;
-		String latAsString = String.valueOf(lat);
-
-		double lon = marker.getPosition().longitude;
-		String lonAsString = String.valueOf(lon);
-		startActivity(
-				new Intent(
-				    android.content.Intent.ACTION_VIEW, 
-				    Uri.parse(latAsString+","+lonAsString)));
-		return true;
-	}
->>>>>>> origin
 }
 	
 			public boolean onMarkerClick(Marker marker) {
