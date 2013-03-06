@@ -22,7 +22,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MyLocationOverlay;
-
+import android.location.Location;
 public class UserMap extends Activity {
 
 	private GoogleMap map;
@@ -32,7 +32,7 @@ public class UserMap extends Activity {
 	private String provider;
 	private Intent parcel;
 	private Food activeFood;
-	
+	private Location userLocation;
 	static final LatLng HAMBURG = new LatLng(53.558, 9.927);
 	 static final LatLng KIEL = new LatLng(53.551, 9.993);
 	
@@ -65,9 +65,9 @@ public class UserMap extends Activity {
 	    // default
 	    Criteria criteria = new Criteria();
 	    provider = locationManager.getBestProvider(criteria, false);
-	    Location location = locationManager.getLastKnownLocation(provider);
+	    userLocation = locationManager.getLastKnownLocation(provider);
 	    
-	    LatLng userLatLng = new LatLng(location.getLatitude(),location.getLongitude());
+	    LatLng userLatLng = new LatLng(userLocation.getLatitude(),userLocation.getLongitude());
 		
 		/*Marker hamburg = map.addMarker(new MarkerOptions().position(HAMBURG)
 		        .title("Hamburg"));
@@ -87,7 +87,8 @@ public class UserMap extends Activity {
 	    	activeFood = (Food)parcel;
 	    }*/
 	    //Make markers on map for the appropriate markets
-	    //markMarkets(searchMarkets());
+	    searchMarkets();
+	    markMarkets(filterMarketsByDistance());
 	    
 	    //For demo to show position of Fresh Grocer
 	    markMarkets(markets);
@@ -146,12 +147,24 @@ public class UserMap extends Activity {
 		List<Market> appropriateMarkets = new ArrayList<Market>();
 		for (Market m : markets) {
 			if (m.hasFood(activeFood)) {
+				
 				appropriateMarkets.add(m);
 			}
 		}
 		return appropriateMarkets;
 	}
-
+	private List<Market> filterMarketsByDistance() {
+		
+		List<Market> appropriateMarkets = new ArrayList<Market>();
+		for (Market m : markets) {
+			if (userLocation.distanceTo(m.getLocation())>1609) {
+				
+				appropriateMarkets.remove(m);
+			}
+		}
+		return appropriateMarkets;
+		
+	}
 	private void markMarkets(List<Market> marketsWithActiveFood) {
 		if (marketsWithActiveFood == null) return;
 		for (Market m : marketsWithActiveFood) {

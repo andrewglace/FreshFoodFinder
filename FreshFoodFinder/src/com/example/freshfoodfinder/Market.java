@@ -1,6 +1,8 @@
 package com.example.freshfoodfinder;
 import java.util.ArrayList;
 
+import android.location.Location;
+
 import com.google.android.gms.maps.model.LatLng;
 public class Market {
 	private String name;
@@ -28,6 +30,13 @@ public class Market {
 	}
 	public LatLng getLatLng(){
 		return location;
+	}
+	public Location getLocation(){
+		Location userLoc = new Location("uloc");
+		userLoc.setLatitude(location.latitude);
+		userLoc.setLongitude(location.longitude);
+
+		return userLoc;
 	}
 	public void addFood(Food FoodIn){
 		if (FoodIn == null) {
