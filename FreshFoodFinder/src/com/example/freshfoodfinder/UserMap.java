@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 
@@ -22,8 +23,9 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MyLocationOverlay;
+
 import android.location.Location;
-public class UserMap extends Activity {
+public class UserMap extends Activity implements GoogleMap.OnMarkerClickListener {
 
 	private GoogleMap map;
 	private MapFragment mapFragment;
@@ -137,6 +139,9 @@ public class UserMap extends Activity {
 		mifflinAndSwansonShopRite.removeFood(apple);
 		markets.add(freshGrocer);
 		markets.add(supreme);
+		markets.add(twenty3rdAndOregonShopRite);
+		markets.add(mifflinAndSwansonShopRite);
+
 
 	}
 	
@@ -186,6 +191,19 @@ public class UserMap extends Activity {
 		Marker market = map.addMarker(new MarkerOptions()
 			.position(location)
 		    .title(m.getName()));
-		}
+		}	
+	}
+	@Override
+	public boolean onMarkerClick(Marker marker) {
+		double lat = marker.getPosition().latitude;
+		String latAsString = String.valueOf(lat);
+
+		double lon = marker.getPosition().longitude;
+		String lonAsString = String.valueOf(lon);
+		startActivity(
+				new Intent(
+				    android.content.Intent.ACTION_VIEW, 
+				    Uri.parse(latAsString+","+lonAsString)));
+		return true;
 	}
 }
