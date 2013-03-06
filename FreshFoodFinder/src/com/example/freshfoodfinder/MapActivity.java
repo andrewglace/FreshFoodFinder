@@ -1,12 +1,16 @@
 package com.example.freshfoodfinder;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
 
 public class MapActivity extends Activity {
 
@@ -15,7 +19,7 @@ public class MapActivity extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
+		init();
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mapactivity);
 		mapFragment = ((MapFragment) getFragmentManager().findFragmentById(R.id.map));
@@ -52,6 +56,25 @@ public class MapActivity extends Activity {
 	        }
 	    }
 	}
-
+	public void init(){
+		Food apple = new Food("apple");
+		Food banana = new Food("banana");
+		Food carrot = new Food("carrot");
+		ArrayList<Food> foods = new ArrayList<Food>();
+		foods.add(apple);
+		foods.add(banana);
+		foods.add(carrot);
+		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
+		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
+		LatLng twenty3rdAndOregonShopRiteLocation = new LatLng(39.919951,-75.186009);
+		LatLng mifflinAndSwansonShopRiteLocation = new LatLng(39.923308,-75.145326);
+		Market freshGrocer = new Market("Fresh Grocer",foods,freshGrocerLocation);
+		Market supreme = new Market("Supreme Supermarket",foods,supremeLocation);
+		Market twenty3rdAndOregonShopRite = new Market("twenty3rdAndOregonShopRite",foods,twenty3rdAndOregonShopRiteLocation);
+		Market mifflinAndSwansonShopRite = new Market("mifflinAndSwansonShopRite",foods,mifflinAndSwansonShopRiteLocation);
+		
+		float f = freshGrocer.getLocation().distanceTo(supreme.getLocation());
+		Log.w(String.valueOf(f),"dist from Fresh Grocer to SUpreme");
+	}
 
 }

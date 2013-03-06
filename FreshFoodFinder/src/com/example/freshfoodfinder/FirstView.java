@@ -1,9 +1,10 @@
 package com.example.freshfoodfinder;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import java.util.ArrayList;
 public class FirstView extends View {
 	public ArrayList<Food> listOfFoods = new ArrayList<Food>();
 	public FirstView(Context context) {

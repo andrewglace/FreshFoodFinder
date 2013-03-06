@@ -1,8 +1,8 @@
 package com.example.freshfoodfinder.test;
 
-import com.example.freshfoodfinder.Food;
-
 import junit.framework.TestCase;
+
+import com.example.freshfoodfinder.Food;
 
 public class FoodTester extends TestCase {
 	public Food apple, banana, carrot, mango, appLE;

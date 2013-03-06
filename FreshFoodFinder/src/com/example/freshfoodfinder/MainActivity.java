@@ -2,11 +2,12 @@ package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -18,7 +19,7 @@ public class MainActivity extends ListActivity {
 	//This class will manage the code for the screen involving the search bar and buttons for food
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
+		init();
 		super.onCreate(savedInstanceState);
 		 Food banana = new Food("banana");
 		 Food apple = new Food("apple");
@@ -46,6 +47,27 @@ public class MainActivity extends ListActivity {
 	
 
 	  }
+	  
+	  public void init(){
+			Food apple = new Food("apple");
+			Food banana = new Food("banana");
+			Food carrot = new Food("carrot");
+			ArrayList<Food> foods = new ArrayList<Food>();
+			foods.add(apple);
+			foods.add(banana);
+			foods.add(carrot);
+			LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
+			LatLng supremeLocation = new LatLng(39.954792,-75.208733);
+			LatLng twenty3rdAndOregonShopRiteLocation = new LatLng(39.919951,-75.186009);
+			LatLng mifflinAndSwansonShopRiteLocation = new LatLng(39.923308,-75.145326);
+			Market freshGrocer = new Market("Fresh Grocer",foods,freshGrocerLocation);
+			Market supreme = new Market("Supreme Supermarket",foods,supremeLocation);
+			Market twenty3rdAndOregonShopRite = new Market("twenty3rdAndOregonShopRite",foods,twenty3rdAndOregonShopRiteLocation);
+			Market mifflinAndSwansonShopRite = new Market("mifflinAndSwansonShopRite",foods,mifflinAndSwansonShopRiteLocation);
+			
+			float f = freshGrocer.getLocation().distanceTo(supreme.getLocation());
+			Log.w(String.valueOf(f),"dist from Fresh Grocer to SUpreme");
+		}
 //	@Override
 //	public boolean onCreateOptionsMenu(Menu menu) {
 //		// Inflate the menu; this adds items to the action bar if it is present.

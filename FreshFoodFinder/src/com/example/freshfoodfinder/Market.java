@@ -14,7 +14,8 @@ public class Market {
 		}
 		name=marketName;
 		location=whereIsThisMarket;
-		foodSoldHere = foods;
+		foodSoldHere = new ArrayList<Food>();
+		foodSoldHere.addAll(foods);
 	}
 	public String getName(){
 		return name;

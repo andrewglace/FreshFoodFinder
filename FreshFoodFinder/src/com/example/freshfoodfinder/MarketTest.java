@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.google.android.gms.maps.model.LatLng;
-import android.os.*;
 
 public class MarketTest {
 

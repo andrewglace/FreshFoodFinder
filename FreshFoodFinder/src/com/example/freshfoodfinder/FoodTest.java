@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import android.os.Parcel;
 public class FoodTest {
 	
 	Food food1;
