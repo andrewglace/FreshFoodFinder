@@ -41,13 +41,17 @@ public class MainActivity extends ListActivity {
 	    Food foodClickedByUser = (Food) this.getListAdapter().getItem(position);
 	    activeFood = foodClickedByUser;
 	    Intent i = new Intent(this, UserMap.class);
-	    //i.putExtra("com.example.freshfoodfinder.activeFood", activeFood);
+	    
+	    //Puts the name of the active food into the UserMap activity
+	    i.putExtra("com.example.freshfoodfinder.activeFood", activeFood.getName());
+	    
 	    startActivityForResult(i,UserMap_ID);
 	   // Log.w(o.getName(), "ah");
 	
 
 	  }
 	  
+	  //Method used just to test the distanceTo function
 	  public void init(){
 			Food apple = new Food("apple");
 			Food banana = new Food("banana");

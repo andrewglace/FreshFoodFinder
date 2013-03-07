@@ -11,6 +11,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.Menu;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -84,13 +85,15 @@ import com.google.android.maps.GeoPoint;
 	
 	//Handle Intent
 	/*Bundle extras = getIntent().getExtras();
-	Parcelable parcel = extras.getParcelable("com.example.freshfoodfinder.activeFood");
-	if (parcel != null) {
-	activeFood = (Food)parcel;
+	Parcelable parcel = extras.getParcelable("com.example.freshfoodfinder.activeFood");*/
+	/*if (parcel != null) {
+	activeFood = (Food) parcel;
 	}*/
+	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"));
 	//Make markers on map for the appropriate markets
-	//markets = searchMarkets();
-	markMarkets(filterMarketsByDistance());
+	markets = searchMarkets();
+	markMarkets(markets);
+	//markMarkets(filterMarketsByDistance());
 	
 	//For demo to show position of Fresh Grocer
 	//markMarkets(markets);
@@ -101,9 +104,6 @@ import com.google.android.maps.GeoPoint;
 	
 	// Zoom in, animating the camera.
 	map.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
-	
-	
-	
 	}
 	
 	@Override
@@ -148,13 +148,13 @@ import com.google.android.maps.GeoPoint;
 	// Do a null check to confirm that we have not already instantiated the map.
 		if (map == null) {
 			map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map))
-	.getMap();
+					.getMap();
 	// Check if we were successful in obtaining the map.
-	if (map != null) {
+			if (map != null) {
 	// The Map is verified. It is now safe to manipulate the map.
 	
-	}
-	}
+			}
+		}
 	}
 	
 	//Returns list of markets with the food
@@ -169,13 +169,13 @@ import com.google.android.maps.GeoPoint;
 	}
 	
 	private void markMarkets(List<Market> marketsWithActiveFood) {
-	if (marketsWithActiveFood == null) return;
-	for (Market m : marketsWithActiveFood) {
-	LatLng location = new LatLng(m.getLatLng().latitude,m.getLatLng().longitude);
-	Marker market = map.addMarker(new MarkerOptions()
-	.position(location)
-	.title(m.getName()));
-	}
+		if (marketsWithActiveFood == null) return;
+		for (Market m : marketsWithActiveFood) {
+			LatLng location = new LatLng(m.getLatLng().latitude,m.getLatLng().longitude);
+			Marker market = map.addMarker(new MarkerOptions()
+			.position(location)
+			.title(m.getName()));
+		}
 	}
 	
 	private List<Market> filterMarketsByDistance() {
@@ -190,16 +190,16 @@ import com.google.android.maps.GeoPoint;
 		return appropriateMarkets;
 }
 	
-			public boolean onMarkerClick(Marker marker) {
-			double lat = marker.getPosition().latitude;
-			String latAsString = String.valueOf(lat);
+	public boolean onMarkerClick(Marker marker) {
+		double lat = marker.getPosition().latitude;
+		String latAsString = String.valueOf(lat);
 			
-			double lon = marker.getPosition().longitude;
-			String lonAsString = String.valueOf(lon);
-			startActivity(
+		double lon = marker.getPosition().longitude;
+		String lonAsString = String.valueOf(lon);
+		startActivity(
 			new Intent(
 			android.content.Intent.ACTION_VIEW,
 			Uri.parse(latAsString+","+lonAsString)));
 			return true;
-			}
+		}
 	}
