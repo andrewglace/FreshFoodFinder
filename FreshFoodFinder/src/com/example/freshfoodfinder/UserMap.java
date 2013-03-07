@@ -11,11 +11,11 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.Menu;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -43,7 +43,6 @@ import com.google.android.maps.GeoPoint;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-	
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.usermap);
 	mapFragment = ((MapFragment) getFragmentManager().findFragmentById(R.id.map));
@@ -104,6 +103,8 @@ import com.google.android.maps.GeoPoint;
 	
 	// Zoom in, animating the camera.
 	map.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
+	
+
 	}
 	
 	@Override
@@ -175,6 +176,24 @@ import com.google.android.maps.GeoPoint;
 			Marker market = map.addMarker(new MarkerOptions()
 			.position(location)
 			.title(m.getName()));
+			OnMarkerClickListener mcl = new OnMarkerClickListener() {
+				
+				@Override
+				public boolean onMarkerClick(Marker marker) {
+					final Intent intent = new Intent(Intent.ACTION_VIEW,
+						       /** Using the web based turn by turn directions url. */
+						       Uri.parse(
+						                "http://maps.google.com/maps?" +
+						                "saddr=43.0054446,-87.9678884" +
+						                "&daddr=42.9257104,-88.0508355"));
+						       startActivity(intent);
+						 
+					return false;
+				}
+			};
+			map.setOnMarkerClickListener(mcl);
+			
+
 		}
 	}
 	
@@ -189,7 +208,7 @@ import com.google.android.maps.GeoPoint;
 		}
 		return appropriateMarkets;
 }
-	
+	@Override
 	public boolean onMarkerClick(Marker marker) {
 		double lat = marker.getPosition().latitude;
 		String latAsString = String.valueOf(lat);
