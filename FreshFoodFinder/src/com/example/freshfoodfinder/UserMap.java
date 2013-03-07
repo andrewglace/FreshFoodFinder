@@ -23,7 +23,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.maps.GeoPoint;
 	
-	public class UserMap extends Activity implements GoogleMap.OnMarkerClickListener{
+	public class UserMap extends Activity{
 	
 	private GoogleMap map;
 	private MapFragment mapFragment;
@@ -184,8 +184,9 @@ import com.google.android.maps.GeoPoint;
 						       /** Using the web based turn by turn directions url. */
 						       Uri.parse(
 						                "http://maps.google.com/maps?" +
-						                "saddr=43.0054446,-87.9678884" +
-						                "&daddr=42.9257104,-88.0508355"));
+						                "saddr="+ userLocation.getLatitude()+","+userLocation.getLongitude()+
+						                "&daddr="+marker.getPosition().latitude+","+marker.getPosition().longitude));
+								intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
 						       startActivity(intent);
 						 
 					return false;
@@ -208,17 +209,5 @@ import com.google.android.maps.GeoPoint;
 		}
 		return appropriateMarkets;
 }
-	@Override
-	public boolean onMarkerClick(Marker marker) {
-		double lat = marker.getPosition().latitude;
-		String latAsString = String.valueOf(lat);
-			
-		double lon = marker.getPosition().longitude;
-		String lonAsString = String.valueOf(lon);
-		startActivity(
-			new Intent(
-			android.content.Intent.ACTION_VIEW,
-			Uri.parse(latAsString+","+lonAsString)));
-			return true;
-		}
+	
 	}
