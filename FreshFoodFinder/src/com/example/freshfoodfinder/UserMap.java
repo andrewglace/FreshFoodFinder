@@ -185,7 +185,7 @@ import com.google.android.maps.GeoPoint;
 						       Uri.parse(
 						                "http://maps.google.com/maps?" +
 						                "saddr="+ userLocation.getLatitude()+","+userLocation.getLongitude()+
-						                "&daddr="+marker.getPosition().latitude+","+marker.getPosition().longitude));
+						                "&daddr="+marker.getPosition().latitude+","+marker.getPosition().longitude+"&dirflg=w"));
 								intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
 						       startActivity(intent);
 						 
