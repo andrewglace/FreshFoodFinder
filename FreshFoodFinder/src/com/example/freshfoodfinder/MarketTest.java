@@ -1,8 +1,10 @@
 package com.example.freshfoodfinder;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,9 +16,9 @@ public class MarketTest {
 	Market freshGrocer;
 	@Before
 	public void setup() {
-		Food apple = new Food("apple");
-		Food banana = new Food("banana");
-		Food carrot = new Food("carrot");
+		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		ArrayList<Food> foods = new ArrayList<Food>();
 		foods.add(apple);
 		foods.add(banana);
@@ -34,9 +36,9 @@ public class MarketTest {
 	
 	@Test(expected =IllegalArgumentException.class)
 	public void testNullName() {
-		Food apple = new Food("apple");
-		Food banana = new Food("banana");
-		Food carrot = new Food("carrot");
+		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		ArrayList<Food> foods = new ArrayList<Food>();
 		foods.add(apple);
 		foods.add(banana);
@@ -48,7 +50,7 @@ public class MarketTest {
 	
 	@Test
 	public void testHasFoodNormal() {
-		assertTrue(freshGrocer.hasFood(new Food("apple")));
+		assertTrue(freshGrocer.hasFood(new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER)));
 	}
 	
 	@Test
@@ -58,8 +60,8 @@ public class MarketTest {
 	
 	@Test
 	public void testAddFoodNormal() {
-		freshGrocer.addFood(new Food("mango"));
-		assertTrue(freshGrocer.hasFood(new Food("mango")));
+		freshGrocer.addFood(new Food("mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		assertTrue(freshGrocer.hasFood(new Food("mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER)));
 	}
 	
 	@Test
@@ -70,8 +72,8 @@ public class MarketTest {
 	
 	@Test
 	public void testRemoveFoodNormal() {
-		freshGrocer.removeFood(new Food("apple"));
-		assertFalse(freshGrocer.hasFood(new Food("apple")));
+		freshGrocer.removeFood(new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		assertFalse(freshGrocer.hasFood(new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER)));
 	}
 	
 	@Test
@@ -82,7 +84,7 @@ public class MarketTest {
 	
 	@Test
 	public void testRemoveFoodNotPresent() {
-		freshGrocer.removeFood(new Food("mango"));
-		assertFalse(freshGrocer.hasFood(new Food("mango")));
+		freshGrocer.removeFood(new Food("mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		assertFalse(freshGrocer.hasFood(new Food("mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER)));
 	}
 }

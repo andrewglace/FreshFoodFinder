@@ -1,6 +1,7 @@
 	package com.example.freshfoodfinder;
 	
 	import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import android.app.Activity;
@@ -56,7 +57,7 @@ import com.google.android.maps.GeoPoint;
 	.rotateGesturesEnabled(true)
 	.tiltGesturesEnabled(true);
 	
-	activeFood = new Food("apple");
+	activeFood = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 	map.setMyLocationEnabled(true);
 	
 	markets = new ArrayList<Market>();
@@ -88,7 +89,7 @@ import com.google.android.maps.GeoPoint;
 	/*if (parcel != null) {
 	activeFood = (Food) parcel;
 	}*/
-	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"));
+	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"), 1, Calendar.JANUARY, Calendar.DECEMBER);
 	//Make markers on map for the appropriate markets
 	markets = searchMarkets();
 	markMarkets(markets);
@@ -115,9 +116,9 @@ import com.google.android.maps.GeoPoint;
 	}
 	
 	private void instantiateMarkets() {
-		Food apple = new Food("apple");
-		Food banana = new Food("banana");
-		Food carrot = new Food("carrot");
+		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		ArrayList<Food> foods = new ArrayList<Food>();
 		foods.add(apple);
 		foods.add(banana);

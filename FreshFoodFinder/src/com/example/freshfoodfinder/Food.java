@@ -1,10 +1,20 @@
 package com.example.freshfoodfinder;
+import java.util.Calendar;
+
 import android.os.Parcel;
 import android.os.Parcelable;
 public class Food implements Parcelable {
 	private String name;
 	private int foodId;
-	public Food(String foodName) {
+	private Calendar seasonStart;
+	private Calendar seasonEnd;
+	
+	public static final int FOOD_FRUIT = 1;
+	public static final int FOOD_VEG = 2;
+	
+	
+	
+	public Food(String foodName, int foodType, int seasonStart, int seasonEnd) {
 		name=foodName;
 	}
 	public String getName(){

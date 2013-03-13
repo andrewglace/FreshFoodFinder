@@ -1,6 +1,7 @@
 package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -57,9 +58,9 @@ public class MapActivity extends Activity {
 	    }
 	}
 	public void init(){
-		Food apple = new Food("apple");
-		Food banana = new Food("banana");
-		Food carrot = new Food("carrot");
+		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		ArrayList<Food> foods = new ArrayList<Food>();
 		foods.add(apple);
 		foods.add(banana);
