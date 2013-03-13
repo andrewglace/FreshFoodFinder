@@ -29,6 +29,41 @@ public class MainActivity extends ListActivity {
 		allFoods = new ArrayList<Food>();
 		//-----fruits
 		allFoods.add(new Food("Apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Apricot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Avocado", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Blackberry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Blueberry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Cantaloupe", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Cherry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Clementine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Coconut", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Date", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Fig", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Grape", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Grapefruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Honeydew", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Kiwi fruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Lemon", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Lime", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Nectarine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Orange", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Peach", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Pear", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Plum", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));	
+		allFoods.add(new Food("Pineapple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Pomegranate", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Raspberry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Strawberry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Tangerine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Watermelon", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+
+		
+		
+		
+		
+		
 		
 		
 		//-----veggies
