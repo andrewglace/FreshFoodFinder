@@ -53,7 +53,7 @@ public class MainActivity extends ListActivity {
 	  
 	  //Method used just to test the distanceTo function
 	  public void init(){
-			Food apple = new Food("apple");
+		/*	Food apple = new Food("apple");
 			Food banana = new Food("banana");
 			Food carrot = new Food("carrot");
 			ArrayList<Food> foods = new ArrayList<Food>();
@@ -70,7 +70,7 @@ public class MainActivity extends ListActivity {
 			Market mifflinAndSwansonShopRite = new Market("mifflinAndSwansonShopRite",foods,mifflinAndSwansonShopRiteLocation);
 			
 			float f = freshGrocer.getLocation().distanceTo(supreme.getLocation());
-			Log.w(String.valueOf(f),"dist from Fresh Grocer to SUpreme");
+			Log.w(String.valueOf(f),"dist from Fresh Grocer to SUpreme");*/
 		}
 //	@Override
 //	public boolean onCreateOptionsMenu(Menu menu) {
