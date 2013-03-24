@@ -70,7 +70,7 @@ public class MarketManager {
 	}
 	
 	private void instantiateWawaFoods() {
-		
+		Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
 	}
 
 	private void instantiateCornerStoreFoods() {
