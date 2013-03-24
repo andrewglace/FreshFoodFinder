@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <string name="app_name">FreshFoodFinder</string>
     <string name="hello_world">Hello world!</string>
@@ -11,5 +11,6 @@
     <string name="Seasonal">Go Seasonal!</string>
     <string name="TogglerMap">Find: Map</string>
     <string name="TogglerRecipe">Find: Recipe</string>
+    <string name="SeasonalNone">There are no foods currently in season.</string>
 
 </resources>

@@ -6,9 +6,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 public class Food implements Parcelable {
 	private String name;
-	private int foodId;
-	private Calendar seasonStart;
-	private Calendar seasonEnd;
+	private int foodType;
+	private int seasonStart;
+	private int seasonEnd;
 	
 	public static final int FOOD_FRUIT = 1;
 	public static final int FOOD_VEG = 2;
@@ -17,9 +17,24 @@ public class Food implements Parcelable {
 	
 	public Food(String foodName, int foodType, int seasonStart, int seasonEnd) {
 		name=foodName;
+		this.foodType = foodType;
+		this.seasonStart = seasonStart;
+		this.seasonEnd = seasonEnd;
 	}
 	public String getName(){
 		return name;
+	}
+	public int getSeasonStart() {
+		return seasonStart;
+	}
+	public int getSeasonEnd() {
+		return seasonEnd;
+	}
+	public int getFoodType() {
+		return this.foodType;
+	}
+	public void setFoodType(int foodType) {
+		this.foodType = foodType;
 	}
 	@Override
 	public int hashCode(){		
@@ -90,7 +105,7 @@ public class Food implements Parcelable {
 		allFoods.add(new Food("Turnip", Food.FOOD_VEG, Calendar.AUGUST, Calendar.NOVEMBER));
 		allFoods.add(new Food("Turnip greens", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
 		allFoods.add(new Food("Yam", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		allFoods.add(new Food("Zucchini", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		allFoods.add(new Food("Zucchini", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
 		return allFoods;
 
 	}
@@ -192,12 +207,22 @@ public class Food implements Parcelable {
 	
 	public static ArrayList<Food> getSeasonalFoods(ArrayList<Food> foods) {
 		Calendar current = Calendar.getInstance();
-		int month = current.get(Calendar.MONTH);
+		//current.set(Calendar.MONTH, Calendar.JUNE); //remove this later!
+		int currentMonth = current.get(Calendar.MONTH);
+		ArrayList<Food> seasonalFoods = new ArrayList<Food>();
 		
 		for (Food f : foods) {
+			//We do not count foods that have seasons of "january" and "december"
+			if (f.seasonStart == Calendar.JANUARY && 
+					f.seasonEnd == Calendar.DECEMBER) {
+				continue;
+			}
+			if(currentMonth >= f.seasonStart && currentMonth <= f.seasonEnd) {
+				seasonalFoods.add(f);
+			}
 			
 		}
-		return null;
+		return seasonalFoods;
 	}
 	@Override
 	public int describeContents() {
