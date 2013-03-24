@@ -35,7 +35,7 @@ public class MarketManager {
 		aldi = new ArrayList<Market>();
 		
 		
-		instantiateSuperMarketFoods();
+		instantiatesuperMarketFoods();
 		instantiateWawaFoods();
 		instantiateCornerStoreFoods();
 		instantiateFarmerMarketFoods();
@@ -59,14 +59,10 @@ public class MarketManager {
 		
 		return allMarkets;
 	}
-	private void instantiateSuperMarketFoods() {
+	private void instantiatesuperMarketFoods() {
 
 		Food apple = new Food("Apple",1, Calendar.JANUARY, Calendar.DECEMBER);
-		Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
-		Food carrot = new Food("Carrot",1, Calendar.JANUARY, Calendar.DECEMBER);
-		superMarketFoods.add(apple);
-		superMarketFoods.add(banana);
-		superMarketFoods.add(carrot);
+		superMarketFoods.addAll(apple.getAllFoods());
 	}
 	
 	private void instantiateWawaFoods() {
@@ -87,12 +83,55 @@ public class MarketManager {
 	}
 	
 	private void instantiateSuperMarkets() {
-		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
-		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
-		Market freshGrocer = new Market("Fresh Grocer",superMarketFoods,freshGrocerLocation);
-		Market supreme = new Market("Supreme Supermarket",superMarketFoods,supremeLocation);
-		superMarkets.add(supreme);
-		superMarkets.add(freshGrocer);
+		
+		//19104 -no shoprite, bottom dollar
+		LatLng freshGrocerLocation40thWalnut = new LatLng(39.954499,-75.202864);
+		LatLng supreme43rdWalnutLocation = new LatLng(39.954792,-75.208733);
+		
+		Market freshGrocer40thWalnut = new Market("FreshGrocer40thWalnut",superMarketFoods,freshGrocerLocation40thWalnut);
+		Market supreme43rdWalnut = new Market("Supreme43rdWalnut",superMarketFoods,supreme43rdWalnutLocation);
+		
+		superMarkets.add(freshGrocer40thWalnut);
+		superMarkets.add(supreme43rdWalnut);
+			
+		//19143 -no shoprite, bottomdollar		
+		//19142 - no shoprite, bottomdollar
+		//19153
+		LatLng shoprite2946IslandAvenueLocation = new LatLng(39.902948,-75.239991); 
+		LatLng bottomdollar7627LindberghBlvdLocation = new LatLng(40.034204,-75.210819); 
+		
+		Market shoprite2946IslandAvenue = new Market("shoprite2946IslandAvenue",superMarketFoods,shoprite2946IslandAvenueLocation);
+		Market bottomdollar7627LindberghBlvd = new Market("bottomdollar7627LindberghBlvd",superMarketFoods,bottomdollar7627LindberghBlvdLocation);
+
+		superMarkets.add(shoprite2946IslandAvenue);
+		superMarkets.add(bottomdollar7627LindberghBlvd);
+		
+		//19145
+		LatLng shoprite24thOregonAveLocation = new LatLng(39.919672,-75.188367);
+		
+		Market shoprite24thOregonAve = new Market("shoprite24thOregonAve",superMarketFoods,shoprite24thOregonAveLocation);
+		
+		superMarkets.add(shoprite24thOregonAve);
+		
+		//19112 		
+		//19146 
+		//19130 - no shoprite
+		LatLng bottomdollarNorth31thGirardAveLocation = new LatLng(39.97495,-75.186679);
+		
+		Market bottomdollarNorth31thGirardAve = new Market("bottomdollarNorth31thGirardAve",superMarketFoods,bottomdollarNorth31thGirardAveLocation);
+		
+		superMarkets.add(bottomdollarNorth31thGirardAve);
+		
+		//19121 - 
+		
+		//19131 - no bottomdollar
+		LatLng shoprite575North52ndLocation = new LatLng(39.96906,-75.225295);
+		
+		Market shoprite575North52nd = new Market("shoprite575North52nd",superMarketFoods,shoprite575North52ndLocation);
+		
+		superMarkets.add(shoprite575North52nd);
+		
+		//19139 - 
 	}
 	
 	private void instantiateWawas() {
