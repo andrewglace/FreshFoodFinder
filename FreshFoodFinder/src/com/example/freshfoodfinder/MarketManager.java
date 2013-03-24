@@ -22,14 +22,38 @@ public class MarketManager {
 		farmerMarketFoods = new ArrayList<Food>();
 		aldiFoods = new ArrayList<Food>();
 		
+		
+		instantiateSuperMarketFoodList();
 
 	}
 	
+	//This method will be called by UserMap
+	public ArrayList<Market> getAllMarkets() {
+		ArrayList<Market> allMarkets = new ArrayList<Market>();
+		allMarkets.addAll(superMarkets);
+		allMarkets.addAll(wawas);
+		allMarkets.addAll(cornerStores);
+		allMarkets.addAll(farmerMarkets);
+		
+		return allMarkets;
+	}
 	private void instantiateSuperMarketFoodList() {
 
 	}
 	
 	private void instantiateWawaFoods() {
+		
+	}
+
+	private void instantiateCornerStoreFoods() {
+		
+	}
+	
+	private void instantiateFarmerMarketFoods() {
+		
+	}
+	
+	private void instantiateAldiFoods() {
 		
 	}
 }
