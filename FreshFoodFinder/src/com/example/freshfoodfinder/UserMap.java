@@ -33,6 +33,7 @@ import com.google.android.maps.GeoPoint;
 	private Intent parcel;
 	private Food activeFood;
 	private Location userLocation;
+	private ArrayList<Food> SuperMarketFoods;
 	
 	static final LatLng HAMBURG = new LatLng(53.558, 9.927);
 	static final LatLng KIEL = new LatLng(53.551, 9.993);
@@ -56,7 +57,6 @@ import com.google.android.maps.GeoPoint;
 	.rotateGesturesEnabled(true)
 	.tiltGesturesEnabled(true);
 	
-	activeFood = new Food("apple");
 	map.setMyLocationEnabled(true);
 	
 	markets = new ArrayList<Market>();
@@ -71,34 +71,19 @@ import com.google.android.maps.GeoPoint;
 	
 	LatLng userLatLng = new LatLng(userLocation.getLatitude(),userLocation.getLongitude());
 	
-	/*Marker hamburg = map.addMarker(new MarkerOptions().position(HAMBURG)
-	.title("Hamburg"));
-	Marker kiel = map.addMarker(new MarkerOptions()
-	.position(KIEL)
-	.title("Kiel")
-	.snippet("Kiel is cool")
-	.icon(BitmapDescriptorFactory
-	.fromResource(R.drawable.ic_launcher)));*/
-	
+
 	instantiateMarkets();
-	
-	//Handle Intent
-	/*Bundle extras = getIntent().getExtras();
-	Parcelable parcel = extras.getParcelable("com.example.freshfoodfinder.activeFood");*/
-	/*if (parcel != null) {
-	activeFood = (Food) parcel;
-	}*/
+	instantiateSuperMarketFoodList();
+	instantiateSuperMarkets();
+
 	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"));
 	//Make markers on map for the appropriate markets
 	markets = searchMarkets();
 	markMarkets(markets);
 	//markMarkets(filterMarketsByDistance());
-	
-	//For demo to show position of Fresh Grocer
-	//markMarkets(markets);
+
 	
 	// Move the camera instantly to user's location with a zoom of 15.
-	//map.addMarker(new MarkerOptions().position(userLatLng).snippet("You are here"));
 	map.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 30));
 	
 	// Zoom in, animating the camera.
@@ -106,7 +91,26 @@ import com.google.android.maps.GeoPoint;
 	
 
 	}
+	private void instantiateSuperMarketFoodList(){
+
+		Food apple = new Food("apple");
+		Food banana = new Food("banana");
+		Food carrot = new Food("carrot");
+		SuperMarketFoods = new ArrayList<Food>();
+		SuperMarketFoods.add(apple);
+		SuperMarketFoods.add(banana);
+		SuperMarketFoods.add(carrot);
+		
+	}
 	
+	private void instantiateSuperMarkets(){
+		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
+		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
+		Market freshGrocer = new Market("Fresh Grocer",SuperMarketFoods,freshGrocerLocation);
+		Market supreme = new Market("Supreme Supermarket",SuperMarketFoods,supremeLocation);
+		markets.add(supreme);
+		markets.add(freshGrocer);
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	// Inflate the menu; this adds items to the action bar if it is present.
@@ -115,7 +119,7 @@ import com.google.android.maps.GeoPoint;
 	}
 	
 	private void instantiateMarkets() {
-		Food apple = new Food("apple");
+/*		Food apple = new Food("apple");
 		Food banana = new Food("banana");
 		Food carrot = new Food("carrot");
 		ArrayList<Food> foods = new ArrayList<Food>();
@@ -139,7 +143,7 @@ import com.google.android.maps.GeoPoint;
 		markets.add(freshGrocer);
 		markets.add(supreme);
 		markets.add(twenty3rdAndOregonShopRite);
-		markets.add(mifflinAndSwansonShopRite);
+		markets.add(mifflinAndSwansonShopRite);*/
 	}
 	
 	//This method provided by the Google Documentation
