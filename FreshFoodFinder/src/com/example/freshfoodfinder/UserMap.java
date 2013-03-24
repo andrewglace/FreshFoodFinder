@@ -12,6 +12,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -35,6 +36,8 @@ import com.google.android.maps.GeoPoint;
 	private Food activeFood;
 	private Location userLocation;
 	private ArrayList<Food> SuperMarketFoods;
+	
+	private MarketManager marketManager;
 	
 	static final LatLng HAMBURG = new LatLng(53.558, 9.927);
 	static final LatLng KIEL = new LatLng(53.551, 9.993);
@@ -61,7 +64,9 @@ import com.google.android.maps.GeoPoint;
 
 	map.setMyLocationEnabled(true);
 	
-	markets = new ArrayList<Market>();
+	/*marketManager = new MarketManager();
+	markets = marketManager.getAllMarkets();*/
+
 	
 	//Get user location set
 	locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -73,14 +78,18 @@ import com.google.android.maps.GeoPoint;
 	
 	LatLng userLatLng = new LatLng(userLocation.getLatitude(),userLocation.getLongitude());
 	
-
-	instantiateMarkets();
+	
+	/*instantiateMarkets();
 
 	instantiateSuperMarketFoodList();
-	instantiateSuperMarkets();
+	instantiateSuperMarkets();*/
 	
-	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"), 1, Calendar.JANUARY, Calendar.DECEMBER);
+	
+	String activeFoodName = getIntent().getStringExtra("com.example.freshfoodfinder.activeFood");
+	activeFood = new Food(activeFoodName, 1, Calendar.JANUARY, Calendar.DECEMBER);
 
+	marketManager = new MarketManager();
+	markets = marketManager.getAllMarkets();
 	//Make markers on map for the appropriate markets
 	markets = searchMarkets();
 	markMarkets(markets);
@@ -95,26 +104,26 @@ import com.google.android.maps.GeoPoint;
 	
 
 	}
-	private void instantiateSuperMarketFoodList(){
+	/*private void instantiateSuperMarketFoodList(){
 
-		Food apple = new Food("apple",1, Calendar.JANUARY, Calendar.DECEMBER);
-		Food banana = new Food("banana",1, Calendar.JANUARY, Calendar.DECEMBER);
-		Food carrot = new Food("carrot",1, Calendar.JANUARY, Calendar.DECEMBER);
+		Food apple = new Food("Apple",1, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("Carrot",1, Calendar.JANUARY, Calendar.DECEMBER);
 		SuperMarketFoods = new ArrayList<Food>();
 		SuperMarketFoods.add(apple);
 		SuperMarketFoods.add(banana);
 		SuperMarketFoods.add(carrot);
 		
-	}
+	}*/
 	
-	private void instantiateSuperMarkets(){
+	/*private void instantiateSuperMarkets(){
 		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
 		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
 		Market freshGrocer = new Market("Fresh Grocer",SuperMarketFoods,freshGrocerLocation);
 		Market supreme = new Market("Supreme Supermarket",SuperMarketFoods,supremeLocation);
 		markets.add(supreme);
 		markets.add(freshGrocer);
-	}
+	}*/
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	// Inflate the menu; this adds items to the action bar if it is present.
