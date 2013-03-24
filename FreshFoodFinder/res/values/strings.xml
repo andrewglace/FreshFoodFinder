@@ -8,5 +8,8 @@
     <string name="apple">Apple</string>
     <string name="banana">Banana</string>
     <string name="carrot">Carrot</string>
+    <string name="Seasonal">Go Seasonal!</string>
+    <string name="TogglerMap">Find: Map</string>
+    <string name="TogglerRecipe">Find: Recipe</string>
 
 </resources>
