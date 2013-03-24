@@ -96,7 +96,8 @@ public class MarketManager {
 	}
 	
 	private void instantiateWawas() {
-		
+		LatLng 46thandChestnutWawaLocation = new LatLng(39.954687,-75.194799);
+		Market 46thandChestnutWawa = new Market("46thandChestnutWawa",wawaFoods,46thandChestnutWawaLocation );
 	}
 	
 	private void instantiateCornerStores() {
