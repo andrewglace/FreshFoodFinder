@@ -1,6 +1,7 @@
 	package com.example.freshfoodfinder;
 	
 	import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import android.app.Activity;
@@ -57,6 +58,7 @@ import com.google.android.maps.GeoPoint;
 	.rotateGesturesEnabled(true)
 	.tiltGesturesEnabled(true);
 	
+
 	map.setMyLocationEnabled(true);
 	
 	markets = new ArrayList<Market>();
@@ -73,10 +75,12 @@ import com.google.android.maps.GeoPoint;
 	
 
 	instantiateMarkets();
+
 	instantiateSuperMarketFoodList();
 	instantiateSuperMarkets();
+	
+	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"), 1, Calendar.JANUARY, Calendar.DECEMBER);
 
-	activeFood = new Food(getIntent().getStringExtra("com.example.freshfoodfinder.activeFood"));
 	//Make markers on map for the appropriate markets
 	markets = searchMarkets();
 	markMarkets(markets);
@@ -93,9 +97,9 @@ import com.google.android.maps.GeoPoint;
 	}
 	private void instantiateSuperMarketFoodList(){
 
-		Food apple = new Food("apple");
-		Food banana = new Food("banana");
-		Food carrot = new Food("carrot");
+		Food apple = new Food("apple",1, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("banana",1, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot",1, Calendar.JANUARY, Calendar.DECEMBER);
 		SuperMarketFoods = new ArrayList<Food>();
 		SuperMarketFoods.add(apple);
 		SuperMarketFoods.add(banana);
@@ -119,9 +123,15 @@ import com.google.android.maps.GeoPoint;
 	}
 	
 	private void instantiateMarkets() {
+
 /*		Food apple = new Food("apple");
 		Food banana = new Food("banana");
 		Food carrot = new Food("carrot");
+
+		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+>>>>>>> 43ba16fd374e174b23cd345ac2e3e959518a9ae1
 		ArrayList<Food> foods = new ArrayList<Food>();
 		foods.add(apple);
 		foods.add(banana);

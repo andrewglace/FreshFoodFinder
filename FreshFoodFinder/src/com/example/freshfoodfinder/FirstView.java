@@ -1,6 +1,7 @@
 package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -26,8 +27,8 @@ public class FirstView extends View {
 	}
 
 	protected void init(){
-		Food banana  = new Food("banana");
-		Food apple = new Food("apple");
-		Food carrot = new Food("carrot");
+		Food banana  = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 	}
 }

@@ -1,6 +1,10 @@
 package com.example.freshfoodfinder;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Calendar;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,13 +16,13 @@ public class FoodTest {
 
 	@Before
 	public void setup() {
-		food1 = new Food("apple");
-		food2 = new Food("banana");
+		food1 = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		food2 = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 	}
 	
 	@Test
 	public void testNullName() {
-		Food foodNull = new Food(null);
+		Food foodNull = new Food(null, 1, Calendar.JANUARY, Calendar.DECEMBER);
 		assertEquals(foodNull.getName(),null);
 	}
 	
@@ -29,15 +33,15 @@ public class FoodTest {
 	
 	@Test
 	public void testEqualsSymmetric() {
-		Food food3 = new Food("apple");
+		Food food3 = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		assertTrue(food1.equals(food3));
 		assertTrue(food3.equals(food1));
 	}
 	
 	@Test
 	public void testEqualsTransitive() {
-		Food food3 = new Food("apple");
-		Food food4 = new Food("apple");
+		Food food3 = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food food4 = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		assertTrue(food1.equals(food3));
 		assertTrue(food3.equals(food4));
 		assertTrue(food1.equals(food4));
