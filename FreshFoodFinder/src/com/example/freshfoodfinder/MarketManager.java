@@ -71,6 +71,7 @@ public class MarketManager {
 	
 	private void instantiateWawaFoods() {
 		Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
+		wawaFoods.add(banana);
 	}
 
 	private void instantiateCornerStoreFoods() {
