@@ -217,6 +217,67 @@ public class MarketManager {
 		cornerStores.add(PorfiOneRaceCornerStore);
 		//end stores from 19139
 		//begin stores from 19131
+		LatLng MaximinoCornerStoreLocation = new LatLng(39.973884,-75.231066);
+		Market MaximinoCornerStore = new Market("MaximinoCornerStore",cornerStoreFoods,MaximinoCornerStoreLocation );
+		cornerStores.add(MaximinoCornerStore);
+		LatLng fiftyeightReyesCornerStoreLocation = new LatLng(39.973101,-75.237898);
+		Market fiftyeightReyesCornerStore = new Market("fiftyeightReyesCornerStore",cornerStoreFoods,fiftyeightReyesCornerStoreLocation );
+		cornerStores.add(fiftyeightReyesCornerStore);
+		LatLng fiftysixMastersReyesCornerStoreLocation = new LatLng(39.973634,-75.233276);
+		Market fiftysixMastersReyesCornerStore = new Market("fiftysixMastersReyesCornerStore",cornerStoreFoods,fiftysixMastersReyesCornerStoreLocation );
+		cornerStores.add(fiftysixMastersReyesCornerStore);
+		LatLng EconomicCornerStoreLocation = new LatLng(32.968041,-81.767068);
+		Market EconomicCornerStore = new Market("EconomicCornerStore",cornerStoreFoods,EconomicCornerStoreLocation );
+		cornerStores.add(EconomicCornerStore);
+		LatLng papiCornerStoreLocation = new LatLng(40.819802,-96.644509);
+		Market papiCornerStore = new Market("papiCornerStore",cornerStoreFoods,papiCornerStoreLocation );
+		cornerStores.add(papiCornerStore);
+
+		LatLng fifty4WyalusingCornerStoreLocation = new LatLng(39.967172,-75.220698);
+		Market fifty4WyalusingCornerStore = new Market("fifty4WyalusingCornerStore",cornerStoreFoods,fifty4WyalusingCornerStoreLocation );
+		cornerStores.add(fifty4WyalusingCornerStore);
+
+		LatLng vinasCornerStoreLocation = new LatLng(39.97117,-75.228826);
+		Market vinasCornerStore = new Market("vinasCornerStore",cornerStoreFoods,vinasCornerStoreLocation );
+		cornerStores.add(vinasCornerStore);
+
+		LatLng crestCornerStoreLocation = new LatLng(39.987849,-75.238558);
+		Market crestCornerStore = new Market("crestCornerStore",cornerStoreFoods,crestCornerStoreLocation );
+		cornerStores.add(crestCornerStore);
+
+		LatLng AngelinasCornerStoreLocation = new LatLng(39.98592,-75.229181);
+		Market AngelinasCornerStore = new Market("AngelinasCornerStore",cornerStoreFoods,AngelinasCornerStoreLocation );
+		cornerStores.add(AngelinasCornerStore);
+
+		LatLng ZabalaCornerStoreLocation = new LatLng(39.984749,-75.231301);
+		Market ZabalaCornerStore = new Market("ZabalaCornerStore",cornerStoreFoods,ZabalaCornerStoreLocation );
+		cornerStores.add(ZabalaCornerStore);
+		
+
+		LatLng CommunityCornerStoreLocation = new LatLng(39.984607,-75.22936);
+		Market CommunityCornerStore = new Market("CommunityCornerStore",cornerStoreFoods,CommunityCornerStoreLocation );
+		cornerStores.add(CommunityCornerStore);
+		
+
+		LatLng iandsCornerStoreLocation = new LatLng(39.980105,-75.227326);
+		Market iandsCornerStore = new Market("iandsCornerStore",cornerStoreFoods,iandsCornerStoreLocation );
+		cornerStores.add(iandsCornerStore);
+
+		LatLng valeriosCornerStoreLocation = new LatLng(39.977099,-75.231691);
+		Market valeriosCornerStore = new Market("valeriosCornerStore",cornerStoreFoods,valeriosCornerStoreLocation );
+		cornerStores.add(valeriosCornerStore);
+
+		LatLng CabreraCornerStoreLocation = new LatLng(39.978064,-75.235849);
+		Market CabreraCornerStore = new Market("CabreraCornerStore",cornerStoreFoods,CabreraCornerStoreLocation );
+		cornerStores.add(CabreraCornerStore);
+
+		LatLng MartinezCornerStoreLocation = new LatLng(39.975047,-75.234747);
+		Market MartinezCornerStore = new Market("MartinezCornerStore",cornerStoreFoods,MartinezCornerStoreLocation );
+		cornerStores.add(PorfiOneRaceCornerStore);
+
+		
+		//end stores in 19131
+		//begin stores in 19121
 	}
 	
 	private void instantiateFarmerMarkets() {
