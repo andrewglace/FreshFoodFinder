@@ -181,6 +181,7 @@ public class MarketManager {
 	private void instantiateWawas() {
 		LatLng f46thandChestnutWawaLocation = new LatLng(39.954687,-75.194799);
 		Market f46thandChestnutWawa = new Market("f46thandChestnutWawa",wawaFoods,f46thandChestnutWawaLocation );
+		wawas.add(f46thandChestnutWawa);
 	}
 	
 	private void instantiateCornerStores() {
@@ -194,6 +195,7 @@ public class MarketManager {
 	private void instantiateAldi() {
 		LatLng aldi46thandMarketLocation = new LatLng(39.959169,-75.213727);
 		Market aldi46thandMarket = new Market("aldi46thandMarket",alDiFoods,aldi46thandMarketLocation );
+		aldi.add(aldi46thandMarket);
 
 	}
 }
