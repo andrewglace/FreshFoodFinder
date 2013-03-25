@@ -192,6 +192,8 @@ public class MarketManager {
 	}
 	
 	private void instantiateAldi() {
-		
+		LatLng aldi46thandMarketLocation = new LatLng(39.959169,-75.213727);
+		Market aldi46thandMarket = new Market("aldi46thandMarket",alDiFoods,aldi46thandMarketLocation );
+
 	}
 }
