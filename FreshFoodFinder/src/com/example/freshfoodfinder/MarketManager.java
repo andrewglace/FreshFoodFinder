@@ -192,6 +192,8 @@ public class MarketManager {
 	}
 	
 	private void instantiateCornerStores() {
+		
+		//all stores from 19139
 		LatLng toresCornerStoreLocation = new LatLng(39.956242,-75.21777);
 		Market toresCornerStore = new Market("toresCornerStore",cornerStoreFoods,toresCornerStoreLocation );
 		cornerStores.add(toresCornerStore);
@@ -213,7 +215,7 @@ public class MarketManager {
 		LatLng PorfiCornerStoreLocation = new LatLng(39.967172,-75.220698);
 		Market PorfiOneRaceCornerStore = new Market("PorfiOneRaceCornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
 		cornerStores.add(PorfiOneRaceCornerStore);
-		
+		//end stores from 19139
 	}
 	
 	private void instantiateFarmerMarkets() {
