@@ -92,8 +92,8 @@ import com.google.android.maps.GeoPoint;
 	markets = marketManager.getAllMarkets();
 	//Make markers on map for the appropriate markets
 	markets = searchMarkets();
+	markets = filterMarketsByDistance();
 	markMarkets(markets);
-	//markMarkets(filterMarketsByDistance());
 
 	
 	// Move the camera instantly to user's location with a zoom of 15.
@@ -223,9 +223,10 @@ import com.google.android.maps.GeoPoint;
 	
 	private List<Market> filterMarketsByDistance() {
 
+		//1609 is 1 mile
 		List<Market> appropriateMarkets = new ArrayList<Market>();
 		for (Market m : markets) {
-			if (markets.get(0).getLocation().distanceTo(m.getLocation())<1609) {
+			if (userLocation.distanceTo(m.getLocation())<1609) {
 
 				appropriateMarkets.add(m);
 			}
