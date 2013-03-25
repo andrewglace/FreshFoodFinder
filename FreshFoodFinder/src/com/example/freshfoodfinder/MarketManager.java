@@ -71,7 +71,7 @@ public class MarketManager {
 	}
 
 	private void instantiateCornerStoreFoods() {
-		
+		cornerStoreFoods.addAll(Food.getAllFoods());
 	}
 	
 	private void instantiateFarmerMarketFoods() {
