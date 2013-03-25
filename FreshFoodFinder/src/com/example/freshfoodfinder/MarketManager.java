@@ -192,6 +192,27 @@ public class MarketManager {
 	}
 	
 	private void instantiateCornerStores() {
+		LatLng toresCornerStoreLocation = new LatLng(39.956242,-75.21777);
+		Market toresCornerStore = new Market("toresCornerStore",cornerStoreFoods,toresCornerStoreLocation );
+		cornerStores.add(toresCornerStore);
+		LatLng conniesCornerStoreLocation = new LatLng(39.957013,-75.22506);
+		Market conniesCornerStore = new Market("conniesCornerStore",cornerStoreFoods,conniesCornerStoreLocation );
+		cornerStores.add(conniesCornerStore);
+		LatLng MontesinosCornerStoreLocation = new LatLng(39.959126,-75.228789);
+		Market MontesinosCornerStore = new Market("MontesinosCornerStore",cornerStoreFoods,MontesinosCornerStoreLocation );
+		cornerStores.add(MontesinosCornerStore);
+		LatLng RodriguezCornerStoreLocation = new LatLng(39.961881,-75.22627);
+		Market RodriguezCornerStore = new Market("RodriguezCornerStore",cornerStoreFoods,RodriguezCornerStoreLocation );
+		cornerStores.add(RodriguezCornerStore);
+		LatLng GregoryCornerStoreLocation = new LatLng(39.961399,-75.221662);
+		Market GregoryCornerStore = new Market("GregoryCornerStore",cornerStoreFoods,GregoryCornerStoreLocation );
+		cornerStores.add(GregoryCornerStore);
+		LatLng fiftyOneRaceCornerStoreLocation = new LatLng(39.963041,-75.222338);
+		Market fiftyOneRaceCornerStore = new Market("fiftyOneRaceCornerStore",cornerStoreFoods,fiftyOneRaceCornerStoreLocation );
+		cornerStores.add(fiftyOneRaceCornerStore);
+		LatLng PorfiCornerStoreLocation = new LatLng(39.967172,-75.220698);
+		Market PorfiOneRaceCornerStore = new Market("PorfiOneRaceCornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
+		cornerStores.add(PorfiOneRaceCornerStore);
 		
 	}
 	
