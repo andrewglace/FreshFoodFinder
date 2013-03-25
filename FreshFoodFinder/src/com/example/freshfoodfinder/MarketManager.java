@@ -216,6 +216,7 @@ public class MarketManager {
 		Market PorfiOneRaceCornerStore = new Market("PorfiOneRaceCornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
 		cornerStores.add(PorfiOneRaceCornerStore);
 		//end stores from 19139
+		//begin stores from 19131
 	}
 	
 	private void instantiateFarmerMarkets() {
