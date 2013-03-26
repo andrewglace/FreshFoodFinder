@@ -215,6 +215,52 @@ public class MarketManager {
 		LatLng PorfiCornerStoreLocation = new LatLng(39.967172,-75.220698);
 		Market PorfiOneRaceCornerStore = new Market("PorfiOneRaceCornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
 		cornerStores.add(PorfiOneRaceCornerStore);
+		
+
+		LatLng  genesisspruceCornerStoreLocation = new LatLng(39.955583,-75.2321);
+		Market genesisspruceCornerStore = new Market("genesisspruceCornerStore",cornerStoreFoods,genesisspruceCornerStoreLocation );
+		cornerStores.add(genesisspruceCornerStore);
+		
+
+		LatLng  nadiasvineCornerStoreLocation = new LatLng(39.966849,-75.243654);
+		Market nadiasvineCornerStore = new Market("nadiasvineCornerStore",cornerStoreFoods,nadiasvineCornerStoreLocation );
+		cornerStores.add(nadiasvineCornerStore);
+		
+		LatLng  yalneypineCornerStoreLocation = new LatLng(39.954732,-75.234321);
+		Market yalneypineCornerStore = new Market("yalneypineCornerStore",cornerStoreFoods,yalneypineCornerStoreLocation );
+		cornerStores.add(yalneypineCornerStore);
+		
+		LatLng westphilaproduce62ndCornerStoreLocation = new LatLng(39.961824,-75.24498);
+		Market westphilaproduce62ndCornerStore = new Market("westphilaproduce62ndCornerStore",cornerStoreFoods,westphilaproduce62ndCornerStoreLocation );
+		cornerStores.add(westphilaproduce62ndCornerStore);
+		
+		LatLng unidollarplusspruceCornerStoreLocation = new LatLng(39.953424,-75.217311);
+		Market unidollarplusspruceCornerStore = new Market("unidollarplusspruceCornerStore",cornerStoreFoods,unidollarplusspruceCornerStoreLocation );
+		cornerStores.add(unidollarplusspruceCornerStore);
+		
+		LatLng mohhallal45walnutCornerStoreLocation = new LatLng(39.955688,-75.213183);
+		Market mohhallal45walnutCornerStore = new Market("mohhallal45walnutCornerStore",cornerStoreFoods,mohhallal45walnutCornerStoreLocation );
+		cornerStores.add(mohhallal45walnutCornerStore);
+		
+		LatLng pm52ndCornerStoreLocation = new LatLng(39.961465,-75.224434);
+		Market pm52ndCornerStore = new Market("pm52ndCornerStore",cornerStoreFoods,pm52ndCornerStoreLocation );
+		cornerStores.add(pm52ndCornerStore);
+		
+		LatLng amanMarketstCornerStoreLocation = new LatLng(39.960417,-75.22857);
+		Market amanMarketstCornerStore = new Market("amanMarketstCornerStore",cornerStoreFoods,amanMarketstCornerStoreLocation );
+		cornerStores.add(amanMarketstCornerStore);
+		
+		LatLng syed52ndCornerStoreLocation = new LatLng(39.955555,-75.225955);
+		Market syed52ndCornerStore = new Market("syed52ndCornerStore",cornerStoreFoods,syed52ndCornerStoreLocation );
+		cornerStores.add(syed52ndCornerStore);
+		
+		LatLng forty9stopwalnutCornerStoreLocation = new LatLng(39.956443,-75.219391);
+		Market forty9stopwalnutCornerStore = new Market("forty9stopwalnutCornerStore",cornerStoreFoods,forty9stopwalnutCornerStoreLocation );
+		cornerStores.add(forty9stopwalnutCornerStore);
+		
+		LatLng delanceyfoodCornerStoreLocation = new LatLng(39.954271,-75.227971);
+		Market delanceyfoodCornerStore = new Market("delanceyfoodCornerStore",cornerStoreFoods,delanceyfoodCornerStoreLocation );
+		cornerStores.add(delanceyfoodCornerStore);
 		//end stores from 19139
 		//begin stores from 19131
 		LatLng MaximinoCornerStoreLocation = new LatLng(39.973884,-75.231066);
@@ -274,6 +320,16 @@ public class MarketManager {
 		LatLng MartinezCornerStoreLocation = new LatLng(39.975047,-75.234747);
 		Market MartinezCornerStore = new Market("MartinezCornerStore",cornerStoreFoods,MartinezCornerStoreLocation );
 		cornerStores.add(PorfiOneRaceCornerStore);
+
+
+		LatLng morgans54thCornerStoreLocation = new LatLng(39.986537,-75.231913);
+		Market morgans54thCornerStore = new Market("morgans54thCornerStore",cornerStoreFoods,morgans54thCornerStoreLocation );
+		cornerStores.add(morgans54thCornerStore);
+
+
+		LatLng rodriguez60055thstCornerStoreLocation = new LatLng(39.975047,-75.234747);
+		Market rodriguez60055thstCornerStore = new Market("rodriguez60055thstCornerStore",cornerStoreFoods,rodriguez60055thstCornerStoreLocation );
+		cornerStores.add(rodriguez60055thstCornerStore);
 
 		
 		//end stores in 19131
