@@ -187,7 +187,7 @@ public class MarketManager {
 		wawas.add(f37thandSpruceWawa);
 		LatLng bartramAveWawaLocation = new LatLng(39.894628,-75.236559);
 		Market bartramAveWawa = new Market("bartramAveWawa",wawaFoods,bartramAveWawaLocation );
-		wawas.add(f37thandSpruceWawa);
+		wawas.add(bartramAveWawa);
 
 	}
 	
@@ -319,7 +319,7 @@ public class MarketManager {
 
 		LatLng MartinezCornerStoreLocation = new LatLng(39.975047,-75.234747);
 		Market MartinezCornerStore = new Market("MartinezCornerStore",cornerStoreFoods,MartinezCornerStoreLocation );
-		cornerStores.add(PorfiOneRaceCornerStore);
+		cornerStores.add(MartinezCornerStore);
 
 
 		LatLng morgans54thCornerStoreLocation = new LatLng(39.986537,-75.231913);
@@ -420,7 +420,7 @@ public class MarketManager {
 		cornerStores.add(jmsesquehanaCornerStore);
 		LatLng lorasesquehanaCornerStoreLocation = new LatLng(39.987438,-75.165238);
 		Market lorasesquehanaCornerStore = new Market("lorasesquehanaCornerStore",cornerStoreFoods,lorasesquehanaCornerStoreLocation );
-		cornerStores.add(jmsesquehanaCornerStore);
+		cornerStores.add(lorasesquehanaCornerStore);
 		LatLng adandiamondCornerStoreLocation = new LatLng(39.985559,-75.16121);
 		Market adandiamondCornerStore = new Market("adandiamondCornerStore",cornerStoreFoods,adandiamondCornerStoreLocation );
 		cornerStores.add(adandiamondCornerStore);
@@ -447,7 +447,7 @@ public class MarketManager {
 		cornerStores.add(communityoxfordCornerStore);
 		LatLng bravoMarketCornerStoreLocation = new LatLng(39.981712,-75.182175);
 		Market bravoMarketCornerStore = new Market("bravoMarketCornerStore",cornerStoreFoods,bravoMarketCornerStoreLocation );
-		cornerStores.add(brothersridgeCornerStore);
+		cornerStores.add(bravoMarketCornerStore);
 		LatLng rightchoiceberksCornerStoreLocation = new LatLng(39.983554,-75.170913);
 		Market rightchoiceberksCornerStore = new Market("rightchoiceberksCornerStore",cornerStoreFoods,rightchoiceberksCornerStoreLocation );
 		cornerStores.add(rightchoiceberksCornerStore);
