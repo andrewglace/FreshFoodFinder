@@ -368,57 +368,10 @@ public class MarketManager {
 		LatLng AdabelDeliIncCornerStoreLocation = new LatLng(39.944477,-75.171559);
 		Market AdabelDeliIncCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,AdabelDeliIncCornerStoreLocation );
 		cornerStores.add(AdabelDeliIncCornerStore);
-		
-		//19112
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		LatLng BarbaroCornerStoreLocation = new LatLng(39.922046,-75.180535);
-		Market BarbaroCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,BarbaroCornerStoreLocation );
-		cornerStores.add(BarbaroCornerStore);
-		
-		
-		
-		
-		
+ 
+		//19112 -none
+		//19153 -none
+				
 		//all stores from 19139
 		LatLng toresCornerStoreLocation = new LatLng(39.956242,-75.21777);
 		Market toresCornerStore = new Market("toresCornerStore",cornerStoreFoods,toresCornerStoreLocation );
