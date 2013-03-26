@@ -71,7 +71,32 @@ public class MarketManager {
 	}
 
 	private void instantiateCornerStoreFoods() {
-		cornerStoreFoods.addAll(Food.getAllFoods());
+		cornerStoreFoods.add(new Food("Banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Kiwi fruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Lemon", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Lime", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Orange", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Beets", Food.FOOD_VEG, Calendar.JUNE, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Bell pepper", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Black-eyed peas", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Brussels sprouts", Food.FOOD_VEG, Calendar.SEPTEMBER, Calendar.NOVEMBER));
+		cornerStoreFoods.add(new Food("Collard Greens", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Cucumber", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Eggplant", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
+		cornerStoreFoods.add(new Food("Leek", Food.FOOD_VEG, Calendar.AUGUST, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Lettuce", Food.FOOD_VEG, Calendar.MAY, Calendar.OCTOBER));
+		cornerStoreFoods.add(new Food("Mustard", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Onion", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
+		cornerStoreFoods.add(new Food("Potato", Food.FOOD_VEG, Calendar.JULY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Spinach", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
+		cornerStoreFoods.add(new Food("Squash", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));//AND AGUST-DECEMBER
+		cornerStoreFoods.add(new Food("Sweet corn", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Sweet pepper", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
+		cornerStoreFoods.add(new Food("Sweet potato", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Radish", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
+		cornerStoreFoods.add(new Food("Tomato", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
+		cornerStoreFoods.add(new Food("Yam", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		cornerStoreFoods.add(new Food("Zucchini", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
 	}
 	
 	private void instantiateFarmerMarketFoods() {
@@ -216,6 +241,8 @@ public class MarketManager {
 		Market PorfiOneRaceCornerStore = new Market("PorfiOneRaceCornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
 		cornerStores.add(PorfiOneRaceCornerStore);
 		//end stores from 19139
+		LatLng NigerianAfricanFoodMarketLocation = new LatLng(39.949106,-75.213747);
+		Market NigerianAfricanFoodMarket = new Market("Nigerian African Food Market",cornerStoreFoods,NigerianAfricanFoodMarketLocation);
 	}
 	
 	private void instantiateFarmerMarkets() {
