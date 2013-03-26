@@ -486,7 +486,242 @@ public class MarketManager {
 		Market 	GoodNeighborMarket = new Market("Good Neighbor Market",cornerStoreFoods,GoodNeighborMarketLocation);
 		cornerStores.add(GoodNeighborMarket);
 		
+		LatLng 	StreetMiniMarket1Location = new LatLng(39.940126,-75.216702);
+		Market 	StreetMiniMarket1 = new Market("51 Street Mini Market #1",cornerStoreFoods,StreetMiniMarket1Location);
+		cornerStores.add(StreetMiniMarket1);
 		
+		LatLng 	StopOneSupermarketLocation = new LatLng(39.934933,-75.22146);
+		Market 	StopOneSupermarket = new Market("Stop One Supermarket",cornerStoreFoods,StopOneSupermarketLocation);
+		cornerStores.add(StopOneSupermarket);
+		
+		LatLng 	MDAGoceryLocation = new LatLng(39.936381,-75.218779);
+		Market 	MDAGocery = new Market("MDA Gocery",cornerStoreFoods,MDAGoceryLocation);
+		cornerStores.add(MDAGocery);
+		
+		LatLng 	SamichesDeliIncLocation = new LatLng(39.936215,-75.219437);
+		Market 	SamichesDeliInc = new Market("Samiches Deli Inc",cornerStoreFoods,SamichesDeliIncLocation);
+		cornerStores.add(SamichesDeliInc);
+		
+		LatLng 	RaysGroceryLocation = new LatLng(39.934353,-75.221415);
+		Market 	RaysGrocery = new Market("Ray's Grocery",cornerStoreFoods,RaysGroceryLocation);
+		cornerStores.add(RaysGrocery);
+		
+		LatLng 	KingssesingFoodMarketLocation = new LatLng(39.937629,-75.223308);
+		Market 	KingssesingFoodMarket = new Market("Kingssesing Food Market",cornerStoreFoods,KingssesingFoodMarketLocation);
+		cornerStores.add(KingssesingFoodMarket);
+		
+		LatLng 	SisterInternationalFoodMarketLocation = new LatLng(39.938148,-75.225434);
+		Market 	SisterInternationalFoodMarket = new Market("Sister International Food Market",cornerStoreFoods,SisterInternationalFoodMarketLocation);
+		cornerStores.add(SisterInternationalFoodMarket);
+		
+		LatLng 	ArredondoAngelaMiniMarketLocation = new LatLng(39.93652,-75.22715);
+		Market 	ArredondoAngelaMiniMarket = new Market("Arredondo/Angela Mini Market",cornerStoreFoods,ArredondoAngelaMiniMarketLocation);
+		cornerStores.add(ArredondoAngelaMiniMarket);
+		
+		LatLng 	SamanaFoodMarketLocation = new LatLng(39.936771,-75.2294);
+		Market 	SamanaFoodMarket = new Market("Samana Food Market",cornerStoreFoods,SamanaFoodMarketLocation);
+		cornerStores.add(SamanaFoodMarket);
+		
+		LatLng 	JoseJimenezGroceryLocation = new LatLng(39.937967,-75.230825);
+		Market 	JoseJimenezGrocery = new Market("Jose Jimenez Grocery",cornerStoreFoods,JoseJimenezGroceryLocation);
+		cornerStores.add(JoseJimenezGrocery);
+		
+		LatLng 	PapisGroceryLocation = new LatLng(39.939003,-75.230098);
+		Market 	PapisGrocery = new Market("Papi's Grocery",cornerStoreFoods,PapisGroceryLocation);
+		cornerStores.add(PapisGrocery);
+		
+		LatLng 	TwoBrothersFoodMarketLocation = new LatLng(39.943908,-75.228093);
+		Market 	TwoBrothersFoodMarket = new Market("Two Brothers Food Market",cornerStoreFoods,TwoBrothersFoodMarketLocation);
+		cornerStores.add(TwoBrothersFoodMarket);
+		
+		LatLng 	EightBrothersSupermarketLocation = new LatLng(39.943876,-75.232554);
+		Market 	EightBrothersSupermarket = new Market("Eight Brothers Supermarket",cornerStoreFoods,EightBrothersSupermarketLocation);
+		cornerStores.add(EightBrothersSupermarket);
+		
+		LatLng 	Narciso2Location = new LatLng(39.941364,-75.232929);
+		Market 	Narciso2 = new Market("Narciso #2",cornerStoreFoods,Narciso2Location);
+		cornerStores.add(Narciso2);
+		
+		LatLng 	RiftValleyGroceryStoretLocation = new LatLng(39.948388,-75.226999);
+		Market 	RiftValleyGroceryStore = new Market("Rift Valley Grocery Store",cornerStoreFoods,RiftValleyGroceryStoretLocation);
+		cornerStores.add(RiftValleyGroceryStore);
+		
+		LatLng 	AngelicaSupermarketLocation = new LatLng(39.947535,-75.233453);
+		Market 	AngelicaSupermarket = new Market("Angelica Supermarket",cornerStoreFoods,AngelicaSupermarketLocation);
+		cornerStores.add(AngelicaSupermarket);
+		
+		LatLng 	JDMiniMarketLocation = new LatLng(39.948354,-75.235425);
+		Market 	JDMiniMarket = new Market("J&D Mini Market",cornerStoreFoods,JDMiniMarketLocation);
+		cornerStores.add(JDMiniMarket);
+		
+		LatLng 	DiosPruebaelHombreGroceryLocation = new LatLng(39.947281,-75.239682);
+		Market 	DiosPruebaelHombreGrocery = new Market("Dios Prueba el Hombre Grocery",cornerStoreFoods,DiosPruebaelHombreGroceryLocation);
+		cornerStores.add(DiosPruebaelHombreGrocery);
+		
+		LatLng 	DiosPruebaelHombre2Location = new LatLng(39.948643,-75.238712);
+		Market 	DiosPruebaelHombre2 = new Market("Dios Prueba el Hombre #2",cornerStoreFoods,DiosPruebaelHombre2Location);
+		cornerStores.add(DiosPruebaelHombre2);
+		
+		LatLng 	EnaFoodsIncLocation = new LatLng(39.952058,-75.243091);
+		Market 	EnaFoodsInc = new Market("Ena Foods, Inc",cornerStoreFoods,EnaFoodsIncLocation);
+		cornerStores.add(EnaFoodsInc);
+		
+		LatLng 	DelanceyFoodMarketLocation = new LatLng(39.954154,-75.227995);
+		Market 	DelanceyFoodMarket = new Market("Delancey Food Market",cornerStoreFoods,DelanceyFoodMarketLocation);
+		cornerStores.add(DelanceyFoodMarket);
+		
+		LatLng 	Sisters2Location = new LatLng(39.954363,-75.229749);
+		Market 	Sisters2 = new Market("3 Sisters #2",cornerStoreFoods,Sisters2Location);
+		cornerStores.add(Sisters2);
+		
+		LatLng 	AngeloFoodMarketLocation = new LatLng(39.956232,-75.24195);
+		Market 	AngeloFoodMarket = new Market("Angelo's Food Market",cornerStoreFoods,AngeloFoodMarketLocation);
+		cornerStores.add(AngeloFoodMarket);
+		
+		LatLng 	thStDelanceyFoodMarketLocation = new LatLng(39.95541,-75.238221);
+		Market 	thStDelanceyFoodMarket = new Market("58th St. & Delancey Food Market",cornerStoreFoods,thStDelanceyFoodMarketLocation);
+		cornerStores.add(thStDelanceyFoodMarket);
+		
+		LatLng 	MezquitaGroceryLocation = new LatLng(39.954517,-75.226198);
+		Market 	MezquitaGrocery = new Market("Mezquita Grocery",cornerStoreFoods,MezquitaGroceryLocation);
+		cornerStores.add(MezquitaGrocery);
+		//end 19143
+		
+		//begin 19142
+		
+		LatLng 	SPGroceryIncLocation = new LatLng(39.932334,-75.230159);
+		Market 	SPGroceryInc = new Market("S&P Grocery Inc",cornerStoreFoods,SPGroceryIncLocation);
+		cornerStores.add(SPGroceryInc);
+		
+		LatLng 	BrothersSupermarketLocation = new LatLng(39.928145,-75.237719);
+		Market 	BrothersSupermarket = new Market("8 Brothers Supermarket",cornerStoreFoods,BrothersSupermarketLocation);
+		cornerStores.add(BrothersSupermarket);
+		
+		LatLng 	LibertyMiniMarketLocation = new LatLng(39.925999,-75.242676);
+		Market 	LibertyMiniMarket = new Market("Liberty Mini Market",cornerStoreFoods,LibertyMiniMarketLocation);
+		cornerStores.add(LibertyMiniMarket);
+		
+		LatLng 	UplandMiniMarketLocation = new LatLng(39.924198,-75.240431);
+		Market 	UplandMiniMarket = new Market("Upland Mini Market",cornerStoreFoods,UplandMiniMarketLocation);
+		cornerStores.add(UplandMiniMarket);
+		
+		LatLng 	NinaGroceryVarietyLocation = new LatLng(39.927054,-75.231765);
+		Market 	NinaGroceryVariety = new Market("Nina's Grocery & Variety",cornerStoreFoods,NinaGroceryVarietyLocation);
+		cornerStores.add(NinaGroceryVariety);
+		
+		LatLng 	BainHalalMarketAndGroceryLocation = new LatLng(39.926731,-75.233196);
+		Market 	BainHalalMarketAndGrocery = new Market("Bain'S Halal Market And Grocery",cornerStoreFoods,BainHalalMarketAndGroceryLocation);
+		cornerStores.add(BainHalalMarketAndGrocery);
+		
+		LatLng 	DynamicDollarLocation = new LatLng(39.92692,-75.232196);
+		Market 	DynamicDollar = new Market("Dynamic Dollar",cornerStoreFoods,DynamicDollarLocation);
+		cornerStores.add(DynamicDollar);
+		
+		LatLng 	ExecutiveAfricanFoodFashioLocation = new LatLng(39.92508,-75.235468);
+		Market 	ExecutiveAfricanFoodFashio = new Market("Executive African Food & Fashion",cornerStoreFoods,ExecutiveAfricanFoodFashioLocation);
+		cornerStores.add(ExecutiveAfricanFoodFashio);
+		
+		LatLng 	SitaTAfricanGroceryStoreLocation = new LatLng(39.924608,-75.236084);
+		Market 	SitaTAfricanGroceryStore = new Market("Sita T African Grocery Store",cornerStoreFoods,SitaTAfricanGroceryStoreLocation);
+		cornerStores.add(SitaTAfricanGroceryStore);
+		
+		LatLng 	LibertyAfricanGroceryLocation = new LatLng(39.924474,-75.236278);
+		Market 		LibertyAfricanGrocery = new Market("Liberty African Grocery",cornerStoreFoods,LibertyAfricanGroceryLocation);
+		cornerStores.add(LibertyAfricanGrocery);
+		
+		LatLng 	UcetaGroceryLocation = new LatLng(39.926296,-75.224927);
+		Market 		UcetaGrocery = new Market("Uceta Grocery",cornerStoreFoods,UcetaGroceryLocation);
+		cornerStores.add(UcetaGrocery);
+		
+		LatLng 	BuistFoodMarketLocation = new LatLng(39.9251,-75.223429);
+		Market 			BuistFoodMarket = new Market("Buist Food Market",cornerStoreFoods,BuistFoodMarketLocation);
+		cornerStores.add(BuistFoodMarket);
+		
+		LatLng 	JaquezGroceryLocation = new LatLng(39.925494,-75.226911);
+		Market 			JaquezGrocery = new Market("Jaquez Grocery",cornerStoreFoods,JaquezGroceryLocation);
+		cornerStores.add(JaquezGrocery);
+		
+		LatLng 	AladdinFoodMarketLocation = new LatLng(39.924293,-75.2278);
+		Market 		AladdinFoodMarket = new Market("Aladdin Food Market",cornerStoreFoods,AladdinFoodMarketLocation);
+		cornerStores.add(AladdinFoodMarket);
+		
+		LatLng 	DeniaASanchezPadillaGroceryLocation = new LatLng(39.924327,-75.230754);
+		Market 		DeniaASanchezPadillaGrocery = new Market("Denia A Sanchez Padilla Grocery",cornerStoreFoods,DeniaASanchezPadillaGroceryLocation);
+		cornerStores.add(DeniaASanchezPadillaGrocery);
+		
+		LatLng 	ShemaConvenienceStoreLocation = new LatLng(39.921969,-75.23108);
+		Market 		ShemaConvenienceStore = new Market("Shema's Convenience Store",cornerStoreFoods,ShemaConvenienceStoreLocation);
+		cornerStores.add(ShemaConvenienceStore);
+		
+		LatLng 	BJSupermarketLocation = new LatLng(39.921315,-75.231313);
+		Market 		BJSupermarket = new Market("B & J Supermarket",cornerStoreFoods,BJSupermarketLocation);
+		cornerStores.add(BJSupermarket);
+		
+		LatLng 	PirelaFoodMarketLocation = new LatLng(39.918342,-75.228287);
+		Market 		PirelaFoodMarket = new Market("Pirela Food Market",cornerStoreFoods,PirelaFoodMarketLocation);
+		cornerStores.add(PirelaFoodMarket);
+		
+		LatLng 	RomanoGroceryLocation = new LatLng(39.915401,-75.234283);
+		Market 		RomanoGrocery = new Market("Romano Grocery",cornerStoreFoods,RomanoGroceryLocation);
+		cornerStores.add(RomanoGrocery);
+		
+		LatLng 	VJDeliGroceryLocation = new LatLng(39.91572,-75.239092);
+		Market 	VJDeliGrocery = new Market("V & J Deli Grocery",cornerStoreFoods,VJDeliGroceryLocation);
+		cornerStores.add(VJDeliGrocery);
+		
+		LatLng 	KDInternationalMarketLocation = new LatLng(39.914879,-75.240338);
+		Market 	KDInternationalMarket = new Market("K&D International Market",cornerStoreFoods,KDInternationalMarketLocation);
+		cornerStores.add(KDInternationalMarket);
+		
+		LatLng 	BensaleLocation = new LatLng(39.914209,-75.241249);
+		Market 	Bensale = new Market("Bensale",cornerStoreFoods,BensaleLocation);
+		cornerStores.add(Bensale);
+		
+		LatLng 	ZamZamMarketLocation = new LatLng(39.913852,-75.242611);
+		Market 	ZamZamMarket = new Market("Zam Zam Market",cornerStoreFoods,ZamZamMarketLocation);
+		cornerStores.add(ZamZamMarket);
+		
+		LatLng 	ElmwoodMarketLocation = new LatLng(39.919978,-75.233855);
+		Market 	ElmwoodMarket = new Market("Elmwood Market",cornerStoreFoods,ElmwoodMarketLocation);
+		cornerStores.add(ElmwoodMarket);
+		
+		LatLng 	SekpehProsperity1Location = new LatLng(39.920237,-75.233459);
+		Market 	SekpehProsperity1 = new Market("Sekpeh Prosperity #1",cornerStoreFoods,SekpehProsperity1Location);
+		cornerStores.add(SekpehProsperity1);
+		
+		//end 19142
+		
+		//begin 19104
+		
+		LatLng 	CityFoodMarketLocation = new LatLng(39.960522,-75.201848);
+		Market 	CityFoodMarket = new Market("City Food Market",cornerStoreFoods,CityFoodMarketLocation);
+		cornerStores.add(CityFoodMarket);
+		
+		LatLng 	HamiltonExpressDeliLLCLocation = new LatLng(39.962336,-75.191548);
+		Market 	HamiltonExpressDeliLLC = new Market("Hamilton Express Deli LLC",cornerStoreFoods,HamiltonExpressDeliLLCLocation);
+		cornerStores.add(VJDeliGrocery);
+		
+		LatLng 	PeraltaFoodMarketLocation = new LatLng(39.964277,-75.191228);
+		Market 	PeraltaFoodMarket = new Market("Peralta Food Market",cornerStoreFoods,PeraltaFoodMarketLocation);
+		cornerStores.add(PeraltaFoodMarket);
+		
+		LatLng 	RubenGroceriesLocation = new LatLng(39.966111,-75.192673);
+		Market 	RubenGroceries = new Market("Ruben Groceries",cornerStoreFoods,RubenGroceriesLocation);
+		cornerStores.add(RubenGroceries);
+		
+		LatLng 	GoodNeighborSupermarketLocation = new LatLng(39.965956,-75.196519);
+		Market 	GoodNeighborSupermarket = new Market("Good Neighbor Supermarket",cornerStoreFoods,GoodNeighborSupermarketLocation);
+		cornerStores.add(GoodNeighborSupermarket);
+		
+		LatLng 	JRFoodMarketLocation = new LatLng(39.972817,-75.201303);
+		Market 	JRFoodMarket = new Market("J & R Food Market",cornerStoreFoods,JRFoodMarketLocation);
+		cornerStores.add(JRFoodMarket);
+		
+		LatLng 	LaSuperBigMannyGroceryStorLocation = new LatLng(39.972632,-75.203722);
+		Market 	LaSuperBigMannyGroceryStor = new Market("La Super Big Manny Grocery Store",cornerStoreFoods,LaSuperBigMannyGroceryStorLocation);
+		cornerStores.add(LaSuperBigMannyGroceryStor);
+		
+		//end 19104
 
 		//begin stores from 19131
 		LatLng MaximinoCornerStoreLocation = new LatLng(39.973884,-75.231066);
