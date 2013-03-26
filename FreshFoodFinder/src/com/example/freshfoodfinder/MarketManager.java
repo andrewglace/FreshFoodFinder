@@ -366,6 +366,14 @@ public class MarketManager {
 		LatLng wallaceCornerStoreLocation = new LatLng(39.96615,-75.170542);
 		Market wallaceCornerStore = new Market("wallaceCornerStore",cornerStoreFoods,wallaceCornerStoreLocation );
 		cornerStores.add(wallaceCornerStore);
+
+		LatLng alejoMtvernonCornerStoreLocation = new LatLng(39.964996,-75.165721);
+		Market alejoMtvernonCornerStore = new Market("alejoMtvernonCornerStore",cornerStoreFoods,alejoMtvernonCornerStoreLocation );
+		cornerStores.add(alejoMtvernonCornerStore);
+
+		LatLng almontepoplarCornerStoreLocation = new LatLng(39.971489,-75.169156);
+		Market almontepoplarCornerStore = new Market("almontepoplarCornerStore",cornerStoreFoods,almontepoplarCornerStoreLocation );
+		cornerStores.add(almontepoplarCornerStore);
 		//end 19130 stores
 		//begin 19121 stores
 		LatLng karenN30thCornerStoreLocation = new LatLng(39.977893,-75.184618);
