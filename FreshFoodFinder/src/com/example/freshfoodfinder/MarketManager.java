@@ -288,8 +288,52 @@ public class MarketManager {
 		cornerStores.add(delanceyfoodCornerStore);
 		//end stores from 19139
 
+		//begin 19143
 		LatLng NigerianAfricanFoodMarketLocation = new LatLng(39.949106,-75.213747);
 		Market NigerianAfricanFoodMarket = new Market("Nigerian African Food Market",cornerStoreFoods,NigerianAfricanFoodMarketLocation);
+		cornerStores.add(NigerianAfricanFoodMarket);
+		
+		LatLng AminGasMiniMartLocation = new LatLng(39.948629,-75.21444);
+		Market AminGasMiniMart = new Market("Amin Gas & Mini Mart",cornerStoreFoods,AminGasMiniMartLocation);
+		cornerStores.add(AminGasMiniMart);
+		
+		LatLng 	DavisPharmacyLocation = new LatLng(39.949082,-75.214206);
+		Market 	DavisPharmacy = new Market("Davis Pharmacy",cornerStoreFoods,DavisPharmacyLocation);
+		cornerStores.add(DavisPharmacy);
+		
+		LatLng 	ValentinoAfricanFoodStoreLocation = new LatLng(39.948871,-75.213596);
+		Market 	ValentinoAfricanFoodStore = new Market("Valentino African Food Store",cornerStoreFoods,ValentinoAfricanFoodStoreLocation);
+		cornerStores.add(ValentinoAfricanFoodStore);
+		
+		LatLng 	MariposaIncLocation = new LatLng(39.948374,-75.217761);
+		Market 	MariposaInc = new Market("Mariposa Inc",cornerStoreFoods,MariposaIncLocation);
+		cornerStores.add(MariposaInc);
+		
+		LatLng 	BoostMarketLocation = new LatLng(39.947806,-75.222276);
+		Market 	BoostMarket = new Market("Boost Market",cornerStoreFoods,BoostMarketLocation);
+		cornerStores.add(BoostMarket);
+		
+		LatLng 	ChesterFoodPlazaLocation = new LatLng(39.945732,-75.213935);
+		Market 	ChesterFoodPlaza = new Market("Chester Food Plaza",cornerStoreFoods,ChesterFoodPlazaLocation);
+		cornerStores.add(ChesterFoodPlaza);
+		
+		LatLng 	JenniferGroceryLocation = new LatLng(39.944306,-75.216378);
+		Market 	JenniferGrocery = new Market("Jennifer Grocery",cornerStoreFoods,JenniferGroceryLocation);
+		cornerStores.add(JenniferGrocery);
+		
+		LatLng 	AnaGroceryLocation = new LatLng(39.941897,-75.214143);
+		Market 	AnaGrocery = new Market("Ana Grocery",cornerStoreFoods,AnaGroceryLocation);
+		cornerStores.add(AnaGrocery);
+		
+		LatLng 	AzconaSupermarketLocation = new LatLng(39.941887,-75.220246);
+		Market 	AzconaSupermarket = new Market("Azcona Supermarket",cornerStoreFoods,AzconaSupermarketLocation);
+		cornerStores.add(AzconaSupermarket);
+		
+		LatLng 	GoodNeighborMarketLocation = new LatLng(39.94116,-75.212609);
+		Market 	GoodNeighborMarket = new Market("Good Neighbor Market",cornerStoreFoods,GoodNeighborMarketLocation);
+		cornerStores.add(GoodNeighborMarket);
+		
+		
 
 		//begin stores from 19131
 		LatLng MaximinoCornerStoreLocation = new LatLng(39.973884,-75.231066);
