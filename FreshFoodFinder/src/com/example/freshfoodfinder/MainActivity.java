@@ -1,11 +1,11 @@
 package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,6 +18,7 @@ public class MainActivity extends ListActivity {
 	public static ArrayList<Food> allFoods;
 	public static ArrayList<Food> seasonalFoods;
 	public static boolean togglerIsMap = true;
+	public static boolean isSeasonal = false;
 	
 	//This class will manage the code for the screen involving the search bar and buttons for food
 	@Override
@@ -27,6 +28,7 @@ public class MainActivity extends ListActivity {
 		setContentView(R.layout.activity_main);
 		
 		allFoods = Food.getAllFoods();
+		seasonalFoods = Food.getSeasonalFoods(allFoods);
 		
 		ArrayAdapter<Food> adapter = new ArrayAdapter<Food>(this,
 		        android.R.layout.simple_list_item_1, allFoods);
@@ -45,15 +47,25 @@ public class MainActivity extends ListActivity {
 	    
 	    startActivityForResult(i,UserMap_ID);
 	   // Log.w(o.getName(), "ah");
-	
-
 	  }
 	  
 	  public void goSeasonal(View view) {
-		  
+		  if (isSeasonal) {
+			  isSeasonal = false;
+			  ArrayAdapter<Food> adapter = new ArrayAdapter<Food>(this,
+					  android.R.layout.simple_list_item_1, allFoods);
+			  setListAdapter(adapter);
+		  }
+		  else {
+			  isSeasonal = true;
+			  ArrayAdapter<Food> adapter = new ArrayAdapter<Food>(this,
+					  android.R.layout.simple_list_item_1, seasonalFoods);
+			  setListAdapter(adapter);
+		  }
 	  }
 	  
 	  public void toggleMapRecipe(View view) {
+
 		  Button toggler = (Button) view;
 		  if (togglerIsMap) {
 			  toggler.setText(R.string.TogglerRecipe);
