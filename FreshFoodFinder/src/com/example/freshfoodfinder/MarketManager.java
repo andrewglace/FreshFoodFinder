@@ -725,11 +725,19 @@ public class MarketManager {
 		farmerMarkets.add(ClarkPark);
 		
 		
-//		19142
-//		19153
-//		19145
-//		19112
+//		19142 - none
+//		19153 - none
+//		19145 - none
+//		19112 - none
 //		19146
+		LatLng _22ndandTaskarLocation = new LatLng(39.939628,-75.18664);
+		Market _22ndandTaskar = new Market("22nd & Taskar (Point Breeze)", farmerMarketFoods, _22ndandTaskarLocation);
+		farmerMarkets.add(_22ndandTaskar);
+		
+		LatLng _29thandWhartonLocation = new LatLng(39.93729,-75.192046);
+		Market _29thandWharton = new Market("29th & Wharton (Grays Ferry)", farmerMarketFoods, _29thandWhartonLocation);
+		farmerMarkets.add(_29thandWharton);
+		
 //		19130
 		LatLng Girardand27thLocation = new LatLng(39.974189,-75.180434);
 		Market Girardand27th = new Market ("Girard & 27th", farmerMarketFoods, Girardand27thLocation);
