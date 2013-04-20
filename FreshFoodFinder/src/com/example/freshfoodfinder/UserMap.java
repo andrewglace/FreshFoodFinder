@@ -126,17 +126,6 @@ import com.google.android.maps.GeoPoint;
 		}
 	}
 	
-	private Dialog onCreateDialog(Bundle savedInstanceState) {
-	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-	    builder.setTitle("hey");
-	          /* .setItems(R.array.colors_array, new DialogInterface.OnClickListener() {
-	               public void onClick(DialogInterface dialog, int which) {
-	               // The 'which' argument contains the index position
-	               // of the selected item
-	           }*/
-	    
-	    return builder.create();
-	}
 	private void markMarkets(List<Market> marketsWithActiveFood, String bitmapImage) {
 		if (marketsWithActiveFood == null) return;
 		for (Market m : marketsWithActiveFood) {
@@ -144,7 +133,8 @@ import com.google.android.maps.GeoPoint;
 			map.addMarker(new MarkerOptions()
 			.position(location)
 			.title(m.getName())
-			.icon(BitmapDescriptorFactory.fromAsset(bitmapImage)));
+			.icon(BitmapDescriptorFactory.fromAsset(bitmapImage))
+			.snippet(m.getPhoneNumber()+" , "+m.getHours()));
 			
 			OnInfoWindowClickListener mcl = new OnInfoWindowClickListener() {
 				

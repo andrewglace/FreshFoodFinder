@@ -9,6 +9,7 @@ import com.google.android.gms.maps.model.LatLng;
 public class Market {
 	private String name;
 	private String phoneNumber;
+	private String hours;
 	private ArrayList<Food> foodSoldHere;
 	private LatLng location;
 	public Market(String marketName, ArrayList<Food> foods, LatLng whereIsThisMarket) throws IllegalArgumentException {
@@ -19,6 +20,22 @@ public class Market {
 		location=whereIsThisMarket;
 		foodSoldHere = new ArrayList<Food>();
 		foodSoldHere.addAll(foods);
+		phoneNumber = "";
+		hours = "";
+	}
+	
+	public void setPhoneNumber(String phone) {
+		phoneNumber = phone;
+	}
+	
+	public void setHours(String times) {
+		hours = times;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public String getHours() {
+		return hours;
 	}
 	public String getName(){
 		return name;

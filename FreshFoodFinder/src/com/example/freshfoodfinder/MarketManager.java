@@ -85,7 +85,9 @@ public class MarketManager {
 			//1609 is 1 mile
 			ArrayList<Market> appropriateMarkets = new ArrayList<Market>();
 			for (Market m : markets) {
-				if (userLocation.distanceTo(m.getLocation())<1609) {
+				
+				//1609 is 1 mile
+				if (userLocation.distanceTo(m.getLocation())<3218) {
 
 					appropriateMarkets.add(m);
 				}
@@ -221,6 +223,8 @@ public class MarketManager {
 		LatLng supreme43rdWalnutLocation = new LatLng(39.954792,-75.208733);
 		
 		Market freshGrocer40thWalnut = new Market("Fresh Grocer",superMarketFoods,freshGrocerLocation40thWalnut);
+		freshGrocer40thWalnut.setPhoneNumber("phone: (215) 222-9200");
+		freshGrocer40thWalnut.setHours("Open: 24/7");
 		Market supreme43rdWalnut = new Market("Supreme",superMarketFoods,supreme43rdWalnutLocation);
 		
 		superMarkets.add(freshGrocer40thWalnut);
