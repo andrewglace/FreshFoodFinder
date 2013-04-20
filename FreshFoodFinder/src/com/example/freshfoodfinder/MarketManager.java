@@ -2,6 +2,9 @@ package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
+
+import android.location.Location;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -18,10 +21,15 @@ public class MarketManager {
 	private ArrayList<Market> cornerStores;
 	private ArrayList<Market> farmerMarkets;
 	
+	private Food activeFood;
+	private Location userLocation;
+	
 	//We'll still instiate Aldi as a list so we dont have to treat it specially
 	private ArrayList<Market> aldi;
 	
-	public MarketManager() {
+	public MarketManager(Food food, Location location) {
+		activeFood = food;
+		userLocation = location;
 		superMarketFoods = new ArrayList<Food>();
 		wawaFoods = new ArrayList<Food>();
 		cornerStoreFoods = new ArrayList<Food>();
@@ -46,7 +54,54 @@ public class MarketManager {
 		instantiateCornerStores();
 		instantiateFarmerMarkets();
 		instantiateAldi();
+		
+		wawas = searchMarkets(wawas);
+		wawas = filterMarketsByDistance(wawas);
+		
+		superMarkets = searchMarkets(superMarkets);
+		superMarkets = filterMarketsByDistance(superMarkets);
+		
+		cornerStores = searchMarkets(cornerStores);
+		cornerStores = filterMarketsByDistance(cornerStores);
+		
+		farmerMarkets = searchMarkets(farmerMarkets);
+		farmerMarkets = filterMarketsByDistance(farmerMarkets);
+		
+		aldi = searchMarkets(aldi);
+		aldi = filterMarketsByDistance(aldi);
 
+	}
+	
+	//Returns list of markets with the food
+		private ArrayList<Market> searchMarkets(ArrayList<Market> markets) {
+			ArrayList<Market> appropriateMarkets = new ArrayList<Market>();
+			for (Market m : markets) {
+				if (m.hasFood(activeFood)) {
+					appropriateMarkets.add(m);
+				}
+			}
+			return appropriateMarkets;
+		}
+		
+		private ArrayList<Market> filterMarketsByDistance(ArrayList<Market> markets) {
+
+			//1609 is 1 mile
+			ArrayList<Market> appropriateMarkets = new ArrayList<Market>();
+			for (Market m : markets) {
+				if (userLocation.distanceTo(m.getLocation())<1609) {
+
+					appropriateMarkets.add(m);
+				}
+			}
+			return appropriateMarkets;
+	}
+	
+	public ArrayList<Market> getCornerStores() {
+		return cornerStores;
+	}
+	
+	public ArrayList<Market> getWawas() {
+		return wawas;
 	}
 	
 	//This method will be called by UserMap

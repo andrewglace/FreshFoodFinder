@@ -81,19 +81,17 @@ import com.google.android.maps.GeoPoint;
 	String activeFoodName = getIntent().getStringExtra("com.example.freshfoodfinder.activeFood");
 	activeFood = new Food(activeFoodName, 1, Calendar.JANUARY, Calendar.DECEMBER);
 
-	marketManager = new MarketManager();
-	markets = marketManager.getAllMarkets();
+	marketManager = new MarketManager(activeFood,userLocation);
 	//Make markers on map for the appropriate markets
-	markets = searchMarkets();
-	markets = filterMarketsByDistance();
-	markMarkets(markets);
+	markMarkets(marketManager.getWawas(),"Wawa Logo-resized.bmp");
+	markMarkets(marketManager.getCornerStores(),"Corner_Store-icon-resized.bmp");
 
 	
 	// Move the camera instantly to user's location with a zoom of 15.
 	map.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 30));
 	
 	// Zoom in, animating the camera.
-	map.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
+	map.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
 	
 
 	}
@@ -121,25 +119,15 @@ import com.google.android.maps.GeoPoint;
 		}
 	}
 	
-	//Returns list of markets with the food
-	private List<Market> searchMarkets() {
-		List<Market> appropriateMarkets = new ArrayList<Market>();
-		for (Market m : markets) {
-			if (m.hasFood(activeFood)) {
-				appropriateMarkets.add(m);
-			}
-		}
-		return appropriateMarkets;
-	}
 	
-	private void markMarkets(List<Market> marketsWithActiveFood) {
+	private void markMarkets(List<Market> marketsWithActiveFood, String bitmapImage) {
 		if (marketsWithActiveFood == null) return;
 		for (Market m : marketsWithActiveFood) {
 			LatLng location = new LatLng(m.getLatLng().latitude,m.getLatLng().longitude);
-			Marker market = map.addMarker(new MarkerOptions()
+			map.addMarker(new MarkerOptions()
 			.position(location)
 			.title(m.getName())
-			.icon(BitmapDescriptorFactory.fromAsset("Corner_Store-icon.bmp")));
+			.icon(BitmapDescriptorFactory.fromAsset(bitmapImage)));
 			OnMarkerClickListener mcl = new OnMarkerClickListener() {
 				
 				@Override
@@ -161,18 +149,5 @@ import com.google.android.maps.GeoPoint;
 
 		}
 	}
-	
-	private List<Market> filterMarketsByDistance() {
-
-		//1609 is 1 mile
-		List<Market> appropriateMarkets = new ArrayList<Market>();
-		for (Market m : markets) {
-			if (userLocation.distanceTo(m.getLocation())<1609) {
-
-				appropriateMarkets.add(m);
-			}
-		}
-		return appropriateMarkets;
-}
 	
 	}
