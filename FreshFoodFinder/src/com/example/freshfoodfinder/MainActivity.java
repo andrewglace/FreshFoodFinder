@@ -5,11 +5,10 @@ import java.util.ArrayList;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
+import android.widget.RadioButton;
 
 
 public class MainActivity extends ListActivity {
@@ -30,9 +29,12 @@ public class MainActivity extends ListActivity {
 		allFoods = Food.getAllFoods();
 		seasonalFoods = Food.getSeasonalFoods(allFoods);
 		
-		ArrayAdapter<Food> adapter = new ArrayAdapter<Food>(this,
+		ColoredArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 		        android.R.layout.simple_list_item_1, allFoods);
-		setListAdapter(adapter);		
+		setListAdapter(adapter);
+		
+		RadioButton mapButton = (RadioButton) this.findViewById(R.id.radioButtonMap);
+		mapButton.setChecked(true);
 	}
 	  @Override
 	  protected void onListItemClick(ListView l, View v, int position, long id) {
@@ -46,34 +48,29 @@ public class MainActivity extends ListActivity {
 	    i.putExtra("com.example.freshfoodfinder.activeFood", activeFood.getName());
 	    
 	    startActivityForResult(i,UserMap_ID);
-	   // Log.w(o.getName(), "ah");
 	  }
 	  
 	  public void goSeasonal(View view) {
 		  if (isSeasonal) {
 			  isSeasonal = false;
-			  ArrayAdapter<Food> adapter = new ArrayAdapter<Food>(this,
+			 ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 					  android.R.layout.simple_list_item_1, allFoods);
 			  setListAdapter(adapter);
 		  }
 		  else {
 			  isSeasonal = true;
-			  ArrayAdapter<Food> adapter = new ArrayAdapter<Food>(this,
+			  ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 					  android.R.layout.simple_list_item_1, seasonalFoods);
 			  setListAdapter(adapter);
 		  }
 	  }
 	  
-	  public void toggleMapRecipe(View view) {
-
-		  Button toggler = (Button) view;
-		  if (togglerIsMap) {
-			  toggler.setText(R.string.TogglerRecipe);
-			  togglerIsMap = false;
-		  } else {
-			  toggler.setText(R.string.TogglerMap);
-			  togglerIsMap = true;
-		  }
+	  public void toggleMap(View view) {
+		  togglerIsMap = true;
+	  }
+	  
+	  public void toggleRecipe(View view) {
+		  togglerIsMap = false;
 	  }
 //	@Override
 //	public boolean onCreateOptionsMenu(Menu menu) {
