@@ -259,6 +259,17 @@ public class MarketManager {
 		Market shoprite2946IslandAvenue = new Market("ShopRite",superMarketFoods,shoprite2946IslandAvenueLocation);
 		Market bottomdollar7627LindberghBlvd = new Market("bottomdollar7627LindberghBlvd",superMarketFoods,bottomdollar7627LindberghBlvdLocation);
 
+		shoprite2946IslandAvenue.setPhoneNumber("(215) 937-0327");
+		Map<String,String> shoprite2946Hours = new HashMap<String,String>();
+		shoprite2946Hours.put("Sunday","9:00 AM - 4:00 PM");
+		shoprite2946Hours.put("Monday","9:00 AM - 9:00 PM");
+		shoprite2946Hours.put("Tuesday","9:00 AM - 9:00 PM");
+		shoprite2946Hours.put("Wednesday","9:00 AM - 9:00 PM");
+		shoprite2946Hours.put("Thursday","9:00 AM - 9:00 PM");
+		shoprite2946Hours.put("Friday","9:00 AM - 9:00 PM");
+		shoprite2946Hours.put("Saturday","9:00 AM - 9:00 PM");
+		shoprite2946IslandAvenue.setHours(shoprite2946Hours);
+		
 		superMarkets.add(shoprite2946IslandAvenue);
 		superMarkets.add(bottomdollar7627LindberghBlvd);
 		

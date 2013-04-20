@@ -162,7 +162,7 @@ import com.google.android.maps.GeoPoint;
 				break;
 			}
 		}
-		return "Open today: " + hoursToday;
+		return "Hours today: " + hoursToday;
 	}
 	
 	private void markMarkets(List<Market> marketsWithActiveFood, String bitmapImage) {
