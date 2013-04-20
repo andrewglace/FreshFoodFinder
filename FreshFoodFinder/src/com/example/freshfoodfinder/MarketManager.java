@@ -224,7 +224,7 @@ public class MarketManager {
 		LatLng supreme43rdWalnutLocation = new LatLng(39.954792,-75.208733);
 		
 		Market freshGrocer40thWalnut = new Market("Fresh Grocer",superMarketFoods,freshGrocerLocation40thWalnut);
-		freshGrocer40thWalnut.setPhoneNumber("phone: (215) 222-9200");
+		freshGrocer40thWalnut.setPhoneNumber("(215) 222-9200");
 		Map<String,String> freshGrocerHours = new HashMap<String,String>();
 		freshGrocerHours.put("Sunday","12:00 AM - 12:00 AM");
 		freshGrocerHours.put("Monday","12:00 AM - 12:00 AM");
@@ -235,7 +235,17 @@ public class MarketManager {
 		freshGrocerHours.put("Saturday","12:00 AM - 12:00 AM");
 		freshGrocer40thWalnut.setHours(freshGrocerHours);
 		
-		Market supreme43rdWalnut = new Market("Supreme",superMarketFoods,supreme43rdWalnutLocation);
+		Market supreme43rdWalnut = new Market("Supreme Shop N Bag",superMarketFoods,supreme43rdWalnutLocation);
+		Map<String,String> supreme43rdWalnutHours = new HashMap<String,String>();
+		supreme43rdWalnut.setPhoneNumber("(215) 387-3070");
+		supreme43rdWalnutHours.put("Sunday","8:00 AM - 10:00 PM");
+		supreme43rdWalnutHours.put("Monday","7:00 AM - 11:00 PM");
+		supreme43rdWalnutHours.put("Tuesday","7:00 AM - 11:00 PM");
+		supreme43rdWalnutHours.put("Wednesday","7:00 AM - 11:00 PM");
+		supreme43rdWalnutHours.put("Thursday","7:00 AM - 11:00 PM");
+		supreme43rdWalnutHours.put("Friday","7:00 AM - 11:00 PM");
+		supreme43rdWalnutHours.put("Saturday","7:00 AM - 11:00 PM");
+		supreme43rdWalnut.setHours(supreme43rdWalnutHours);
 		
 		superMarkets.add(freshGrocer40thWalnut);
 		superMarkets.add(supreme43rdWalnut);
