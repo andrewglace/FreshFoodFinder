@@ -1,11 +1,14 @@
 package com.example.freshfoodfinder;
+
 import java.util.ArrayList;
+
 
 import android.location.Location;
 
 import com.google.android.gms.maps.model.LatLng;
 public class Market {
 	private String name;
+	private String phoneNumber;
 	private ArrayList<Food> foodSoldHere;
 	private LatLng location;
 	public Market(String marketName, ArrayList<Food> foods, LatLng whereIsThisMarket) throws IllegalArgumentException {

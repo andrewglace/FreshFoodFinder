@@ -5,6 +5,9 @@ import java.util.Calendar;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Criteria;
@@ -12,12 +15,11 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
+import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -124,7 +126,17 @@ import com.google.android.maps.GeoPoint;
 		}
 	}
 	
-	
+	private Dialog onCreateDialog(Bundle savedInstanceState) {
+	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+	    builder.setTitle("hey");
+	          /* .setItems(R.array.colors_array, new DialogInterface.OnClickListener() {
+	               public void onClick(DialogInterface dialog, int which) {
+	               // The 'which' argument contains the index position
+	               // of the selected item
+	           }*/
+	    
+	    return builder.create();
+	}
 	private void markMarkets(List<Market> marketsWithActiveFood, String bitmapImage) {
 		if (marketsWithActiveFood == null) return;
 		for (Market m : marketsWithActiveFood) {
@@ -133,23 +145,30 @@ import com.google.android.maps.GeoPoint;
 			.position(location)
 			.title(m.getName())
 			.icon(BitmapDescriptorFactory.fromAsset(bitmapImage)));
-			OnMarkerClickListener mcl = new OnMarkerClickListener() {
+			
+			OnInfoWindowClickListener mcl = new OnInfoWindowClickListener() {
 				
 				@Override
-				public boolean onMarkerClick(Marker marker) {
-					final Intent intent = new Intent(Intent.ACTION_VIEW,
-						       /** Using the web based turn by turn directions url. */
+				public void onInfoWindowClick(Marker marker) {
+					Bundle bundle = new Bundle();
+					bundle.putParcelable("userLocation", userLocation);
+					bundle.putParcelable("markerLatLng", marker.getPosition());
+					DialogFragment newFragment = new DirectionsDialogFragment();
+					newFragment.setArguments(bundle);
+				    newFragment.show(getFragmentManager(), "missiles");
+
+					/*final Intent intent = new Intent(Intent.ACTION_VIEW,
+						       //** Using the web based turn by turn directions url. *//*
 						       Uri.parse(
 						                "http://maps.google.com/maps?" +
 						                "saddr="+ userLocation.getLatitude()+","+userLocation.getLongitude()+
 						                "&daddr="+marker.getPosition().latitude+","+marker.getPosition().longitude+"&dirflg=w"));
 								intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-						       startActivity(intent);
+						       startActivity(intent);*/
 						 
-					return false;
 				}
 			};
-			map.setOnMarkerClickListener(mcl);
+			map.setOnInfoWindowClickListener(mcl);
 			
 
 		}
