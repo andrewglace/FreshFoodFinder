@@ -20,6 +20,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -64,8 +65,6 @@ import com.google.android.maps.GeoPoint;
 
 	map.setMyLocationEnabled(true);
 	
-	/*marketManager = new MarketManager();
-	markets = marketManager.getAllMarkets();*/
 
 	
 	//Get user location set
@@ -77,12 +76,6 @@ import com.google.android.maps.GeoPoint;
 	userLocation = locationManager.getLastKnownLocation(provider);
 	
 	LatLng userLatLng = new LatLng(userLocation.getLatitude(),userLocation.getLongitude());
-	
-	
-	/*instantiateMarkets();
-
-	instantiateSuperMarketFoodList();
-	instantiateSuperMarkets();*/
 	
 	
 	String activeFoodName = getIntent().getStringExtra("com.example.freshfoodfinder.activeFood");
@@ -104,26 +97,6 @@ import com.google.android.maps.GeoPoint;
 	
 
 	}
-	/*private void instantiateSuperMarketFoodList(){
-
-		Food apple = new Food("Apple",1, Calendar.JANUARY, Calendar.DECEMBER);
-		Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
-		Food carrot = new Food("Carrot",1, Calendar.JANUARY, Calendar.DECEMBER);
-		SuperMarketFoods = new ArrayList<Food>();
-		SuperMarketFoods.add(apple);
-		SuperMarketFoods.add(banana);
-		SuperMarketFoods.add(carrot);
-		
-	}*/
-	
-	/*private void instantiateSuperMarkets(){
-		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
-		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
-		Market freshGrocer = new Market("Fresh Grocer",SuperMarketFoods,freshGrocerLocation);
-		Market supreme = new Market("Supreme Supermarket",SuperMarketFoods,supremeLocation);
-		markets.add(supreme);
-		markets.add(freshGrocer);
-	}*/
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	// Inflate the menu; this adds items to the action bar if it is present.
@@ -131,39 +104,6 @@ import com.google.android.maps.GeoPoint;
 	return true;
 	}
 	
-	private void instantiateMarkets() {
-
-/*		Food apple = new Food("apple");
-		Food banana = new Food("banana");
-		Food carrot = new Food("carrot");
-
-		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
-		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
-		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
->>>>>>> 43ba16fd374e174b23cd345ac2e3e959518a9ae1
-		ArrayList<Food> foods = new ArrayList<Food>();
-		foods.add(apple);
-		foods.add(banana);
-		foods.add(carrot);
-
-		//This location is accurate
-		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
-		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
-		LatLng twenty3rdAndOregonShopRiteLocation = new LatLng(39.919951,-75.186009);
-		LatLng mifflinAndSwansonShopRiteLocation = new LatLng(39.923308,-75.145326);
-
-
-		Market freshGrocer = new Market("Fresh Grocer",foods,freshGrocerLocation);
-		Market supreme = new Market("Supreme Supermarket",foods,supremeLocation);
-		Market twenty3rdAndOregonShopRite = new Market("twenty3rdAndOregonShopRite",foods,twenty3rdAndOregonShopRiteLocation);
-		Market mifflinAndSwansonShopRite = new Market("mifflinAndSwansonShopRite",foods,mifflinAndSwansonShopRiteLocation);
-		freshGrocer.removeFood(apple);
-		mifflinAndSwansonShopRite.removeFood(apple);
-		markets.add(freshGrocer);
-		markets.add(supreme);
-		markets.add(twenty3rdAndOregonShopRite);
-		markets.add(mifflinAndSwansonShopRite);*/
-	}
 	
 	//This method provided by the Google Documentation
 	//* https://developers.google.com/maps/documentation/android/map
@@ -198,7 +138,8 @@ import com.google.android.maps.GeoPoint;
 			LatLng location = new LatLng(m.getLatLng().latitude,m.getLatLng().longitude);
 			Marker market = map.addMarker(new MarkerOptions()
 			.position(location)
-			.title(m.getName()));
+			.title(m.getName())
+			.icon(BitmapDescriptorFactory.fromAsset("Corner_Store-icon.bmp")));
 			OnMarkerClickListener mcl = new OnMarkerClickListener() {
 				
 				@Override
