@@ -82,9 +82,14 @@ import com.google.android.maps.GeoPoint;
 	activeFood = new Food(activeFoodName, 1, Calendar.JANUARY, Calendar.DECEMBER);
 
 	marketManager = new MarketManager(activeFood,userLocation);
+	
+	//Filtering by distance and markets that contain food are now carried out in MarketManager
 	//Make markers on map for the appropriate markets
 	markMarkets(marketManager.getWawas(),"Wawa Logo-resized.bmp");
 	markMarkets(marketManager.getCornerStores(),"Corner_Store-icon-resized.bmp");
+	markMarkets(marketManager.getSuperMarkets(),"super market icon-resized.bmp");
+	markMarkets(marketManager.getAldis(),"aldi_logo-resized.bmp");
+	markMarkets(marketManager.getFarmerMarkets(),"farmers market icon-resized.bmp");
 
 	
 	// Move the camera instantly to user's location with a zoom of 15.

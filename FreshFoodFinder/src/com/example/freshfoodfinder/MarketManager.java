@@ -55,21 +55,18 @@ public class MarketManager {
 		instantiateFarmerMarkets();
 		instantiateAldi();
 		
-		wawas = searchMarkets(wawas);
-		wawas = filterMarketsByDistance(wawas);
-		
-		superMarkets = searchMarkets(superMarkets);
-		superMarkets = filterMarketsByDistance(superMarkets);
-		
-		cornerStores = searchMarkets(cornerStores);
-		cornerStores = filterMarketsByDistance(cornerStores);
-		
-		farmerMarkets = searchMarkets(farmerMarkets);
-		farmerMarkets = filterMarketsByDistance(farmerMarkets);
-		
-		aldi = searchMarkets(aldi);
-		aldi = filterMarketsByDistance(aldi);
+		filterMarkets(wawas);
+		filterMarkets(aldi);
+		filterMarkets(superMarkets);
+		filterMarkets(farmerMarkets);
+		filterMarkets(cornerStores);
 
+	}
+	
+	private ArrayList<Market> filterMarkets(ArrayList<Market> markets) {
+		markets = searchMarkets(markets);
+		markets = filterMarketsByDistance(markets);
+		return markets;
 	}
 	
 	//Returns list of markets with the food
@@ -102,6 +99,18 @@ public class MarketManager {
 	
 	public ArrayList<Market> getWawas() {
 		return wawas;
+	}
+	
+	public ArrayList<Market> getSuperMarkets() {
+		return superMarkets;
+	}
+	
+	public ArrayList<Market> getAldis() {
+		return aldi;
+	}
+	
+	public ArrayList<Market> getFarmerMarkets() {
+		return farmerMarkets;
 	}
 	
 	//This method will be called by UserMap
