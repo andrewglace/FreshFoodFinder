@@ -1,7 +1,8 @@
 package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
-
+import java.util.HashMap;
+import java.util.Map;
 
 import android.location.Location;
 
@@ -9,7 +10,10 @@ import com.google.android.gms.maps.model.LatLng;
 public class Market {
 	private String name;
 	private String phoneNumber;
-	private String hours;
+	
+	//Maps days to hours
+	private Map<String,String> hours;
+	
 	private ArrayList<Food> foodSoldHere;
 	private LatLng location;
 	public Market(String marketName, ArrayList<Food> foods, LatLng whereIsThisMarket) throws IllegalArgumentException {
@@ -21,20 +25,20 @@ public class Market {
 		foodSoldHere = new ArrayList<Food>();
 		foodSoldHere.addAll(foods);
 		phoneNumber = "";
-		hours = "";
+		hours = new HashMap<String,String>();
 	}
 	
 	public void setPhoneNumber(String phone) {
 		phoneNumber = phone;
 	}
 	
-	public void setHours(String times) {
-		hours = times;
+	public void setHours(Map<String,String> map) {
+		hours = map;
 	}
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public String getHours() {
+	public Map<String,String> getHours() {
 		return hours;
 	}
 	public String getName(){

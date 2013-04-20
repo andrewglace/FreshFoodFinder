@@ -3,6 +3,7 @@
 	import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Map;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -126,15 +127,65 @@ import com.google.android.maps.GeoPoint;
 		}
 	}
 	
+	private String findAppropriateHours(Market market) {
+		Map<String,String> weekHours = market.getHours();
+		String hoursToday = "";
+		if (weekHours.isEmpty()) {
+			return "";
+		}
+		else  {
+			Calendar current = Calendar.getInstance();
+			int dayOfWeek = current.DAY_OF_WEEK;
+			switch(dayOfWeek) {
+			case Calendar.SUNDAY:
+				hoursToday = weekHours.get("Sunday");
+				break;
+			case Calendar.MONDAY:
+				hoursToday = weekHours.get("Monday");
+				break;
+			case Calendar.TUESDAY:
+				hoursToday = weekHours.get("Tuesday");
+				break;
+			case Calendar.WEDNESDAY:
+				hoursToday = weekHours.get("Wednesday");
+				break;
+			case Calendar.THURSDAY:
+				hoursToday = weekHours.get("Thursday");
+				break;
+			case Calendar.FRIDAY:
+				hoursToday = weekHours.get("Friday");
+				break;
+			case Calendar.SATURDAY:
+				hoursToday = weekHours.get("Saturday");
+				break;
+			default:
+				break;
+			}
+		}
+		return "Hours: " + hoursToday;
+	}
+	
 	private void markMarkets(List<Market> marketsWithActiveFood, String bitmapImage) {
 		if (marketsWithActiveFood == null) return;
 		for (Market m : marketsWithActiveFood) {
 			LatLng location = new LatLng(m.getLatLng().latitude,m.getLatLng().longitude);
+			String hoursToday = findAppropriateHours(m);
+			String phoneNumber = m.getPhoneNumber();
+			String snippet = "";
+			if (!hoursToday.equals("") && !phoneNumber.equals("")) {
+				snippet = phoneNumber + " , " + hoursToday;
+			}
+			else if (hoursToday.equals("")) {
+				snippet = phoneNumber;
+			}
+			else {
+				snippet = hoursToday;
+			}
 			map.addMarker(new MarkerOptions()
 			.position(location)
 			.title(m.getName())
 			.icon(BitmapDescriptorFactory.fromAsset(bitmapImage))
-			.snippet(m.getPhoneNumber()+" , "+m.getHours()));
+			.snippet(snippet));
 			
 			OnInfoWindowClickListener mcl = new OnInfoWindowClickListener() {
 				

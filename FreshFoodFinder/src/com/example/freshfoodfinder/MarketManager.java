@@ -2,7 +2,8 @@ package com.example.freshfoodfinder;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import android.location.Location;
 
@@ -224,7 +225,16 @@ public class MarketManager {
 		
 		Market freshGrocer40thWalnut = new Market("Fresh Grocer",superMarketFoods,freshGrocerLocation40thWalnut);
 		freshGrocer40thWalnut.setPhoneNumber("phone: (215) 222-9200");
-		freshGrocer40thWalnut.setHours("Open: 24/7");
+		Map<String,String> freshGrocerHours = new HashMap<String,String>();
+		freshGrocerHours.put("Sunday","12:00 AM - 12:00 AM");
+		freshGrocerHours.put("Monday","12:00 AM - 12:00 AM");
+		freshGrocerHours.put("Tuesday","12:00 AM - 12:00 AM");
+		freshGrocerHours.put("Wednesday","12:00 AM - 12:00 AM");
+		freshGrocerHours.put("Thursday","12:00 AM - 12:00 AM");
+		freshGrocerHours.put("Friday","12:00 AM - 12:00 AM");
+		freshGrocerHours.put("Saturday","12:00 AM - 12:00 AM");
+		freshGrocer40thWalnut.setHours(freshGrocerHours);
+		
 		Market supreme43rdWalnut = new Market("Supreme",superMarketFoods,supreme43rdWalnutLocation);
 		
 		superMarkets.add(freshGrocer40thWalnut);
