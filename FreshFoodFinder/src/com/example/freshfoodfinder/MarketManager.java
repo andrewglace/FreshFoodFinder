@@ -254,7 +254,7 @@ public class MarketManager {
 	
 	private void instantiateFarmerMarketFoods() {
 		//Supermarket foods is the entire list - we will filter seasons from this list.
-		farmerMarketFoods = Food.getSeasonalFoods(allFoods);
+		farmerMarketFoods = Food.getSeasonalFoods();
 	}
 	
 	private void instantiateAldiFoods() {
