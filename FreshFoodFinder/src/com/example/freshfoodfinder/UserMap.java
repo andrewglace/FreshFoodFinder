@@ -82,7 +82,11 @@ import com.google.android.maps.GeoPoint;
 	
 	Intent intentThatIniiatedUserMap = getIntent();
 	String activeFoodName = intentThatIniiatedUserMap.getStringExtra("activeFoodName");
-	activeFood = new Food(activeFoodName, 1, Calendar.JANUARY, Calendar.DECEMBER);
+	
+	/*Foods are compared based on their names only, so therefore giving dummy fields for 
+	 * the activeFood here does not matter
+	 */
+	activeFood = new Food(activeFoodName, 1, Calendar.JANUARY, Calendar.DECEMBER,"");
 
 	int searchRadius = intentThatIniiatedUserMap.getIntExtra("searchRadius",0);
 

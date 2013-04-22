@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -18,6 +19,7 @@ public class MainActivity extends ListActivity {
 	public static ArrayList<Food> seasonalFoods;
 	public static boolean togglerIsMap = true;
 	public static boolean isSeasonal = false;
+	public final int Recipe_ID = 1;
 	
 	//This class will manage the code for the screen involving the search bar and buttons for food
 	@Override
@@ -55,6 +57,10 @@ public class MainActivity extends ListActivity {
 		    i.putExtra("activeFoodName", activeFood.getName());
 		    
 		    startActivityForResult(i,UserMap_ID);*/
+	    }
+	    else {
+	    	Intent viewIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(activeFood.getRecipeSite()));  
+	    	startActivityForResult(viewIntent,Recipe_ID);
 	    }
 	    
 	  }

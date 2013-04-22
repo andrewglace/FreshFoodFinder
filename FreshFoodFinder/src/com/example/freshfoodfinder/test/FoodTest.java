@@ -13,13 +13,13 @@ public class FoodTest {
 	public Food apple, banana, carrot, mango, appLE;
 	@Before
 	public void setUp() throws Exception {
-		apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
-		appLE = new Food("appLE", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER,"");
+		appLE = new Food("appLE", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER,"");
 	}
 
 	@Test
 	public void testEquality() {
-		Food myApple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
+		Food myApple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER,"");
 		
 		assertEquals(apple, myApple);
 		assertEquals(apple.hashCode(), myApple.hashCode());
