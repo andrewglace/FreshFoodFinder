@@ -195,7 +195,7 @@ public class MarketManager {
 		superMarketFoods.add(Food.cherry );
 		superMarketFoods.add(Food.clementine);
 		superMarketFoods.add(Food.coconut );
-		superMarketFoods.add(Food.data );
+		superMarketFoods.add(Food.date );
 		superMarketFoods.add(Food.fig );
 		superMarketFoods.add(Food.grape);
 		superMarketFoods.add(Food.grapeFruit);
@@ -254,7 +254,7 @@ public class MarketManager {
 	
 	private void instantiateFarmerMarketFoods() {
 		//Supermarket foods is the entire list - we will filter seasons from this list.
-		farmerMarketFoods = Food.getSeasonalFoods(superMarketFoods);
+		farmerMarketFoods = Food.getSeasonalFoods();
 	}
 	
 	private void instantiateAldiFoods() {
