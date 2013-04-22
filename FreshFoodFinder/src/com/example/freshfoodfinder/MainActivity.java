@@ -42,17 +42,20 @@ public class MainActivity extends ListActivity {
 	    // Get the item that was clicked
 	    Food foodClickedByUser = (Food) this.getListAdapter().getItem(position);
 	    activeFood = foodClickedByUser;
-	    Bundle bundle = new Bundle();
-	    bundle.putString("activeFoodName",activeFood.getName());
-	    SearchRadiusDialogFragment searchRadiusQuery = new SearchRadiusDialogFragment();
-	    searchRadiusQuery.setArguments(bundle);
-	    searchRadiusQuery.show(getFragmentManager(), "search radius");
-	    /*Intent i = new Intent(this, SearchRadiusDialogFragment.class);
 	    
-	    //Puts the name of the active food into the UserMap activity
-	    i.putExtra("activeFoodName", activeFood.getName());
-	    
-	    startActivityForResult(i,UserMap_ID);*/
+	    if (togglerIsMap) {
+		    Bundle bundle = new Bundle();
+		    bundle.putString("activeFoodName",activeFood.getName());
+		    SearchRadiusDialogFragment searchRadiusQuery = new SearchRadiusDialogFragment();
+		    searchRadiusQuery.setArguments(bundle);
+		    searchRadiusQuery.show(getFragmentManager(), "search radius");
+		    /*Intent i = new Intent(this, SearchRadiusDialogFragment.class);
+		    
+		    //Puts the name of the active food into the UserMap activity
+		    i.putExtra("activeFoodName", activeFood.getName());
+		    
+		    startActivityForResult(i,UserMap_ID);*/
+	    }
 	    
 	  }
 	  
