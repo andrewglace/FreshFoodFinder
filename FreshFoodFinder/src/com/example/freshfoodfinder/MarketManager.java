@@ -127,41 +127,124 @@ public class MarketManager {
 		return allMarkets;
 	}
 	private void instantiatesuperMarketFoods() {
-		superMarketFoods.addAll(Food.getAllFoods());
+		superMarketFoods.add(Food.asparagus); 
+		superMarketFoods.add(Food.artichoke); 
+		superMarketFoods.add(Food.arugula ); 
+		superMarketFoods.add(Food.beets ); 
+		superMarketFoods.add(Food.beetroot ); 
+		superMarketFoods.add(Food.bellPepper);  
+		superMarketFoods.add(Food.blackEyedPeas ); 
+		superMarketFoods.add(Food.broccoli ); 
+		superMarketFoods.add(Food.brusselsSprouts); 
+		superMarketFoods.add(Food.cabbage ); 
+		superMarketFoods.add(Food.carrot); 
+		superMarketFoods.add(Food.cauliflower ); 
+		superMarketFoods.add(Food.celery);  
+		superMarketFoods.add(Food.collardGreens); 
+		superMarketFoods.add(Food.cucumber); 
+		superMarketFoods.add(Food.daikon); 
+		superMarketFoods.add(Food.eggplant); 
+		superMarketFoods.add(Food.florenceFennel); 
+		superMarketFoods.add(Food.garlic); 
+		superMarketFoods.add(Food.garbanzo); 
+		superMarketFoods.add(Food.ginger);
+		superMarketFoods.add(Food.greenBeans); 
+		superMarketFoods.add(Food.kale); 
+		superMarketFoods.add(Food.leek);
+		superMarketFoods.add(Food.lentil); 
+		superMarketFoods.add(Food.lettuce); 
+		superMarketFoods.add(Food.limaBean);
+		superMarketFoods.add(Food.mustard); 
+		superMarketFoods.add(Food.okra); 
+		superMarketFoods.add(Food.onion); 
+		superMarketFoods.add(Food.parsnip); 
+		superMarketFoods.add(Food.peas); 
+		superMarketFoods.add(Food.pumpkin);
+		superMarketFoods.add(Food.potato);
+		superMarketFoods.add(Food.scallion);
+		superMarketFoods.add(Food.shallot); 
+		superMarketFoods.add(Food.snapPea); 
+		superMarketFoods.add(Food.snowPea);
+		superMarketFoods.add(Food.soybean);
+		superMarketFoods.add(Food.spinach);
+		superMarketFoods.add(Food.squash); 
+		superMarketFoods.add(Food.sweetCorn); 
+		superMarketFoods.add(Food.sweetPepper);
+		superMarketFoods.add(Food.sweetPotato); 
+		superMarketFoods.add(Food.swissChard);
+		superMarketFoods.add(Food.radish); 
+		superMarketFoods.add(Food.tomato); 
+		superMarketFoods.add(Food.turnip); 
+		superMarketFoods.add(Food.turnipGreens); 
+		superMarketFoods.add(Food.yam); 
+		superMarketFoods.add(Food.zucchini);
+		
+		//Fruits
+		superMarketFoods.add(Food.apple);
+		superMarketFoods.add(Food.apricot);
+		superMarketFoods.add(Food.avocado);
+		superMarketFoods.add(Food.banana);
+		superMarketFoods.add(Food.blackberry);
+		superMarketFoods.add(Food.blueberry);
+		superMarketFoods.add(Food.cantaloupe);
+		superMarketFoods.add(Food.cherry );
+		superMarketFoods.add(Food.clementine);
+		superMarketFoods.add(Food.coconut );
+		superMarketFoods.add(Food.data );
+		superMarketFoods.add(Food.fig );
+		superMarketFoods.add(Food.grape);
+		superMarketFoods.add(Food.grapeFruit);
+		superMarketFoods.add(Food.honeydew);
+		superMarketFoods.add(Food.kiwi);
+		superMarketFoods.add(Food.lemon);
+		superMarketFoods.add(Food.lime);
+		superMarketFoods.add(Food.mango);
+		superMarketFoods.add(Food.nectarine);
+		superMarketFoods.add(Food.orange );
+		superMarketFoods.add(Food.peach);
+		superMarketFoods.add(Food.pear);
+		superMarketFoods.add(Food.plum );	
+		superMarketFoods.add(Food.pineapple );
+		superMarketFoods.add(Food.pomegranate);
+		superMarketFoods.add(Food.raspberry);
+		superMarketFoods.add(Food.strawberry);
+		superMarketFoods.add(Food.tangerine);
+		superMarketFoods.add(Food.watermelon);
+		//superMarketFoods.addAll(Food.getAllFoods());
 	}
 	
 	private void instantiateWawaFoods() {
-		Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
-		wawaFoods.add(banana);
+		//Food banana = new Food("Banana",1, Calendar.JANUARY, Calendar.DECEMBER);
+		wawaFoods.add(Food.banana);
 	}
 
 	private void instantiateCornerStoreFoods() {
-		cornerStoreFoods.add(new Food("Banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Kiwi fruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Lemon", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Lime", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Orange", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Beets", Food.FOOD_VEG, Calendar.JUNE, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Bell pepper", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Black-eyed peas", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Brussels sprouts", Food.FOOD_VEG, Calendar.SEPTEMBER, Calendar.NOVEMBER));
-		cornerStoreFoods.add(new Food("Collard Greens", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Cucumber", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Eggplant", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
-		cornerStoreFoods.add(new Food("Leek", Food.FOOD_VEG, Calendar.AUGUST, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Lettuce", Food.FOOD_VEG, Calendar.MAY, Calendar.OCTOBER));
-		cornerStoreFoods.add(new Food("Mustard", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Onion", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
-		cornerStoreFoods.add(new Food("Potato", Food.FOOD_VEG, Calendar.JULY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Spinach", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
-		cornerStoreFoods.add(new Food("Squash", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));//AND AGUST-DECEMBER
-		cornerStoreFoods.add(new Food("Sweet corn", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Sweet pepper", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
-		cornerStoreFoods.add(new Food("Sweet potato", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Radish", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
-		cornerStoreFoods.add(new Food("Tomato", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
-		cornerStoreFoods.add(new Food("Yam", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		cornerStoreFoods.add(new Food("Zucchini", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
+		cornerStoreFoods.add(Food.banana);
+		cornerStoreFoods.add(Food.kiwi);
+		cornerStoreFoods.add(Food.lemon);
+		cornerStoreFoods.add(Food.lime);
+		cornerStoreFoods.add(Food.orange);
+		cornerStoreFoods.add(Food.beets);
+		cornerStoreFoods.add(Food.bellPepper);
+		cornerStoreFoods.add(Food.blackEyedPeas);
+		cornerStoreFoods.add(Food.brusselsSprouts);
+		cornerStoreFoods.add(Food.collardGreens);
+		cornerStoreFoods.add(Food.cucumber);
+		cornerStoreFoods.add(Food.eggplant);
+		cornerStoreFoods.add(Food.leek);
+		cornerStoreFoods.add(Food.lettuce);
+		cornerStoreFoods.add(Food.mustard);
+		cornerStoreFoods.add(Food.onion);
+		cornerStoreFoods.add(Food.potato);
+		cornerStoreFoods.add(Food.spinach);
+		cornerStoreFoods.add(Food.squash);
+		cornerStoreFoods.add(Food.sweetCorn);
+		cornerStoreFoods.add(Food.sweetPepper);
+		cornerStoreFoods.add(Food.sweetPotato);
+		cornerStoreFoods.add(Food.radish);
+		cornerStoreFoods.add(Food.tomato);
+		cornerStoreFoods.add(Food.yam);
+		cornerStoreFoods.add(Food.zucchini);
 	}
 	
 	private void instantiateFarmerMarketFoods() {
@@ -171,50 +254,50 @@ public class MarketManager {
 	
 	private void instantiateAldiFoods() {
 	
-		alDiFoods.add(new Food("Asparagus", Food.FOOD_VEG, Calendar.MAY, Calendar.JUNE));
-		alDiFoods.add(new Food("Arugula", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Bell pepper", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Broccoli", Food.FOOD_VEG, Calendar.JUNE, Calendar.NOVEMBER));
-		alDiFoods.add(new Food("Cabbage", Food.FOOD_VEG, Calendar.JUNE, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Carrot", Food.FOOD_VEG, Calendar.JUNE, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Cauliflower", Food.FOOD_VEG, Calendar.AUGUST, Calendar.NOVEMBER));
-		alDiFoods.add(new Food("Celery", Food.FOOD_VEG, Calendar.AUGUST, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Cucumber", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Garlic", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));//STORED YEAR ROUND THOUGH
-		alDiFoods.add(new Food("Green Beans", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Lettuce", Food.FOOD_VEG, Calendar.MAY, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Onion", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Pumpkin", Food.FOOD_VEG, Calendar.SEPTEMBER, Calendar.NOVEMBER));
-		alDiFoods.add(new Food("Potato", Food.FOOD_VEG, Calendar.JULY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Spinach", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Sweet corn", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Sweet pepper", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Sweet potato", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Radish", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Tomato", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Yam", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Zucchini", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Apple", Food.FOOD_FRUIT, Calendar.JULY, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Avocado", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Blackberry", Food.FOOD_FRUIT, Calendar.JULY, Calendar.AUGUST));
-		alDiFoods.add(new Food("Blueberry", Food.FOOD_FRUIT, Calendar.JULY, Calendar.AUGUST));
-		alDiFoods.add(new Food("Cantaloupe", Food.FOOD_FRUIT, Calendar.AUGUST, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Clementine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Grape", Food.FOOD_FRUIT, Calendar.SEPTEMBER, Calendar.OCTOBER));
-		alDiFoods.add(new Food("Grapefruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Kiwi fruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Lemon", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Lime", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Nectarine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Orange", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Peach", Food.FOOD_FRUIT, Calendar.JULY, Calendar.SEPTEMBER));
-		alDiFoods.add(new Food("Pear", Food.FOOD_FRUIT, Calendar.AUGUST, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Plum", Food.FOOD_FRUIT, Calendar.AUGUST, Calendar.SEPTEMBER));	
-		alDiFoods.add(new Food("Pineapple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Raspberry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
-		alDiFoods.add(new Food("Strawberry", Food.FOOD_FRUIT, Calendar.JUNE, Calendar.JUNE));
+		alDiFoods.add(Food.asparagus("Asparagus", Food.FOOD_VEG, Calendar.MAY, Calendar.JUNE));
+		alDiFoods.add(Food.arugula("Arugula", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.bellPepper("Bell pepper", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.broccoli("Broccoli", Food.FOOD_VEG, Calendar.JUNE, Calendar.NOVEMBER));
+		alDiFoods.add(Food.cabbage("Cabbage", Food.FOOD_VEG, Calendar.JUNE, Calendar.OCTOBER));
+		alDiFoods.add(Food.carrot("Carrot", Food.FOOD_VEG, Calendar.JUNE, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.cauliflower("Cauliflower", Food.FOOD_VEG, Calendar.AUGUST, Calendar.NOVEMBER));
+		alDiFoods.add(Food.celery("Celery", Food.FOOD_VEG, Calendar.AUGUST, Calendar.OCTOBER));
+		alDiFoods.add(Food.cucumber("Cucumber", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.garlic("Garlic", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));//STORED YEAR ROUND THOUGH
+		alDiFoods.add(Food.greenBeans("Green Beans", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.lettuce("Lettuce", Food.FOOD_VEG, Calendar.MAY, Calendar.OCTOBER));
+		alDiFoods.add(Food.onion("Onion", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
+		alDiFoods.add(Food.pumpkin("Pumpkin", Food.FOOD_VEG, Calendar.SEPTEMBER, Calendar.NOVEMBER));
+		alDiFoods.add(Food.potato("Potato", Food.FOOD_VEG, Calendar.JULY, Calendar.DECEMBER));
+		alDiFoods.add(Food.spinach("Spinach", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.sweetCorn("Sweet corn", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.sweetPepper("Sweet pepper", Food.FOOD_VEG, Calendar.JULY, Calendar.OCTOBER));
+		alDiFoods.add(Food.sweetPotato("Sweet potato", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.radish("Radish", Food.FOOD_VEG, Calendar.MAY, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.tomato("Tomato", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.yam("Yam", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.zucchini("Zucchini", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.apple("Apple", Food.FOOD_FRUIT, Calendar.JULY, Calendar.OCTOBER));
+		alDiFoods.add(Food.avocado("Avocado", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.banana("Banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Blackberry", Food.FOOD_FRUIT, Calendar.JULY, Calendar.AUGUST));
+		alDiFoods.add(Food.("Blueberry", Food.FOOD_FRUIT, Calendar.JULY, Calendar.AUGUST));
+		alDiFoods.add(Food.("Cantaloupe", Food.FOOD_FRUIT, Calendar.AUGUST, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.("Clementine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Grape", Food.FOOD_FRUIT, Calendar.SEPTEMBER, Calendar.OCTOBER));
+		alDiFoods.add(Food.("Grapefruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Kiwi fruit", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Lemon", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Lime", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Mango", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Nectarine", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Orange", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Peach", Food.FOOD_FRUIT, Calendar.JULY, Calendar.SEPTEMBER));
+		alDiFoods.add(Food.("Pear", Food.FOOD_FRUIT, Calendar.AUGUST, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Plum", Food.FOOD_FRUIT, Calendar.AUGUST, Calendar.SEPTEMBER));	
+		alDiFoods.add(Food.("Pineapple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Raspberry", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER));
+		alDiFoods.add(Food.("Strawberry", Food.FOOD_FRUIT, Calendar.JUNE, Calendar.JUNE));
 	}
 	
 	private void instantiateSuperMarkets() {
