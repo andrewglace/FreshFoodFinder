@@ -1120,32 +1120,95 @@ public class MarketManager {
 		LatLng LancasterAveLocation = new LatLng(39.959566,-75.197051);
 		Market LancasterAve = new Market("Lancaster Ave", farmerMarketFoods, LancasterAveLocation);
 		farmerMarkets.add(LancasterAve);
+		Map<String,String> LancasterAveHours = new HashMap<String,String>();
+		LancasterAveHours.put("Sunday","CLOSED");
+		LancasterAveHours.put("Monday","CLOSED");
+		LancasterAveHours.put("Tuesday","CLOSED");
+		LancasterAveHours.put("Wednesday","CLOSED");
+		LancasterAveHours.put("Thursday","CLOSED");
+		LancasterAveHours.put("Friday","CLOSED");
+		LancasterAveHours.put("Saturday","10:00 AM - 02:00 PM");
+		LancasterAve.setHours(LancasterAveHours);
 		
 		LatLng UniversitySquareLocation = new LatLng(39.953147,-75.194782);
 		Market UniversitySquare = new Market("University Square", farmerMarketFoods, UniversitySquareLocation);
 		farmerMarkets.add(UniversitySquare);
+		Map<String,String> UniversitySquareHours = new HashMap<String,String>();
+		UniversitySquareHours.put("Sunday","CLOSED");
+		UniversitySquareHours.put("Monday","CLOSED");
+		UniversitySquareHours.put("Tuesday","CLOSED");
+		UniversitySquareHours.put("Wednesday","10:00 AM - 03:00 PM");
+		UniversitySquareHours.put("Thursday","CLOSED");
+		UniversitySquareHours.put("Friday","CLOSED");
+		UniversitySquareHours.put("Saturday","CLOSED");
+		UniversitySquare.setHours(UniversitySquareHours);
 		
 		LatLng DrexelUniversityLocation = new LatLng(39.955612,-75.189485);
 		Market DrexelUniversity = new Market("Drexel University", farmerMarketFoods, DrexelUniversityLocation);
 		farmerMarkets.add(DrexelUniversity);
+		Map<String,String> DrexelUniversityHours = new HashMap<String,String>();
+		DrexelUniversityHours.put("Sunday","CLOSED");
+		DrexelUniversityHours.put("Monday","CLOSED");
+		DrexelUniversityHours.put("Tuesday","11:00 AM - 03:00 PM");
+		DrexelUniversityHours.put("Wednesday","CLOSED");
+		DrexelUniversityHours.put("Thursday","CLOSED");
+		DrexelUniversityHours.put("Friday","CLOSED");
+		DrexelUniversityHours.put("Saturday","CLOSED");
+		DrexelUniversity.setHours(DrexelUniversityHours);
 		
 		LatLng ThePorchAt30thLocation = new LatLng(39.954608,-75.185049);
 		Market ThePorchAt30th = new Market("The Porch at 30th St Station", farmerMarketFoods, ThePorchAt30thLocation);
 		farmerMarkets.add(ThePorchAt30th);
+		Map<String,String> ThePorchAt30thHours = new HashMap<String,String>();
+		ThePorchAt30thHours.put("Sunday","CLOSED");
+		ThePorchAt30thHours.put("Monday","CLOSED");
+		ThePorchAt30thHours.put("Tuesday","11:00 AM - 02:00 PM");
+		ThePorchAt30thHours.put("Wednesday","CLOSED");
+		ThePorchAt30thHours.put("Thursday","CLOSED");
+		ThePorchAt30thHours.put("Friday","CLOSED");
+		ThePorchAt30thHours.put("Saturday","CLOSED");
+		ThePorchAt30th.setHours(ThePorchAt30thHours);
 		
 //		19143
 		LatLng _58thandChesterLocation = new LatLng(39.935732,-75.228533);
 		Market _58thandChester = new Market("58th & Chester (Kingsessing)", farmerMarketFoods, _58thandChesterLocation);
 		farmerMarkets.add(_58thandChester);
+		Map<String,String> _58thandChesterHours = new HashMap<String,String>();
+		_58thandChesterHours.put("Sunday","CLOSED");
+		_58thandChesterHours.put("Monday","CLOSED");
+		_58thandChesterHours.put("Tuesday","CLOSED");
+		_58thandChesterHours.put("Wednesday","02:00 PM - 06:00 PM");
+		_58thandChesterHours.put("Thursday","CLOSED");
+		_58thandChesterHours.put("Friday","CLOSED");
+		_58thandChesterHours.put("Saturday","CLOSED");
+		_58thandChester.setHours(_58thandChesterHours);
 		
 		LatLng Farm51Location = new LatLng(39.942425,-75.219051);
 		Market Farm51 = new Market("Farm 51", farmerMarketFoods, Farm51Location);
 		farmerMarkets.add(Farm51);
+		Map<String,String> Farm51Hours = new HashMap<String,String>();
+		Farm51Hours.put("Sunday","CLOSED");
+		Farm51Hours.put("Monday","CLOSED");
+		Farm51Hours.put("Tuesday","CLOSED");
+		Farm51Hours.put("Wednesday","CLOSED");
+		Farm51Hours.put("Thursday","02:00 PM - 06:00 PM");
+		Farm51Hours.put("Friday","CLOSED");
+		Farm51Hours.put("Saturday","10:00 AM - 2:00 PM");
+		Farm51.setHours(Farm51Hours);
 		
 		LatLng ClarkParkLocation = new LatLng(39.949573,-75.20924);
 		Market ClarkPark = new Market("Clark Park (both days)", farmerMarketFoods, ClarkParkLocation);
 		farmerMarkets.add(ClarkPark);
-		
+		Map<String,String> ClarkParkHours = new HashMap<String,String>();
+		ClarkParkHours.put("Sunday","CLOSED");
+		ClarkParkHours.put("Monday","CLOSED");
+		ClarkParkHours.put("Tuesday","CLOSED");
+		ClarkParkHours.put("Wednesday","CLOSED");
+		ClarkParkHours.put("Thursday","04:30 PM - 07:00 PM");
+		ClarkParkHours.put("Friday","CLOSED");
+		ClarkParkHours.put("Saturday","CLOSED");
+		ClarkPark.setHours(ClarkParkHours);
+		//Th 2-6; Sat 10-2
 		
 //		19142 - none
 //		19153 - none
@@ -1155,56 +1218,159 @@ public class MarketManager {
 		LatLng _22ndandTaskarLocation = new LatLng(39.939628,-75.18664);
 		Market _22ndandTaskar = new Market("22nd & Taskar (Point Breeze)", farmerMarketFoods, _22ndandTaskarLocation);
 		farmerMarkets.add(_22ndandTaskar);
-		
+		Map<String,String> _22ndandTaskarHours = new HashMap<String,String>();
+		_22ndandTaskarHours.put("Sunday","CLOSED");
+		_22ndandTaskarHours.put("Monday","CLOSED");
+		_22ndandTaskarHours.put("Tuesday","02:00 PM - 06:00 PM");
+		_22ndandTaskarHours.put("Wednesday","CLOSED");
+		_22ndandTaskarHours.put("Thursday","CLOSED");
+		_22ndandTaskarHours.put("Friday","CLOSED");
+		_22ndandTaskarHours.put("Saturday","CLOSED");
+		_22ndandTaskar.setHours(_22ndandTaskarHours);
 		LatLng _29thandWhartonLocation = new LatLng(39.93729,-75.192046);
 		Market _29thandWharton = new Market("29th & Wharton (Grays Ferry)", farmerMarketFoods, _29thandWhartonLocation);
 		farmerMarkets.add(_29thandWharton);
-		
+		Map<String,String> _29thandWhartonHours = new HashMap<String,String>();
+		_29thandWhartonHours.put("Sunday","CLOSED");
+		_29thandWhartonHours.put("Monday","CLOSED");
+		_29thandWhartonHours.put("Tuesday","02:00 PM - 06:00 PM");
+		_29thandWhartonHours.put("Wednesday","CLOSED");
+		_29thandWhartonHours.put("Thursday","CLOSED");
+		_29thandWhartonHours.put("Friday","CLOSED");
+		_29thandWhartonHours.put("Saturday","CLOSED");
+		_29thandWharton.setHours(_29thandWhartonHours);
 //		19130
 		LatLng Girardand27thLocation = new LatLng(39.974189,-75.180434);
 		Market Girardand27th = new Market ("Girard & 27th", farmerMarketFoods, Girardand27thLocation);
 		farmerMarkets.add(Girardand27th);
+		Map<String,String> Girardand27thHours = new HashMap<String,String>();
+		Girardand27thHours.put("Sunday","CLOSED");
+		Girardand27thHours.put("Monday","CLOSED");
+		Girardand27thHours.put("Tuesday","CLOSED");
+		Girardand27thHours.put("Wednesday","CLOSED");
+		Girardand27thHours.put("Thursday","CLOSED");
+		Girardand27thHours.put("Friday","CLOSED");
+		Girardand27thHours.put("Saturday","10:00 AM - 01:00 PM");
+		Girardand27th.setHours(Girardand27thHours);
 		
 		LatLng FairmountLocation = new LatLng(39.967307,-75.17375);
 		Market Fairmount = new Market("Fairmount", farmerMarketFoods, FairmountLocation);
 		farmerMarkets.add(Fairmount);
+		Map<String,String> FairmountHours = new HashMap<String,String>();
+		FairmountHours.put("Sunday","CLOSED");
+		FairmountHours.put("Monday","CLOSED");
+		FairmountHours.put("Tuesday","CLOSED");
+		FairmountHours.put("Wednesday","CLOSED");
+		FairmountHours.put("Thursday","03:00 PM - 07:00 PM");
+		FairmountHours.put("Friday","CLOSED");
+		FairmountHours.put("Saturday","CLOSED");
+		Fairmount.setHours(FairmountHours);
 
 		LatLng FrancisvilleLocation = new LatLng(39.966664,-75.160521);
 		Market Francisville = new Market("Francisville", farmerMarketFoods, FrancisvilleLocation);
 		farmerMarkets.add(Francisville);		
-		
+		Map<String,String> FrancisvilleHours = new HashMap<String,String>();
+		FrancisvilleHours.put("Sunday","CLOSED");
+		FrancisvilleHours.put("Monday","CLOSED");
+		FrancisvilleHours.put("Tuesday","CLOSED");
+		FrancisvilleHours.put("Wednesday","CLOSED");
+		FrancisvilleHours.put("Thursday","CLOSED");
+		FrancisvilleHours.put("Friday","CLOSED");
+		FrancisvilleHours.put("Saturday","10:00 AM - 01:00 PM");
+		Francisville.setHours(FrancisvilleHours);
 //		19121
 		LatLng _33rdandDiamondLocation = new LatLng(39.984092,-75.180803);
 		Market _33rdandDiamond = new Market("33rd & Diamond (Strawberry Mansion)", farmerMarketFoods, _33rdandDiamondLocation);
 		farmerMarkets.add(_33rdandDiamond);
-
+		Map<String,String> _33rdandDiamondHours = new HashMap<String,String>();
+		_33rdandDiamondHours.put("Sunday","CLOSED");
+		_33rdandDiamondHours.put("Monday","CLOSED");
+		_33rdandDiamondHours.put("Tuesday","02:00 AM - 06:00 PM");
+		_33rdandDiamondHours.put("Wednesday","CLOSED");
+		_33rdandDiamondHours.put("Thursday","CLOSED");
+		_33rdandDiamondHours.put("Friday","CLOSED");
+		_33rdandDiamondHours.put("Saturday","CLOSED");
+		_33rdandDiamond.setHours(_33rdandDiamondHours);
+		
 		LatLng NewGrowthProjectLocation = new LatLng(39.977188,-75.179779);
 		Market NewGrowthProject = new Market("New Growth Project", farmerMarketFoods, NewGrowthProjectLocation);
 		farmerMarkets.add(NewGrowthProject);
+		Map<String,String> NewGrowthProjectHours = new HashMap<String,String>();
+		NewGrowthProjectHours.put("Sunday","CLOSED");
+		NewGrowthProjectHours.put("Monday","CLOSED");
+		NewGrowthProjectHours.put("Tuesday","CLOSED");
+		NewGrowthProjectHours.put("Wednesday","CLOSED");
+		NewGrowthProjectHours.put("Thursday","CLOSED");
+		NewGrowthProjectHours.put("Friday","CLOSED");
+		NewGrowthProjectHours.put("Saturday","09:30 AM - 02:30 PM");
+		NewGrowthProject.setHours(NewGrowthProjectHours);
 		
 		
 //		19131
 		LatLng MSFPHeritageFarmLocation = new LatLng(39.997332,-75.216695);
 		Market MSFPHeritageFarm = new Market("MSFP Heritage Farm", farmerMarketFoods, MSFPHeritageFarmLocation);
 		farmerMarkets.add(MSFPHeritageFarm);
+		Map<String,String> MSFPHeritageFarmHours = new HashMap<String,String>();
+		MSFPHeritageFarmHours.put("Sunday","CLOSED");
+		MSFPHeritageFarmHours.put("Monday","CLOSED");
+		MSFPHeritageFarmHours.put("Tuesday","CLOSED");
+		MSFPHeritageFarmHours.put("Wednesday","CLOSED");
+		MSFPHeritageFarmHours.put("Thursday","CLOSED");
+		MSFPHeritageFarmHours.put("Friday","03:00 PAM - 06:00 PM");
+		MSFPHeritageFarmHours.put("Saturday","CLOSED");
+		MSFPHeritageFarm.setHours(MSFPHeritageFarmHours);
 		
 		LatLng UrbanTreeHarvestFarmstandLocation = new LatLng(39.969937,-75.230496);
 		Market UrbanTreeHarvestFarmstand = new Market("Urban Tree Harvest Farmstand", farmerMarketFoods, UrbanTreeHarvestFarmstandLocation);
 		farmerMarkets.add(UrbanTreeHarvestFarmstand);
-		
+		Map<String,String> UrbanTreeHarvestFarmstandHours = new HashMap<String,String>();
+		UrbanTreeHarvestFarmstandHours.put("Sunday","CLOSED");
+		UrbanTreeHarvestFarmstandHours.put("Monday","CLOSED");
+		UrbanTreeHarvestFarmstandHours.put("Tuesday","CLOSED");
+		UrbanTreeHarvestFarmstandHours.put("Wednesday","CLOSED");
+		UrbanTreeHarvestFarmstandHours.put("Thursday","CLOSED");
+		UrbanTreeHarvestFarmstandHours.put("Friday","03:00 PAM - 06:00 PM");
+		UrbanTreeHarvestFarmstandHours.put("Saturday","CLOSED");
+		UrbanTreeHarvestFarmstand.setHours(UrbanTreeHarvestFarmstandHours);
 //		19139
 		LatLng HaddingtonLocation = new LatLng(39.96498,-75.224606);
 		Market Haddington = new Market ("Haddington - both days", farmerMarketFoods, HaddingtonLocation);
 		farmerMarkets.add(Haddington);
+		Map<String,String> HaddingtonHours = new HashMap<String,String>();
+		HaddingtonHours.put("Sunday","CLOSED");
+		HaddingtonHours.put("Monday","CLOSED");
+		HaddingtonHours.put("Tuesday","CLOSED");
+		HaddingtonHours.put("Wednesday","01:00 PM - 05:00 PM");
+		HaddingtonHours.put("Thursday","CLOSED");
+		HaddingtonHours.put("Friday","01:00 PM - 05:00 PM");
+		HaddingtonHours.put("Saturday","CLOSED");
+		Haddington.setHours(HaddingtonHours);
 		
 		LatLng MillCreekFarmLocation = new LatLng(39.966121,-75.2185);
 		Market MillCreekFarm = new Market("Mill Creek Farm", farmerMarketFoods, MillCreekFarmLocation);
 		farmerMarkets.add(MillCreekFarm);
-		
+		Map<String,String> MillCreekFarmHours = new HashMap<String,String>();
+		MillCreekFarmHours.put("Sunday","CLOSED");
+		MillCreekFarmHours.put("Monday","CLOSED");
+		MillCreekFarmHours.put("Tuesday","CLOSED");
+		MillCreekFarmHours.put("Wednesday","CLOSED");
+		MillCreekFarmHours.put("Thursday","CLOSED");
+		MillCreekFarmHours.put("Friday","CLOSED");
+		MillCreekFarmHours.put("Saturday","11:00 AM - 02:00 PM");
+		MillCreekFarm.setHours(MillCreekFarmHours);
 		LatLng WalnutHillFarmstandLocation = new LatLng(39.958301,-75.213523);
 		Market WalnutHillFarmstand = new Market("Walnut Hill Farmstand", farmerMarketFoods, WalnutHillFarmstandLocation);
+		
 		farmerMarkets.add(WalnutHillFarmstand);
-	
+		Map<String,String> WalnutHillFarmstandHours = new HashMap<String,String>();
+		WalnutHillFarmstandHours.put("Sunday","CLOSED");
+		WalnutHillFarmstandHours.put("Monday","CLOSED");
+		WalnutHillFarmstandHours.put("Tuesday","03:30 AM - 06:30 PM");
+		WalnutHillFarmstandHours.put("Wednesday","CLOSED");
+		WalnutHillFarmstandHours.put("Thursday","CLOSED");
+		WalnutHillFarmstandHours.put("Friday","03:30 AM - 06:30 PM");
+		WalnutHillFarmstandHours.put("Saturday","CLOSED");
+		WalnutHillFarmstand.setHours(WalnutHillFarmstandHours);
 		
 	}
 	
