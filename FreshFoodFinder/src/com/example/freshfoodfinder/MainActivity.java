@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RadioButton;
 
@@ -29,7 +30,7 @@ public class MainActivity extends ListActivity {
 		setContentView(R.layout.activity_main);
 		
 		allFoods = Food.getAllFoods();
-		seasonalFoods = Food.getSeasonalFoods(allFoods);
+		seasonalFoods = Food.getSeasonalFoods();
 		
 		ColoredArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 		        android.R.layout.simple_list_item_1, allFoods);
@@ -66,14 +67,18 @@ public class MainActivity extends ListActivity {
 	  }
 	  
 	  public void goSeasonal(View view) {
+		  Button button = (Button)view;
 		  if (isSeasonal) {
 			  isSeasonal = false;
-			 ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
+			  button.setText(R.string.UnSeasonal);
+			  ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 					  android.R.layout.simple_list_item_1, allFoods);
 			  setListAdapter(adapter);
+			  
 		  }
 		  else {
 			  isSeasonal = true;
+			  button.setText(R.string.Seasonal);
 			  ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 					  android.R.layout.simple_list_item_1, seasonalFoods);
 			  setListAdapter(adapter);

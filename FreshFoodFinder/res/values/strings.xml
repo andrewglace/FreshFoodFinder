@@ -14,5 +14,6 @@
     <string name="SeasonalNone">There are no foods currently in season.</string>
     <string name="pick_color">Pick a Colo</string>
     <string name="searchRadiusQuestion">How far away would you like to search?</string>
+    <string name="UnSeasonal">Display All</string>
 
 </resources>
