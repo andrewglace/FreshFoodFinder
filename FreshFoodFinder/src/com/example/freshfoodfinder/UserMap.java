@@ -80,11 +80,13 @@ import com.google.android.maps.GeoPoint;
 	
 	LatLng userLatLng = new LatLng(userLocation.getLatitude(),userLocation.getLongitude());
 	
-	
-	String activeFoodName = getIntent().getStringExtra("com.example.freshfoodfinder.activeFood");
+	Intent intentThatIniiatedUserMap = getIntent();
+	String activeFoodName = intentThatIniiatedUserMap.getStringExtra("activeFoodName");
 	activeFood = new Food(activeFoodName, 1, Calendar.JANUARY, Calendar.DECEMBER);
 
-	marketManager = new MarketManager(activeFood,userLocation);
+	int searchRadius = intentThatIniiatedUserMap.getIntExtra("searchRadius",0);
+
+	marketManager = new MarketManager(activeFood,userLocation,searchRadius);
 	
 	//Filtering by distance and markets that contain food are now carried out in MarketManager
 	//Make markers on map for the appropriate markets
@@ -196,7 +198,7 @@ import com.google.android.maps.GeoPoint;
 					bundle.putParcelable("markerLatLng", marker.getPosition());
 					DialogFragment newFragment = new DirectionsDialogFragment();
 					newFragment.setArguments(bundle);
-				    newFragment.show(getFragmentManager(), "missiles");
+				    newFragment.show(getFragmentManager(), "directions type");
 
 					/*final Intent intent = new Intent(Intent.ACTION_VIEW,
 						       //** Using the web based turn by turn directions url. *//*

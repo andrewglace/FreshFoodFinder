@@ -24,13 +24,15 @@ public class MarketManager {
 	
 	private Food activeFood;
 	private Location userLocation;
+	private int searchRadius;
 	
 	//We'll still instiate Aldi as a list so we dont have to treat it specially
 	private ArrayList<Market> aldi;
 	
-	public MarketManager(Food food, Location location) {
+	public MarketManager(Food food, Location location,int radius) {
 		activeFood = food;
 		userLocation = location;
+		searchRadius = radius;
 		superMarketFoods = new ArrayList<Food>();
 		wawaFoods = new ArrayList<Food>();
 		cornerStoreFoods = new ArrayList<Food>();
@@ -82,13 +84,16 @@ public class MarketManager {
 		}
 		
 		private ArrayList<Market> filterMarketsByDistance(ArrayList<Market> markets) {
-
+			//Don't filter if default value zero is given, which indicates no radius limit
+			if (searchRadius == 0) {
+				return markets;
+			}
 			//1609 is 1 mile
 			ArrayList<Market> appropriateMarkets = new ArrayList<Market>();
 			for (Market m : markets) {
 				
 				//1609 is 1 mile
-				if (userLocation.distanceTo(m.getLocation())<3218) {
+				if (userLocation.distanceTo(m.getLocation())<searchRadius) {
 
 					appropriateMarkets.add(m);
 				}

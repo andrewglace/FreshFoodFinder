@@ -42,12 +42,18 @@ public class MainActivity extends ListActivity {
 	    // Get the item that was clicked
 	    Food foodClickedByUser = (Food) this.getListAdapter().getItem(position);
 	    activeFood = foodClickedByUser;
-	    Intent i = new Intent(this, UserMap.class);
+	    Bundle bundle = new Bundle();
+	    bundle.putString("activeFoodName",activeFood.getName());
+	    SearchRadiusDialogFragment searchRadiusQuery = new SearchRadiusDialogFragment();
+	    searchRadiusQuery.setArguments(bundle);
+	    searchRadiusQuery.show(getFragmentManager(), "search radius");
+	    /*Intent i = new Intent(this, SearchRadiusDialogFragment.class);
 	    
 	    //Puts the name of the active food into the UserMap activity
-	    i.putExtra("com.example.freshfoodfinder.activeFood", activeFood.getName());
+	    i.putExtra("activeFoodName", activeFood.getName());
 	    
-	    startActivityForResult(i,UserMap_ID);
+	    startActivityForResult(i,UserMap_ID);*/
+	    
 	  }
 	  
 	  public void goSeasonal(View view) {
