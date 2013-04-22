@@ -1,5 +1,6 @@
 package com.example.freshfoodfinder;
 import java.util.ArrayList;
+
 import java.util.Calendar;
 
 import android.os.Parcel;
@@ -333,6 +334,7 @@ public class Food implements Parcelable {
 		Calendar current = Calendar.getInstance();
 		//current.set(Calendar.MONTH, Calendar.JUNE); //remove this later!
 		int currentMonth = current.get(Calendar.MONTH);
+
 		ArrayList<Food> seasonalFoods = new ArrayList<Food>();
 		
 		for (Food f : foods) {
@@ -344,7 +346,6 @@ public class Food implements Parcelable {
 			if(currentMonth >= f.seasonStart && currentMonth <= f.seasonEnd) {
 				seasonalFoods.add(f);
 			}
-			
 		}
 		return seasonalFoods;
 	}
