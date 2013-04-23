@@ -38,6 +38,7 @@ public class MainActivity extends ListActivity {
 		
 		RadioButton mapButton = (RadioButton) this.findViewById(R.id.radioButtonMap);
 		mapButton.setChecked(true);
+		togglerIsMap = true;
 	}
 	  @Override
 	  protected void onListItemClick(ListView l, View v, int position, long id) {

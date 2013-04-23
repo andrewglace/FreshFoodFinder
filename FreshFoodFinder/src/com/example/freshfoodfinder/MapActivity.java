@@ -58,13 +58,7 @@ public class MapActivity extends Activity {
 	    }
 	}
 	public void init(){
-		Food apple = new Food("apple", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
-		Food banana = new Food("banana", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
-		Food carrot = new Food("carrot", Food.FOOD_FRUIT, Calendar.JANUARY, Calendar.DECEMBER);
 		ArrayList<Food> foods = new ArrayList<Food>();
-		foods.add(apple);
-		foods.add(banana);
-		foods.add(carrot);
 		LatLng freshGrocerLocation = new LatLng(39.954499,-75.202864);
 		LatLng supremeLocation = new LatLng(39.954792,-75.208733);
 		LatLng twenty3rdAndOregonShopRiteLocation = new LatLng(39.919951,-75.186009);
