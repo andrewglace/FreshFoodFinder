@@ -429,7 +429,7 @@ public class MarketManager {
 		//Market _16thStreetFoodMarketCornerStore = new Market("_16thStreetFoodMarketCornerStore",cornerStoreFoods,_16thStreetFoodMarketCornerStoreLocation );
 		//cornerStores.add(_16thStreetFoodMarketCornerStore);
 		LatLng TcGroceryLlc1CornerStoreLocation = new LatLng(39.926688,-75.177303);
-		Market TcGroceryLlc1CornerStore = new Market("TcGroceryLlc1CornerStore",cornerStoreFoods,TcGroceryLlc1CornerStoreLocation );
+		Market TcGroceryLlc1CornerStore = new Market("Tc Grocery Llc1 CornerStore",cornerStoreFoods,TcGroceryLlc1CornerStoreLocation );
 		cornerStores.add(TcGroceryLlc1CornerStore);		
 		LatLng CruzBrotherMiniMarketCornerStoreLocation = new LatLng(39.926891,-75.178874);
 		Market CruzBrotherMiniMarketCornerStore = new Market("CruzB rothers Mini Market",cornerStoreFoods,CruzBrotherMiniMarketCornerStoreLocation );
@@ -444,115 +444,115 @@ public class MarketManager {
 		Market RamosFoodMarketCornerStore = new Market("Ramos Food Market Corner Store",cornerStoreFoods,RamosFoodMarketCornerStoreLocation );
 		cornerStores.add(RamosFoodMarketCornerStore);	
 		LatLng FernandezMiniMarketCornerStoreLocation = new LatLng(39.928801,-75.180638);
-		Market FernandezMiniMarketCornerStore = new Market("FernandezMiniMarketCornerStore",cornerStoreFoods,FernandezMiniMarketCornerStoreLocation );
+		Market FernandezMiniMarketCornerStore = new Market("Fernandez Mini Market CornerStore",cornerStoreFoods,FernandezMiniMarketCornerStoreLocation );
 		cornerStores.add(FernandezMiniMarketCornerStore);		
 		LatLng CruzandFGroceryCornerStoreLocation = new LatLng(39.928633,-75.182403);
-		Market CruzandFGroceryCornerStore = new Market("Cruz&FGroceryCornerStore",cornerStoreFoods,CruzandFGroceryCornerStoreLocation );
+		Market CruzandFGroceryCornerStore = new Market("Cruz & F Grocery CornerStore",cornerStoreFoods,CruzandFGroceryCornerStoreLocation );
 		cornerStores.add(CruzandFGroceryCornerStore);	
 		LatLng RanacaroGroceryStoreCornerStoreLocation = new LatLng(39.928684,-75.184317);
-		Market RanacaroGroceryStoreCornerStore = new Market("RanacaroGroceryStoreCornerStore",cornerStoreFoods,RanacaroGroceryStoreCornerStoreLocation );
+		Market RanacaroGroceryStoreCornerStore = new Market("Ranacaro GroceryStore CornerStore",cornerStoreFoods,RanacaroGroceryStoreCornerStoreLocation );
 		cornerStores.add(RanacaroGroceryStoreCornerStore);		
 		LatLng MohamedMarketCornerStoreLocation = new LatLng(39.928715,-75.173332);
-		Market MohamedMarketCornerStore = new Market("MohamedMarketCornerStore",cornerStoreFoods,MohamedMarketCornerStoreLocation );
+		Market MohamedMarketCornerStore = new Market("Mohamed Market CornerStore",cornerStoreFoods,MohamedMarketCornerStoreLocation );
 		cornerStores.add(MohamedMarketCornerStore);		
 		LatLng NuMiniMarketCornerStoreLocation = new LatLng(39.929497,-75.171801);
-		Market NuMiniMarketCornerStore = new Market("NuMiniMarketCornerStore",cornerStoreFoods,NuMiniMarketCornerStoreLocation );
+		Market NuMiniMarketCornerStore = new Market("Nu Mini Market CornerStore",cornerStoreFoods,NuMiniMarketCornerStoreLocation );
 		cornerStores.add(NuMiniMarketCornerStore);	
 		LatLng DuranMiniMarketCornerStoreLocation = new LatLng(39.930391,-75.178109);
-		Market DuranMiniMarketCornerStore = new Market("DuranMiniMarketCornerStore",cornerStoreFoods,DuranMiniMarketCornerStoreLocation );
+		Market DuranMiniMarketCornerStore = new Market("Duran Mini Market CornerStore",cornerStoreFoods,DuranMiniMarketCornerStoreLocation );
 		cornerStores.add(DuranMiniMarketCornerStore);	
 		LatLng SantosGroceryCornerStoreLocation = new LatLng(39.930848,-75.169896);
-		Market SantosGroceryCornerStore = new Market("SantosGroceryCornerStore",cornerStoreFoods,SantosGroceryCornerStoreLocation );
+		Market SantosGroceryCornerStore = new Market("Santos Grocery CornerStore",cornerStoreFoods,SantosGroceryCornerStoreLocation );
 		cornerStores.add(SantosGroceryCornerStore);	
 		LatLng SanLucaGroceryIncCornerStoreLocation = new LatLng(39.930735,-75.171004);
-		Market SanLucaGroceryIncCornerStore = new Market("SanLucaGroceryIncCornerStore",cornerStoreFoods,SanLucaGroceryIncCornerStoreLocation );
+		Market SanLucaGroceryIncCornerStore = new Market("San Luca Grocery Inc CornerStore",cornerStoreFoods,SanLucaGroceryIncCornerStoreLocation );
 		cornerStores.add(SanLucaGroceryIncCornerStore);
 		
 		//19146
 		LatLng CastroGroceryCornerStoreLocation = new LatLng(39.932059,-75.171474);
-		Market CastroGroceryCornerStore = new Market("CastroGroceryCornerStore",cornerStoreFoods,CastroGroceryCornerStoreLocation );
+		Market CastroGroceryCornerStore = new Market("Castro Grocery CornerStore",cornerStoreFoods,CastroGroceryCornerStoreLocation );
 		cornerStores.add(CastroGroceryCornerStore);
 		
 		LatLng GilGrocery2CornerStoreLocation = new LatLng(39.933248,-75.176178);
-		Market GilGrocery2CornerStore = new Market("GilGrocery#2CornerStore",cornerStoreFoods,GilGrocery2CornerStoreLocation );
+		Market GilGrocery2CornerStore = new Market("Gil Grocery #2 CornerStore",cornerStoreFoods,GilGrocery2CornerStoreLocation );
 		cornerStores.add(GilGrocery2CornerStore);	
 		LatLng _21stFoodMarketandDeliCornerStoreLocation = new LatLng(39.933009,-75.179489);
-		Market _21stFoodMarketandDeliCornerStore = new Market("21stFoodMarket&DeliCornerStore",cornerStoreFoods,_21stFoodMarketandDeliCornerStoreLocation );
+		Market _21stFoodMarketandDeliCornerStore = new Market("21st FoodMarket & Deli CornerStore",cornerStoreFoods,_21stFoodMarketandDeliCornerStoreLocation );
 		cornerStores.add(_21stFoodMarketandDeliCornerStore);
 		LatLng GandNGroceryDeliCornerStoreLocation = new LatLng(39.933714,-75.182992);
-		Market GandNGroceryDeliCornerStore = new Market("G&NGroceryDeliCornerStore",cornerStoreFoods,GandNGroceryDeliCornerStoreLocation );
+		Market GandNGroceryDeliCornerStore = new Market("G & N Grocery Deli CornerStore",cornerStoreFoods,GandNGroceryDeliCornerStoreLocation );
 		cornerStores.add(GandNGroceryDeliCornerStore);
 		LatLng TaskerFoodMarketCornerStoreLocation = new LatLng(39.933976,-75.194927);
-		Market TaskerFoodMarketCornerStore = new Market("TaskerFoodMarketCornerStore",cornerStoreFoods,TaskerFoodMarketCornerStoreLocation );
+		Market TaskerFoodMarketCornerStore = new Market("Tasker Food Market CornerStore",cornerStoreFoods,TaskerFoodMarketCornerStoreLocation );
 		cornerStores.add(TaskerFoodMarketCornerStore);
 		LatLng BlackAngelFoodMarketCornerStoreLocation = new LatLng(39.935156,-75.195718);
-		Market BlackAngelFoodMarketCornerStore = new Market("BlackAngelFoodMarketCornerStore",cornerStoreFoods,BlackAngelFoodMarketCornerStoreLocation );
+		Market BlackAngelFoodMarketCornerStore = new Market("Black Angel Food Market CornerStore",cornerStoreFoods,BlackAngelFoodMarketCornerStoreLocation );
 		cornerStores.add(BlackAngelFoodMarketCornerStore);
 		LatLng PhongGroceryCornerStoreLocation = new LatLng(39.933336,-75.170263);
-		Market PhongGroceryCornerStore = new Market("PhongGroceryCornerStore",cornerStoreFoods,PhongGroceryCornerStoreLocation );
+		Market PhongGroceryCornerStore = new Market("Phong Grocery CornerStore",cornerStoreFoods,PhongGroceryCornerStoreLocation );
 		cornerStores.add(PhongGroceryCornerStore);
 		LatLng JuanCarlosGomezGroceryCornerStoreLocation = new LatLng(39.933868,-75.174417);
-		Market JuanCarlosGomezGroceryCornerStore = new Market("JuanCarlosGomezGroceryCornerStore",cornerStoreFoods,JuanCarlosGomezGroceryCornerStoreLocation );
+		Market JuanCarlosGomezGroceryCornerStore = new Market("Juan Carlos Gomez Grocery CornerStore",cornerStoreFoods,JuanCarlosGomezGroceryCornerStoreLocation );
 		cornerStores.add(JuanCarlosGomezGroceryCornerStore);
 		LatLng YoungsHarvestMarketCornerStoreLocation = new LatLng(39.93385,-75.180254);
-		Market YoungsHarvestMarketCornerStore = new Market("YoungsHarvestMarketCornerStore",cornerStoreFoods,YoungsHarvestMarketCornerStoreLocation );
+		Market YoungsHarvestMarketCornerStore = new Market("Youngs Harvest Market CornerStore",cornerStoreFoods,YoungsHarvestMarketCornerStoreLocation );
 		cornerStores.add(YoungsHarvestMarketCornerStore);
 		LatLng ReedMiniMarketCornerStoreLocation = new LatLng(39.934657,-75.180662);
-		Market ReedMiniMarketCornerStore = new Market("ReedMiniMarketCornerStore",cornerStoreFoods,ReedMiniMarketCornerStoreLocation );
+		Market ReedMiniMarketCornerStore = new Market("Reed Mini Market CornerStore",cornerStoreFoods,ReedMiniMarketCornerStoreLocation );
 		cornerStores.add(ReedMiniMarketCornerStore);
 		LatLng LaMecaFoodMarketCornerStoreLocation = new LatLng(39.93444,-75.169163);
-		Market LaMecaFoodMarketCornerStore = new Market("LaMecaFoodMarketCornerStore",cornerStoreFoods,LaMecaFoodMarketCornerStoreLocation );
+		Market LaMecaFoodMarketCornerStore = new Market("La Meca Food Market CornerStore",cornerStoreFoods,LaMecaFoodMarketCornerStoreLocation );
 		cornerStores.add(LaMecaFoodMarketCornerStore);
 		LatLng LaFuerzaCornerStoreLocation = new LatLng(39.934405,-75.170753);
-		Market LaFuerzaCornerStore = new Market("LaFuerzaCornerStore",cornerStoreFoods,LaFuerzaCornerStoreLocation );
+		Market LaFuerzaCornerStore = new Market("LaFuerza CornerStore",cornerStoreFoods,LaFuerzaCornerStoreLocation );
 		cornerStores.add(LaFuerzaCornerStore);
 		LatLng OlivaresGroceryCornerStoreLocation = new LatLng(39.934809,-75.173126);
-		Market OlivaresGroceryCornerStore = new Market("OlivaresGroceryCornerStore",cornerStoreFoods,OlivaresGroceryCornerStoreLocation );
+		Market OlivaresGroceryCornerStore = new Market("Olivares Grocery CornerStore",cornerStoreFoods,OlivaresGroceryCornerStoreLocation );
 		cornerStores.add(OlivaresGroceryCornerStore);
 		LatLng LandMFoodMarketCornerStoreLocation = new LatLng(39.935896,-75.180363);
-		Market LandMFoodMarketCornerStore = new Market("L&MFoodMarketCornerStore",cornerStoreFoods,LandMFoodMarketCornerStoreLocation );
+		Market LandMFoodMarketCornerStore = new Market("L & M Food Market CornerStore",cornerStoreFoods,LandMFoodMarketCornerStoreLocation );
 		cornerStores.add(LandMFoodMarketCornerStore);
 		LatLng BaezGroceryLlcCornerStoreLocation = new LatLng(39.936141,-75.182214);
-		Market BaezGroceryLlcCornerStore = new Market("BaezGroceryLlcCornerStore",cornerStoreFoods,BaezGroceryLlcCornerStoreLocation );
+		Market BaezGroceryLlcCornerStore = new Market("Baez Grocery Llc CornerStore",cornerStoreFoods,BaezGroceryLlcCornerStoreLocation );
 		cornerStores.add(BaezGroceryLlcCornerStore);
 		LatLng UrenaFoodMartCornerStoreLocation = new LatLng(39.937013,-75.190693);
-		Market UrenaFoodMartCornerStore = new Market("UrenaFoodMartCornerStore",cornerStoreFoods,UrenaFoodMartCornerStoreLocation );
+		Market UrenaFoodMartCornerStore = new Market("Urena FoodMart CornerStore",cornerStoreFoods,UrenaFoodMartCornerStoreLocation );
 		cornerStores.add(UrenaFoodMartCornerStore);
 		LatLng ArhenyFoodMarketCornerStoreLocation = new LatLng(39.937206,-75.182092);
-		Market ArhenyFoodMarketCornerStore = new Market("ArhenyFoodMarketCornerStore",cornerStoreFoods,ArhenyFoodMarketCornerStoreLocation );
+		Market ArhenyFoodMarketCornerStore = new Market("Arheny Food Market CornerStore",cornerStoreFoods,ArhenyFoodMarketCornerStoreLocation );
 		cornerStores.add(ArhenyFoodMarketCornerStore);
 		LatLng AandHFoodMarketCornerStoreLocation = new LatLng(39.937197,-75.176637);
-		Market AandHFoodMarketCornerStore = new Market("A&HFoodMarketCornerStore",cornerStoreFoods,AandHFoodMarketCornerStoreLocation );
+		Market AandHFoodMarketCornerStore = new Market("A & H Food Market CornerStore",cornerStoreFoods,AandHFoodMarketCornerStoreLocation );
 		cornerStores.add(AandHFoodMarketCornerStore);
 		LatLng RightTriangleCornerStoreLocation = new LatLng(39.936924,-75.17508);
-		Market RightTriangleCornerStore = new Market("RightTriangleCornerStore",cornerStoreFoods,RightTriangleCornerStoreLocation );
+		Market RightTriangleCornerStore = new Market("Right Triangle CornerStore",cornerStoreFoods,RightTriangleCornerStoreLocation );
 		cornerStores.add(RightTriangleCornerStore);
 		LatLng ArianaGroceryIICornerStoreLocation = new LatLng(39.935904,-75.169133);
-		Market ArianaGroceryIICornerStore = new Market("ArianaGroceryIICornerStore",cornerStoreFoods,ArianaGroceryIICornerStoreLocation );
+		Market ArianaGroceryIICornerStore = new Market("Ariana Grocery II CornerStore",cornerStoreFoods,ArianaGroceryIICornerStoreLocation );
 		cornerStores.add(ArianaGroceryIICornerStore);
 		
 		LatLng NunezGroceryCornerStoreLocation = new LatLng(39.940318,-75.169519);
-		Market NunezGroceryCornerStore = new Market("NunezGroceryCornerStore",cornerStoreFoods,NunezGroceryCornerStoreLocation );
+		Market NunezGroceryCornerStore = new Market("Nunez Grocery CornerStore",cornerStoreFoods,NunezGroceryCornerStoreLocation );
 		cornerStores.add(NunezGroceryCornerStore);
 		
 		LatLng HarrysHouseCornerStoreLocation = new LatLng(39.941114,-75.174162);
-		Market HarrysHouseCornerStore = new Market("HarrysHouseCornerStore",cornerStoreFoods,HarrysHouseCornerStoreLocation );
+		Market HarrysHouseCornerStore = new Market("Harrys House CornerStore",cornerStoreFoods,HarrysHouseCornerStoreLocation );
 		cornerStores.add(HarrysHouseCornerStore);
 		
 		LatLng NameKimVansCafCornerStoreLocation = new LatLng(39.94145,-75.179268);
-		Market NameKimVansCafCornerStore = new Market("NameKimVansCafCornerStore",cornerStoreFoods,NameKimVansCafCornerStoreLocation );
+		Market NameKimVansCafCornerStore = new Market("Name Kim Vans Caf CornerStore",cornerStoreFoods,NameKimVansCafCornerStoreLocation );
 		cornerStores.add(NameKimVansCafCornerStore);
 		
 		LatLng ChristianFoodMarketCornerStoreLocation = new LatLng(39.941997,-75.180783);
-		Market ChristianFoodMarketCornerStore = new Market("ChristianFoodMarketCornerStore",cornerStoreFoods,ChristianFoodMarketCornerStoreLocation );
+		Market ChristianFoodMarketCornerStore = new Market("Christian Food Market CornerStore",cornerStoreFoods,ChristianFoodMarketCornerStoreLocation );
 		cornerStores.add(ChristianFoodMarketCornerStore);
 		
 		LatLng KennedyGroceryCornerStoreLocation = new LatLng(39.942895,-75.178879);
-		Market KennedyGroceryCornerStore = new Market("KennedyGroceryCornerStore",cornerStoreFoods,KennedyGroceryCornerStoreLocation );
+		Market KennedyGroceryCornerStore = new Market("Kennedy Grocery CornerStore",cornerStoreFoods,KennedyGroceryCornerStoreLocation );
 		cornerStores.add(KennedyGroceryCornerStore);
 		
 		LatLng AdabelDeliIncCornerStoreLocation = new LatLng(39.944477,-75.171559);
-		Market AdabelDeliIncCornerStore = new Market("BarbaroCornerStore",cornerStoreFoods,AdabelDeliIncCornerStoreLocation );
+		Market AdabelDeliIncCornerStore = new Market("Barbaro CornerStore",cornerStoreFoods,AdabelDeliIncCornerStoreLocation );
 		cornerStores.add(AdabelDeliIncCornerStore);
  
 		//19112 -none
@@ -560,71 +560,71 @@ public class MarketManager {
 				
 		//all stores from 19139
 		LatLng toresCornerStoreLocation = new LatLng(39.956242,-75.21777);
-		Market toresCornerStore = new Market("toresCornerStore",cornerStoreFoods,toresCornerStoreLocation );
+		Market toresCornerStore = new Market("Tores CornerStore",cornerStoreFoods,toresCornerStoreLocation );
 		cornerStores.add(toresCornerStore);
 		LatLng conniesCornerStoreLocation = new LatLng(39.957013,-75.22506);
-		Market conniesCornerStore = new Market("conniesCornerStore",cornerStoreFoods,conniesCornerStoreLocation );
+		Market conniesCornerStore = new Market("Connies CornerStore",cornerStoreFoods,conniesCornerStoreLocation );
 		cornerStores.add(conniesCornerStore);
 		LatLng MontesinosCornerStoreLocation = new LatLng(39.959126,-75.228789);
-		Market MontesinosCornerStore = new Market("MontesinosCornerStore",cornerStoreFoods,MontesinosCornerStoreLocation );
+		Market MontesinosCornerStore = new Market("Montesinos CornerStore",cornerStoreFoods,MontesinosCornerStoreLocation );
 		cornerStores.add(MontesinosCornerStore);
 		LatLng RodriguezCornerStoreLocation = new LatLng(39.961881,-75.22627);
-		Market RodriguezCornerStore = new Market("RodriguezCornerStore",cornerStoreFoods,RodriguezCornerStoreLocation );
+		Market RodriguezCornerStore = new Market("Rodriguez CornerStore",cornerStoreFoods,RodriguezCornerStoreLocation );
 		cornerStores.add(RodriguezCornerStore);
 		LatLng GregoryCornerStoreLocation = new LatLng(39.961399,-75.221662);
-		Market GregoryCornerStore = new Market("GregoryCornerStore",cornerStoreFoods,GregoryCornerStoreLocation );
+		Market GregoryCornerStore = new Market("Gregory CornerStore",cornerStoreFoods,GregoryCornerStoreLocation );
 		cornerStores.add(GregoryCornerStore);
 		LatLng fiftyOneRaceCornerStoreLocation = new LatLng(39.963041,-75.222338);
-		Market fiftyOneRaceCornerStore = new Market("fiftyOneRaceCornerStore",cornerStoreFoods,fiftyOneRaceCornerStoreLocation );
+		Market fiftyOneRaceCornerStore = new Market("fifty-One Race CornerStore",cornerStoreFoods,fiftyOneRaceCornerStoreLocation );
 		cornerStores.add(fiftyOneRaceCornerStore);
 		LatLng PorfiCornerStoreLocation = new LatLng(39.967172,-75.220698);
-		Market PorfiOneRaceCornerStore = new Market("PorfiOneRaceCornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
+		Market PorfiOneRaceCornerStore = new Market("Porfi One Race CornerStore",cornerStoreFoods,PorfiCornerStoreLocation );
 		cornerStores.add(PorfiOneRaceCornerStore);
 		
 
 		LatLng  genesisspruceCornerStoreLocation = new LatLng(39.955583,-75.2321);
-		Market genesisspruceCornerStore = new Market("genesisspruceCornerStore",cornerStoreFoods,genesisspruceCornerStoreLocation );
+		Market genesisspruceCornerStore = new Market("Genesis Spruce CornerStore",cornerStoreFoods,genesisspruceCornerStoreLocation );
 		cornerStores.add(genesisspruceCornerStore);
 		
 
 		LatLng  nadiasvineCornerStoreLocation = new LatLng(39.966849,-75.243654);
-		Market nadiasvineCornerStore = new Market("nadiasvineCornerStore",cornerStoreFoods,nadiasvineCornerStoreLocation );
+		Market nadiasvineCornerStore = new Market("Nadias Vine CornerStore",cornerStoreFoods,nadiasvineCornerStoreLocation );
 		cornerStores.add(nadiasvineCornerStore);
 		
 		LatLng  yalneypineCornerStoreLocation = new LatLng(39.954732,-75.234321);
-		Market yalneypineCornerStore = new Market("yalneypineCornerStore",cornerStoreFoods,yalneypineCornerStoreLocation );
+		Market yalneypineCornerStore = new Market("Yalney Pine CornerStore",cornerStoreFoods,yalneypineCornerStoreLocation );
 		cornerStores.add(yalneypineCornerStore);
 		
 		LatLng westphilaproduce62ndCornerStoreLocation = new LatLng(39.961824,-75.24498);
-		Market westphilaproduce62ndCornerStore = new Market("westphilaproduce62ndCornerStore",cornerStoreFoods,westphilaproduce62ndCornerStoreLocation );
+		Market westphilaproduce62ndCornerStore = new Market("West Phila produce 62ndCornerStore",cornerStoreFoods,westphilaproduce62ndCornerStoreLocation );
 		cornerStores.add(westphilaproduce62ndCornerStore);
 		
 		LatLng unidollarplusspruceCornerStoreLocation = new LatLng(39.953424,-75.217311);
-		Market unidollarplusspruceCornerStore = new Market("unidollarplusspruceCornerStore",cornerStoreFoods,unidollarplusspruceCornerStoreLocation );
+		Market unidollarplusspruceCornerStore = new Market("University Dollar Plus Spruce CornerStore",cornerStoreFoods,unidollarplusspruceCornerStoreLocation );
 		cornerStores.add(unidollarplusspruceCornerStore);
 		
 		LatLng mohhallal45walnutCornerStoreLocation = new LatLng(39.955688,-75.213183);
-		Market mohhallal45walnutCornerStore = new Market("mohhallal45walnutCornerStore",cornerStoreFoods,mohhallal45walnutCornerStoreLocation );
+		Market mohhallal45walnutCornerStore = new Market("Mohammed Hallal 45 Walnut CornerStore",cornerStoreFoods,mohhallal45walnutCornerStoreLocation );
 		cornerStores.add(mohhallal45walnutCornerStore);
 		
 		LatLng pm52ndCornerStoreLocation = new LatLng(39.961465,-75.224434);
-		Market pm52ndCornerStore = new Market("pm52ndCornerStore",cornerStoreFoods,pm52ndCornerStoreLocation );
+		Market pm52ndCornerStore = new Market("Pm 52nd CornerStore",cornerStoreFoods,pm52ndCornerStoreLocation );
 		cornerStores.add(pm52ndCornerStore);
 		
 		LatLng amanMarketstCornerStoreLocation = new LatLng(39.960417,-75.22857);
-		Market amanMarketstCornerStore = new Market("amanMarketstCornerStore",cornerStoreFoods,amanMarketstCornerStoreLocation );
+		Market amanMarketstCornerStore = new Market("Aman Market CornerStore",cornerStoreFoods,amanMarketstCornerStoreLocation );
 		cornerStores.add(amanMarketstCornerStore);
 		
 		LatLng syed52ndCornerStoreLocation = new LatLng(39.955555,-75.225955);
-		Market syed52ndCornerStore = new Market("syed52ndCornerStore",cornerStoreFoods,syed52ndCornerStoreLocation );
+		Market syed52ndCornerStore = new Market("Syed 52 nd CornerStore",cornerStoreFoods,syed52ndCornerStoreLocation );
 		cornerStores.add(syed52ndCornerStore);
 		
 		LatLng forty9stopwalnutCornerStoreLocation = new LatLng(39.956443,-75.219391);
-		Market forty9stopwalnutCornerStore = new Market("forty9stopwalnutCornerStore",cornerStoreFoods,forty9stopwalnutCornerStoreLocation );
+		Market forty9stopwalnutCornerStore = new Market("Forty 9 stop Walnut CornerStore",cornerStoreFoods,forty9stopwalnutCornerStoreLocation );
 		cornerStores.add(forty9stopwalnutCornerStore);
 		
 		LatLng delanceyfoodCornerStoreLocation = new LatLng(39.954271,-75.227971);
-		Market delanceyfoodCornerStore = new Market("delanceyfoodCornerStore",cornerStoreFoods,delanceyfoodCornerStoreLocation );
+		Market delanceyfoodCornerStore = new Market("Delancey Food CornerStore",cornerStoreFoods,delanceyfoodCornerStoreLocation );
 		cornerStores.add(delanceyfoodCornerStore);
 		//end stores from 19139
 
@@ -912,71 +912,71 @@ public class MarketManager {
 
 		//begin stores from 19131
 		LatLng MaximinoCornerStoreLocation = new LatLng(39.973884,-75.231066);
-		Market MaximinoCornerStore = new Market("MaximinoCornerStore",cornerStoreFoods,MaximinoCornerStoreLocation );
+		Market MaximinoCornerStore = new Market("Maximino CornerStore",cornerStoreFoods,MaximinoCornerStoreLocation );
 		cornerStores.add(MaximinoCornerStore);
 		LatLng fiftyeightReyesCornerStoreLocation = new LatLng(39.973101,-75.237898);
-		Market fiftyeightReyesCornerStore = new Market("fiftyeightReyesCornerStore",cornerStoreFoods,fiftyeightReyesCornerStoreLocation );
+		Market fiftyeightReyesCornerStore = new Market("Fifty-Eight Reyes CornerStore",cornerStoreFoods,fiftyeightReyesCornerStoreLocation );
 		cornerStores.add(fiftyeightReyesCornerStore);
 		LatLng fiftysixMastersReyesCornerStoreLocation = new LatLng(39.973634,-75.233276);
-		Market fiftysixMastersReyesCornerStore = new Market("fiftysixMastersReyesCornerStore",cornerStoreFoods,fiftysixMastersReyesCornerStoreLocation );
+		Market fiftysixMastersReyesCornerStore = new Market("Fifty-Six Masters Reyes CornerStore",cornerStoreFoods,fiftysixMastersReyesCornerStoreLocation );
 		cornerStores.add(fiftysixMastersReyesCornerStore);
 		LatLng EconomicCornerStoreLocation = new LatLng(32.968041,-81.767068);
-		Market EconomicCornerStore = new Market("EconomicCornerStore",cornerStoreFoods,EconomicCornerStoreLocation );
+		Market EconomicCornerStore = new Market("Economic CornerStore",cornerStoreFoods,EconomicCornerStoreLocation );
 		cornerStores.add(EconomicCornerStore);
 		LatLng papiCornerStoreLocation = new LatLng(40.819802,-96.644509);
-		Market papiCornerStore = new Market("papiCornerStore",cornerStoreFoods,papiCornerStoreLocation );
+		Market papiCornerStore = new Market("Papi CornerStore",cornerStoreFoods,papiCornerStoreLocation );
 		cornerStores.add(papiCornerStore);
 
 		LatLng fifty4WyalusingCornerStoreLocation = new LatLng(39.967172,-75.220698);
-		Market fifty4WyalusingCornerStore = new Market("fifty4WyalusingCornerStore",cornerStoreFoods,fifty4WyalusingCornerStoreLocation );
+		Market fifty4WyalusingCornerStore = new Market("Fifty-Four Wyalusing CornerStore",cornerStoreFoods,fifty4WyalusingCornerStoreLocation );
 		cornerStores.add(fifty4WyalusingCornerStore);
 
 		LatLng vinasCornerStoreLocation = new LatLng(39.97117,-75.228826);
-		Market vinasCornerStore = new Market("vinasCornerStore",cornerStoreFoods,vinasCornerStoreLocation );
+		Market vinasCornerStore = new Market("Vinas CornerStore",cornerStoreFoods,vinasCornerStoreLocation );
 		cornerStores.add(vinasCornerStore);
 
 		LatLng crestCornerStoreLocation = new LatLng(39.987849,-75.238558);
-		Market crestCornerStore = new Market("crestCornerStore",cornerStoreFoods,crestCornerStoreLocation );
+		Market crestCornerStore = new Market("Crest CornerStore",cornerStoreFoods,crestCornerStoreLocation );
 		cornerStores.add(crestCornerStore);
 
 		LatLng AngelinasCornerStoreLocation = new LatLng(39.98592,-75.229181);
-		Market AngelinasCornerStore = new Market("AngelinasCornerStore",cornerStoreFoods,AngelinasCornerStoreLocation );
+		Market AngelinasCornerStore = new Market("Angelinas CornerStore",cornerStoreFoods,AngelinasCornerStoreLocation );
 		cornerStores.add(AngelinasCornerStore);
 
 		LatLng ZabalaCornerStoreLocation = new LatLng(39.984749,-75.231301);
-		Market ZabalaCornerStore = new Market("ZabalaCornerStore",cornerStoreFoods,ZabalaCornerStoreLocation );
+		Market ZabalaCornerStore = new Market("Zabala CornerStore",cornerStoreFoods,ZabalaCornerStoreLocation );
 		cornerStores.add(ZabalaCornerStore);
 		
 
 		LatLng CommunityCornerStoreLocation = new LatLng(39.984607,-75.22936);
-		Market CommunityCornerStore = new Market("CommunityCornerStore",cornerStoreFoods,CommunityCornerStoreLocation );
+		Market CommunityCornerStore = new Market("Community CornerStore",cornerStoreFoods,CommunityCornerStoreLocation );
 		cornerStores.add(CommunityCornerStore);
 		
 
 		LatLng iandsCornerStoreLocation = new LatLng(39.980105,-75.227326);
-		Market iandsCornerStore = new Market("iandsCornerStore",cornerStoreFoods,iandsCornerStoreLocation );
+		Market iandsCornerStore = new Market("IandS CornerStore",cornerStoreFoods,iandsCornerStoreLocation );
 		cornerStores.add(iandsCornerStore);
 
 		LatLng valeriosCornerStoreLocation = new LatLng(39.977099,-75.231691);
-		Market valeriosCornerStore = new Market("valeriosCornerStore",cornerStoreFoods,valeriosCornerStoreLocation );
+		Market valeriosCornerStore = new Market("Valerios CornerStore",cornerStoreFoods,valeriosCornerStoreLocation );
 		cornerStores.add(valeriosCornerStore);
 
 		LatLng CabreraCornerStoreLocation = new LatLng(39.978064,-75.235849);
-		Market CabreraCornerStore = new Market("CabreraCornerStore",cornerStoreFoods,CabreraCornerStoreLocation );
+		Market CabreraCornerStore = new Market("Cabrera CornerStore",cornerStoreFoods,CabreraCornerStoreLocation );
 		cornerStores.add(CabreraCornerStore);
 
 		LatLng MartinezCornerStoreLocation = new LatLng(39.975047,-75.234747);
-		Market MartinezCornerStore = new Market("MartinezCornerStore",cornerStoreFoods,MartinezCornerStoreLocation );
+		Market MartinezCornerStore = new Market("Martinez CornerStore",cornerStoreFoods,MartinezCornerStoreLocation );
 		cornerStores.add(MartinezCornerStore);
 
 
 		LatLng morgans54thCornerStoreLocation = new LatLng(39.986537,-75.231913);
-		Market morgans54thCornerStore = new Market("morgans54thCornerStore",cornerStoreFoods,morgans54thCornerStoreLocation );
+		Market morgans54thCornerStore = new Market("Morgans 54th CornerStore",cornerStoreFoods,morgans54thCornerStoreLocation );
 		cornerStores.add(morgans54thCornerStore);
 
 
 		LatLng rodriguez60055thstCornerStoreLocation = new LatLng(39.975047,-75.234747);
-		Market rodriguez60055thstCornerStore = new Market("rodriguez60055thstCornerStore",cornerStoreFoods,rodriguez60055thstCornerStoreLocation );
+		Market rodriguez60055thstCornerStore = new Market("Rodriguez 600 55th st CornerStore",cornerStoreFoods,rodriguez60055thstCornerStoreLocation );
 		cornerStores.add(rodriguez60055thstCornerStore);
 
 		
@@ -984,129 +984,129 @@ public class MarketManager {
 		//begin stores in 19130
 
 		LatLng trustCornerStoreLocation = new LatLng(39.970372,-75.17953);
-		Market trustCornerStore = new Market("trustCornerStore",cornerStoreFoods,trustCornerStoreLocation );
+		Market trustCornerStore = new Market("Trust CornerStore",cornerStoreFoods,trustCornerStoreLocation );
 		cornerStores.add(trustCornerStore);
 
 		LatLng museumCornerStoreLocation = new LatLng(39.962571,-75.168772);
-		Market museumCornerStore = new Market("museumCornerStore",cornerStoreFoods,museumCornerStoreLocation );
+		Market museumCornerStore = new Market("Museum CornerStore",cornerStoreFoods,museumCornerStoreLocation );
 		cornerStores.add(museumCornerStore);
 
 		LatLng garden22fairmountCornerStoreLocation = new LatLng(39.967145,-75.175321);
-		Market garden22fairmountCornerStore = new Market("garden22fairmountCornerStore",cornerStoreFoods,garden22fairmountCornerStoreLocation );
+		Market garden22fairmountCornerStore = new Market("Garden 22 Fairmount CornerStore",cornerStoreFoods,garden22fairmountCornerStoreLocation );
 		cornerStores.add(garden22fairmountCornerStore);
 
 		LatLng sals676nbroadCornerStoreLocation = new LatLng(39.96656,-75.160842);
-		Market sals676nbroadCornerStore = new Market("sals676nbroadCornerStore",cornerStoreFoods,sals676nbroadCornerStoreLocation );
+		Market sals676nbroadCornerStore = new Market("Sals 676 n broad CornerStore",cornerStoreFoods,sals676nbroadCornerStoreLocation );
 		cornerStores.add(sals676nbroadCornerStore);
 
 		LatLng hotspotN15thCornerStoreLocation = new LatLng(39.965856,-75.162115);
-		Market hotspotN15thCornerStore = new Market("hotspotN15thCornerStore",cornerStoreFoods,hotspotN15thCornerStoreLocation );
+		Market hotspotN15thCornerStore = new Market("Hotspot N 15th CornerStore",cornerStoreFoods,hotspotN15thCornerStoreLocation );
 		cornerStores.add(hotspotN15thCornerStore);
 
 		LatLng aa1700wallaceCornerStoreLocation = new LatLng(39.965719,-75.165782);
-		Market aa1700wallaceCornerStore = new Market("aa1700wallaceCornerStore",cornerStoreFoods,aa1700wallaceCornerStoreLocation );
+		Market aa1700wallaceCornerStore = new Market("aa 1700 Wallace CornerStore",cornerStoreFoods,aa1700wallaceCornerStoreLocation );
 		cornerStores.add(aa1700wallaceCornerStore);
 
 		LatLng jk2001greenstCornerStoreLocation = new LatLng(39.975047,-75.234747);
-		Market jk2001greenstCornerStore = new Market("jk2001greenstCornerStore",cornerStoreFoods,jk2001greenstCornerStoreLocation );
+		Market jk2001greenstCornerStore = new Market("jk 2001 Green st CornerStore",cornerStoreFoods,jk2001greenstCornerStoreLocation );
 		cornerStores.add(jk2001greenstCornerStore);
 
 		LatLng wallaceCornerStoreLocation = new LatLng(39.96615,-75.170542);
-		Market wallaceCornerStore = new Market("wallaceCornerStore",cornerStoreFoods,wallaceCornerStoreLocation );
+		Market wallaceCornerStore = new Market("Wallace CornerStore",cornerStoreFoods,wallaceCornerStoreLocation );
 		cornerStores.add(wallaceCornerStore);
 
 		LatLng alejoMtvernonCornerStoreLocation = new LatLng(39.964996,-75.165721);
-		Market alejoMtvernonCornerStore = new Market("alejoMtvernonCornerStore",cornerStoreFoods,alejoMtvernonCornerStoreLocation );
+		Market alejoMtvernonCornerStore = new Market("Alejo Mt Vernon CornerStore",cornerStoreFoods,alejoMtvernonCornerStoreLocation );
 		cornerStores.add(alejoMtvernonCornerStore);
 
 		LatLng almontepoplarCornerStoreLocation = new LatLng(39.971489,-75.169156);
-		Market almontepoplarCornerStore = new Market("almontepoplarCornerStore",cornerStoreFoods,almontepoplarCornerStoreLocation );
+		Market almontepoplarCornerStore = new Market("Almonte Poplar CornerStore",cornerStoreFoods,almontepoplarCornerStoreLocation );
 		cornerStores.add(almontepoplarCornerStore);
 		//end 19130 stores
 		//begin 19121 stores
 		LatLng karenN30thCornerStoreLocation = new LatLng(39.977893,-75.184618);
-		Market karenN30thCornerStore = new Market("karenN30thCornerStore",cornerStoreFoods,karenN30thCornerStoreLocation );
+		Market karenN30thCornerStore = new Market("Karen N 30th CornerStore",cornerStoreFoods,karenN30thCornerStoreLocation );
 		cornerStores.add(karenN30thCornerStore);
 		LatLng jm1400NetingCornerStoreLocation = new LatLng(39.977251,-75.18017);
-		Market jm1400NetingCornerStore = new Market("jm1400NetingCornerStore",cornerStoreFoods,jm1400NetingCornerStoreLocation );
+		Market jm1400NetingCornerStore = new Market("Jm 1400 Neting CornerStore",cornerStoreFoods,jm1400NetingCornerStoreLocation );
 		cornerStores.add(jm1400NetingCornerStore);
 		LatLng yasminwjeffersonCornerStoreLocation = new LatLng(39.977656,-75.172951);
-		Market yasminwjeffersonCornerStore = new Market("yasminwjeffersonCornerStore",cornerStoreFoods,yasminwjeffersonCornerStoreLocation );
+		Market yasminwjeffersonCornerStore = new Market("Yasmin w Jefferson CornerStore",cornerStoreFoods,yasminwjeffersonCornerStoreLocation );
 		cornerStores.add(yasminwjeffersonCornerStore);
 		LatLng paulinoswoxfordCornerStoreLocation = new LatLng(39.979131,-75.171306);
-		Market paulinoswoxfordCornerStore = new Market("paulinoswoxfordCornerStore",cornerStoreFoods,paulinoswoxfordCornerStoreLocation );
+		Market paulinoswoxfordCornerStore = new Market("Paulinos w Oxford CornerStore",cornerStoreFoods,paulinoswoxfordCornerStoreLocation );
 		cornerStores.add(paulinoswoxfordCornerStore);
 		LatLng rodriguezturnerstCornerStoreLocation = new LatLng(39.979976,-75.175834);
-		Market rodriguezturnerstCornerStore = new Market("rodriguezturnerstCornerStore",cornerStoreFoods,rodriguezturnerstCornerStoreLocation );
+		Market rodriguezturnerstCornerStore = new Market("Rodriguez Turner st CornerStore",cornerStoreFoods,rodriguezturnerstCornerStoreLocation );
 		cornerStores.add(rodriguezturnerstCornerStore);
 		LatLng martinezn20thstCornerStoreLocation = new LatLng(39.98135,-75.167195);
-		Market martinezn20thstCornerStore = new Market("martinezn20thstCornerStore",cornerStoreFoods,martinezn20thstCornerStoreLocation );
+		Market martinezn20thstCornerStore = new Market("Martinezn 20th st CornerStore",cornerStoreFoods,martinezn20thstCornerStoreLocation );
 		cornerStores.add(martinezn20thstCornerStore);
 		LatLng carolinaRidgeCornerStoreLocation = new LatLng(39.987697,-75.182126);
-		Market carolinaRidgeCornerStore = new Market("carolinaRidgeCornerStore",cornerStoreFoods,carolinaRidgeCornerStoreLocation );
+		Market carolinaRidgeCornerStore = new Market("Carolina Ridge CornerStore",cornerStoreFoods,carolinaRidgeCornerStoreLocation );
 		cornerStores.add(carolinaRidgeCornerStore);
 		LatLng espinaln23rdstCornerStoreLocation = new LatLng(39.985002,-75.171447);
-		Market espinaln23rdstCornerStore = new Market("espinaln23rdstCornerStore",cornerStoreFoods,espinaln23rdstCornerStoreLocation );
+		Market espinaln23rdstCornerStore = new Market("Espinaln 23rd st CornerStore",cornerStoreFoods,espinaln23rdstCornerStoreLocation );
 		cornerStores.add(espinaln23rdstCornerStore);
 		LatLng torresNringoldCornerStoreLocation = new LatLng(39.983987,-75.174101);
-		Market torresNringoldCornerStore = new Market("torresNringoldCornerStore",cornerStoreFoods,torresNringoldCornerStoreLocation );
+		Market torresNringoldCornerStore = new Market("Torres N Ringold CornerStore",cornerStoreFoods,torresNringoldCornerStoreLocation );
 		cornerStores.add(torresNringoldCornerStore);
 		LatLng duranN27thCornerStoreLocation = new LatLng(39.982862,-75.178763);
-		Market duranN27thCornerStore = new Market("duranN27thCornerStore",cornerStoreFoods,duranN27thCornerStoreLocation );
+		Market duranN27thCornerStore = new Market("Duran N 27th CornerStore",cornerStoreFoods,duranN27thCornerStoreLocation );
 		cornerStores.add(duranN27thCornerStore);
 		LatLng cecilMooreCornerStoreLocation = new LatLng(39.98104,-75.177562);
-		Market cecilMooreCornerStore = new Market("cecilMooreCornerStore",cornerStoreFoods,cecilMooreCornerStoreLocation );
+		Market cecilMooreCornerStore = new Market("Cecil Moore CornerStore",cornerStoreFoods,cecilMooreCornerStoreLocation );
 		cornerStores.add(cecilMooreCornerStore);
 		LatLng delvalley21stCornerStoreLocation = new LatLng(39.981497,-75.168959);
-		Market delvalley21stCornerStore = new Market("delvalley21stCornerStore",cornerStoreFoods,delvalley21stCornerStoreLocation );
+		Market delvalley21stCornerStore = new Market("Del Valley 21st CornerStore",cornerStoreFoods,delvalley21stCornerStoreLocation );
 		cornerStores.add(delvalley21stCornerStore);
 		LatLng pelteras21stCornerStoreLocation = new LatLng(39.987677,-75.167611);
-		Market pelteras21stCornerStore = new Market("pelteras21stCornerStore",cornerStoreFoods,pelteras21stCornerStoreLocation );
+		Market pelteras21stCornerStore = new Market("Pelteras 21st CornerStore",cornerStoreFoods,pelteras21stCornerStoreLocation );
 		cornerStores.add(pelteras21stCornerStore);
 		LatLng jmsesquehanaCornerStoreLocation = new LatLng(39.987366,-75.164478);
-		Market jmsesquehanaCornerStore = new Market("jmsesquehanaCornerStore",cornerStoreFoods,jmsesquehanaCornerStoreLocation );
+		Market jmsesquehanaCornerStore = new Market("JM Sesquehana CornerStore",cornerStoreFoods,jmsesquehanaCornerStoreLocation );
 		cornerStores.add(jmsesquehanaCornerStore);
 		LatLng lorasesquehanaCornerStoreLocation = new LatLng(39.987438,-75.165238);
-		Market lorasesquehanaCornerStore = new Market("lorasesquehanaCornerStore",cornerStoreFoods,lorasesquehanaCornerStoreLocation );
+		Market lorasesquehanaCornerStore = new Market("Lora sesquehana CornerStore",cornerStoreFoods,lorasesquehanaCornerStoreLocation );
 		cornerStores.add(lorasesquehanaCornerStore);
 		LatLng adandiamondCornerStoreLocation = new LatLng(39.985559,-75.16121);
-		Market adandiamondCornerStore = new Market("adandiamondCornerStore",cornerStoreFoods,adandiamondCornerStoreLocation );
+		Market adandiamondCornerStore = new Market("Adan diamond CornerStore",cornerStoreFoods,adandiamondCornerStoreLocation );
 		cornerStores.add(adandiamondCornerStore);
 		LatLng bristia16thCornerStoreLocation = new LatLng(39.984461,-75.159886);
-		Market bristia16thCornerStore = new Market("bristia16thCornerStore",cornerStoreFoods,bristia16thCornerStoreLocation );
+		Market bristia16thCornerStore = new Market("Bristia 16th CornerStore",cornerStoreFoods,bristia16thCornerStoreLocation );
 		cornerStores.add(bristia16thCornerStore);
 		LatLng  estevezoxfordCornerStoreLocation = new LatLng(39.977897,-75.164493);
-		Market estevezoxfordCornerStore = new Market("estevezoxfordCornerStore",cornerStoreFoods,estevezoxfordCornerStoreLocation );
+		Market estevezoxfordCornerStore = new Market("Estevez oxford CornerStore",cornerStoreFoods,estevezoxfordCornerStoreLocation );
 		cornerStores.add(estevezoxfordCornerStore);
 		LatLng city19CornerStoreLocation = new LatLng(39.976862,-75.16655);
-		Market city19CornerStore = new Market("city19CornerStore",cornerStoreFoods,city19CornerStoreLocation );
+		Market city19CornerStore = new Market("City 19 CornerStore",cornerStoreFoods,city19CornerStoreLocation );
 		cornerStores.add(city19CornerStore);
 		LatLng brothersridgeCornerStoreLocation = new LatLng(39.975585,-75.168714);
-		Market brothersridgeCornerStore = new Market("brothersridgeCornerStore",cornerStoreFoods,brothersridgeCornerStoreLocation );
+		Market brothersridgeCornerStore = new Market("Brothers Ridge CornerStore",cornerStoreFoods,brothersridgeCornerStoreLocation );
 		cornerStores.add(brothersridgeCornerStore);
 		LatLng rodriguezthompsonCornerStoreLocation = new LatLng(39.97533,-75.176787);
-		Market rodriguezthompsonCornerStore = new Market("rodriguezthompsonCornerStore",cornerStoreFoods,rodriguezthompsonCornerStoreLocation );
+		Market rodriguezthompsonCornerStore = new Market("Rodriguez Thompson CornerStore",cornerStoreFoods,rodriguezthompsonCornerStoreLocation );
 		cornerStores.add(rodriguezthompsonCornerStore);
 		LatLng threesistersMasterCornerStoreLocation = new LatLng(39.976606,-75.176676);
-		Market threesistersMasterCornerStore = new Market("threesistersMasterCornerStore",cornerStoreFoods,threesistersMasterCornerStoreLocation );
+		Market threesistersMasterCornerStore = new Market("Three Sisters Master CornerStore",cornerStoreFoods,threesistersMasterCornerStoreLocation );
 		cornerStores.add(threesistersMasterCornerStore);
 		LatLng communityoxfordCornerStoreLocation = new LatLng(39.980521,-75.182341);
-		Market communityoxfordCornerStore = new Market("communityoxfordCornerStore",cornerStoreFoods,communityoxfordCornerStoreLocation );
+		Market communityoxfordCornerStore = new Market("Community Oxford CornerStore",cornerStoreFoods,communityoxfordCornerStoreLocation );
 		cornerStores.add(communityoxfordCornerStore);
 		LatLng bravoMarketCornerStoreLocation = new LatLng(39.981712,-75.182175);
-		Market bravoMarketCornerStore = new Market("bravoMarketCornerStore",cornerStoreFoods,bravoMarketCornerStoreLocation );
+		Market bravoMarketCornerStore = new Market("Bravo MarketCornerStore",cornerStoreFoods,bravoMarketCornerStoreLocation );
 		cornerStores.add(bravoMarketCornerStore);
 		LatLng rightchoiceberksCornerStoreLocation = new LatLng(39.983554,-75.170913);
-		Market rightchoiceberksCornerStore = new Market("rightchoiceberksCornerStore",cornerStoreFoods,rightchoiceberksCornerStoreLocation );
+		Market rightchoiceberksCornerStore = new Market("Right Choice Berks CornerStore",cornerStoreFoods,rightchoiceberksCornerStoreLocation );
 		cornerStores.add(rightchoiceberksCornerStore);
 		LatLng cfoodmorrisCornerStoreLocation = new LatLng(39.985431,-75.174609);
-		Market cfoodmorrisCornerStore = new Market("cfoodmorrisCornerStore",cornerStoreFoods,cfoodmorrisCornerStoreLocation );
+		Market cfoodmorrisCornerStore = new Market("Cfood Morris CornerStore",cornerStoreFoods,cfoodmorrisCornerStoreLocation );
 		cornerStores.add(cfoodmorrisCornerStore);
 		LatLng popexcecilemooreornerStoreLocation = new LatLng(39.981048,-75.174726);
-		Market popexcecilemooreornerStore = new Market("popexcecilemooreornerStore",cornerStoreFoods,popexcecilemooreornerStoreLocation );
+		Market popexcecilemooreornerStore = new Market("Popex Cecil e Moore CornerStore",cornerStoreFoods,popexcecilemooreornerStoreLocation );
 		cornerStores.add(popexcecilemooreornerStore);
 		LatLng twentysixthfoodCornerStoreLocation = new LatLng(39.98283,-75.177131);
-		Market twentysixthfoodCornerStore = new Market("twentysixthfoodCornerStore",cornerStoreFoods,twentysixthfoodCornerStoreLocation );
+		Market twentysixthfoodCornerStore = new Market("Twenty-Sixth Food CornerStore",cornerStoreFoods,twentysixthfoodCornerStoreLocation );
 		cornerStores.add(twentysixthfoodCornerStore);
 		
 		//end stores 19121 
