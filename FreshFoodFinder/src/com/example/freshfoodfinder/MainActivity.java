@@ -70,7 +70,7 @@ public class MainActivity extends ListActivity {
 		  Button button = (Button)view;
 		  if (isSeasonal) {
 			  isSeasonal = false;
-			  button.setText(R.string.UnSeasonal);
+			  button.setText(R.string.Seasonal);
 			  ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 					  android.R.layout.simple_list_item_1, allFoods);
 			  setListAdapter(adapter);
@@ -78,7 +78,7 @@ public class MainActivity extends ListActivity {
 		  }
 		  else {
 			  isSeasonal = true;
-			  button.setText(R.string.Seasonal);
+			  button.setText(R.string.UnSeasonal);
 			  ArrayAdapter<Food> adapter = new ColoredArrayAdapter<Food>(this,
 					  android.R.layout.simple_list_item_1, seasonalFoods);
 			  setListAdapter(adapter);
