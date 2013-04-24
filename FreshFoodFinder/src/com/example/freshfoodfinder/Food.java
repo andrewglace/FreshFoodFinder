@@ -1,4 +1,7 @@
 package com.example.freshfoodfinder;
+
+
+
 import java.util.ArrayList;
 
 import java.util.Calendar;
@@ -261,6 +264,35 @@ public class Food implements Parcelable {
 		
 		Calendar current = Calendar.getInstance();
 		int currentMonth = current.get(Calendar.MONTH);
+
+		ArrayList<Food> seasonalFoods = new ArrayList<Food>();
+		
+		for (Food f : foods) {
+			//We do not count foods that have seasons of "january" and "december"
+			if (f.seasonStart == Calendar.JANUARY && 
+					f.seasonEnd == Calendar.DECEMBER) {
+				continue;
+			}
+			if (f.seasonStart >= f.seasonEnd) { //if we have Nov-Feb. or an overlapping duration
+				if (!(currentMonth < f.seasonStart && currentMonth > f.seasonEnd)) {
+					seasonalFoods.add(f);
+				}
+			} else if (currentMonth >= f.seasonStart && currentMonth <= f.seasonEnd) {
+				seasonalFoods.add(f);
+			}
+		}
+		return seasonalFoods;
+	}
+	
+	//This method is put in for testing purposes
+	public static ArrayList<Food> getSeasonalFoods(ArrayList<Food> foods,int month) {
+		//add "two" versions
+		
+		Calendar current = Calendar.getInstance();
+		int currentMonth = current.get(Calendar.MONTH);
+		if (month != -1) {
+			currentMonth = month;
+		}
 
 		ArrayList<Food> seasonalFoods = new ArrayList<Food>();
 		

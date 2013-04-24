@@ -1,20 +1,16 @@
 	package com.example.freshfoodfinder;
 	
-	import java.util.ArrayList;
-import java.util.Calendar;
+	import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 
@@ -27,27 +23,24 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.maps.GeoPoint;
 	
 	public class UserMap extends Activity{
 	
 	private GoogleMap map;
 	private MapFragment mapFragment;
-	private GeoPoint geo;
+
 	private LocationManager locationManager;
 	private String provider;
-	private Intent parcel;
+
 	private Food activeFood;
 	private Location userLocation;
-	private ArrayList<Food> SuperMarketFoods;
+
 	
 	private MarketManager marketManager;
 	
-	static final LatLng HAMBURG = new LatLng(53.558, 9.927);
-	static final LatLng KIEL = new LatLng(53.551, 9.993);
 
-	
-	private List<Market> markets;
+
+
 	
 	
 	@Override
