@@ -66,14 +66,14 @@ public class MarketManager {
 
 	}
 	
-	private ArrayList<Market> filterMarkets(ArrayList<Market> markets) {
+	public ArrayList<Market> filterMarkets(ArrayList<Market> markets) {
 		markets = searchMarkets(markets);
 		markets = filterMarketsByDistance(markets);
 		return markets;
 	}
 	
 	//Returns list of markets with the food
-		private ArrayList<Market> searchMarkets(ArrayList<Market> markets) {
+		public ArrayList<Market> searchMarkets(ArrayList<Market> markets) {
 			ArrayList<Market> appropriateMarkets = new ArrayList<Market>();
 			for (Market m : markets) {
 				if (m.hasFood(activeFood)) {
@@ -83,7 +83,7 @@ public class MarketManager {
 			return appropriateMarkets;
 		}
 		
-		private ArrayList<Market> filterMarketsByDistance(ArrayList<Market> markets) {
+		public ArrayList<Market> filterMarketsByDistance(ArrayList<Market> markets) {
 			//Don't filter if default value zero is given, which indicates no radius limit
 			if (searchRadius == 0) {
 				return markets;

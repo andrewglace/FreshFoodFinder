@@ -14,12 +14,12 @@ import android.widget.RadioButton;
 
 
 public class MainActivity extends ListActivity {
-	public static Food activeFood;
-	public static final int UserMap_ID = 1;
-	public static ArrayList<Food> allFoods;
-	public static ArrayList<Food> seasonalFoods;
-	public static boolean togglerIsMap = true;
-	public static boolean isSeasonal = false;
+	public Food activeFood;
+	public final int UserMap_ID = 1;
+	public ArrayList<Food> allFoods;
+	public ArrayList<Food> seasonalFoods;
+	public boolean togglerIsMap = true;
+	public boolean isSeasonal = false;
 	public final int Recipe_ID = 1;
 	
 	//This class will manage the code for the screen involving the search bar and buttons for food

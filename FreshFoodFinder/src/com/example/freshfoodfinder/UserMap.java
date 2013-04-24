@@ -102,7 +102,7 @@ import com.google.android.maps.GeoPoint;
 
 	
 	// Move the camera instantly to user's location with a zoom of 15.
-	map.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 30));
+	map.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 15));
 	
 	// Zoom in, animating the camera.
 	map.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);

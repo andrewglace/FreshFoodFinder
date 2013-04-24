@@ -78,7 +78,7 @@ public class Food implements Parcelable {
 	public static Food daikon = new Food("Daikon", Food.FOOD_VEG, Calendar.APRIL, Calendar.MAY,"http://www.yummly.com/recipes?q=daikon"); 
 	public static Food daikonTwo = new Food("Daikon", Food.FOOD_VEG, Calendar.SEPTEMBER, Calendar.NOVEMBER,"http://www.yummly.com/recipes?q=daikon");
 	public static Food eggplant = new Food("Eggplant", Food.FOOD_VEG, Calendar.JULY, Calendar.SEPTEMBER,"http://www.yummly.com/recipes?q=eggplant");
-	public static Food florenceFennel = new Food("Florence fennel", Food.FOOD_VEG, Calendar.APRIL, Calendar.MAY,"http://www.yummly.com/recipes?q=florence+funnel");
+	public static Food florenceFennel = new Food("Florence fennel", Food.FOOD_VEG, Calendar.APRIL, Calendar.MAY,"http://www.yummly.com/recipes?q=fennel");
 	public static Food florenceFennelTwo = new Food("Florence fennel", Food.FOOD_VEG, Calendar.SEPTEMBER, Calendar.NOVEMBER,"http://www.yummly.com/recipes?q=florence+funnel");
 	public static Food garlic = new Food("Garlic", Food.FOOD_VEG, Calendar.AUGUST, Calendar.FEBRUARY,"http://www.yummly.com/recipes?q=garlic");//STORED YEAR ROUND THOUGH
 	public static Food garbanzo = new Food("Garbanzo", Food.FOOD_VEG, Calendar.JANUARY, Calendar.DECEMBER,"http://www.yummly.com/recipes?q=garbanzo");
