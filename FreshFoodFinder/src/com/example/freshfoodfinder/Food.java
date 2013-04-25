@@ -19,7 +19,6 @@ public class Food implements Parcelable {
 	public static final int FOOD_VEG = 2;
 	
 	
-	
 	public Food(String foodName, int foodType, int seasonStart, int seasonEnd, String recipeURL) {
 		recipeSite = recipeURL;
 		name=foodName;

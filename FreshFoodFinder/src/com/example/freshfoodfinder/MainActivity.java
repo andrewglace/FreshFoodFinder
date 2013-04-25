@@ -60,6 +60,7 @@ public class MainActivity extends ListActivity {
 		    
 		    startActivityForResult(i,UserMap_ID);*/
 	    }
+	    //This code is executed when "Recipe" is toggled
 	    else {
 	    	Intent viewIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(activeFood.getRecipeSite()));  
 	    	startActivityForResult(viewIntent,Recipe_ID);
